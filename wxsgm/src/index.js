@@ -11,7 +11,6 @@ axios.interceptors.request.use(config=>{
     return config;
 })
 axios.interceptors.response.use(({data})=>{
-    console.log('l请求拦截中',data)
     return data;
 })
 
