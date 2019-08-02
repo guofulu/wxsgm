@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+    withRouter
+} from 'react-router-dom';
 
 
 class GuardRouter extends React.Component{
@@ -14,4 +17,4 @@ class GuardRouter extends React.Component{
     }
 }
 
-export default GuardRouter
+export default withRouter(GuardRouter)
