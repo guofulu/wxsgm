@@ -21,7 +21,6 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
-            isNav:true
         }
     },
     {//票夹路由
@@ -31,8 +30,7 @@ export default [
         component:Home,
         meta:{
             title:'聚橙网',
-            isFooter:true,
-            isNav:true
+            isFooter:false,
         }
     },
     {//我的路由
@@ -43,7 +41,6 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
-            isNav:true
         }
     },
     
