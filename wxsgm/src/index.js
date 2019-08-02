@@ -8,8 +8,6 @@ import {Provider} from 'react-redux';
 import store from './store';
 
 axios.interceptors.request.use(config=>{
-    config.url = '/juooo'+config.url;
-    console.log(222,config.url)
     return config;
 })
 axios.interceptors.response.use(({data})=>{
