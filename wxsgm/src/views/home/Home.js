@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux'
 import homeCreator from '../../store/actionCreator/home';
-import axios from 'axios';
 
 
 class Home extends React.Component{

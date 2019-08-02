@@ -1,15 +1,51 @@
 import Home from '../views/home/Home';
 
 export default [
-    {
+    {//首页路由
         to:'/',
         path:'/',
         context:'首页',
         component:Home,
         exact:true,
         meta:{
-            title:'聚橙网-首页',
-            isFooter:true
+            title:'聚橙网',
+            isFooter:true,
+            isNav:true
         }
-    }
+    },
+    {//剧院路由
+        to:'/theatre/theatreList',
+        path:'/theatre/theatreList',
+        context:'剧院',
+        component:Home,
+        meta:{
+            title:'聚橙网',
+            isFooter:true,
+            isNav:true
+        }
+    },
+    {//票夹路由
+        to:'/eticket/list',
+        path:'/eticket/list',
+        context:'票夹',
+        component:Home,
+        meta:{
+            title:'聚橙网',
+            isFooter:true,
+            isNav:true
+        }
+    },
+    {//我的路由
+        to:'/myjuooo/myjuooo',
+        path:'/myjuooo/myjuooo',
+        context:'我的',
+        component:Home,
+        meta:{
+            title:'聚橙网',
+            isFooter:true,
+            isNav:true
+        }
+    },
+    
+
 ]
