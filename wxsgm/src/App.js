@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Home from './views/home/Home'
+import './assets/css/common.css'
+
 import {
   BrowserRouter as Router,
   Route
