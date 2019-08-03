@@ -1,0 +1,21 @@
+/*navbar_on_center 公共部分的样式  上面的可点击返回时间*/
+.navbar_on_center{
+    width: 100%;
+    font-size: 18px;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #232323;
+    position: fixed;
+    height: 1rem;
+    background: #fff;
+    border-bottom: 1px #f5f5f5 solid;
+}
+.My_left{
+    font-size: 26px;
+}
+.My_rigth{
+    font-size: 30px;
+}
+

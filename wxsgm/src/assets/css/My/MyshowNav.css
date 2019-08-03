@@ -1,0 +1,24 @@
+.showNav{
+    position:fixed;
+    top:1rem;
+    background: white;
+}
+.showNull{
+    width: 7.5rem;
+    height: .2rem;
+    position: absolute;
+    bottom: 0;
+    background: white;
+}
+.showUl{
+    width: 7.5rem;
+    height: 0.91rem;
+    line-height: 0.91rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+}
+.showUl li{
+    padding: 0 .2rem;
+    font-size: 16px;
+}

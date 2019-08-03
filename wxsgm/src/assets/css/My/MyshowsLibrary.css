@@ -1,0 +1,56 @@
+/*演出的*/
+.library_wrap{
+    padding-top: 1.65rem;
+    width: 100%;
+    height: 100%;
+}
+.library_main{
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5rem;
+}
+.library_li{
+    width: 6.9rem;
+    height:3.04rem ;
+    margin: 0 0.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.library_left{
+    width: 2.26rem;
+    height:3rem;
+}
+.library_left img{
+    width: 100%;
+}
+.library_right{
+    width:4.36rem;
+    height: 3rem;
+    text-align: left;
+}
+.library_right .library_time{
+    color: black;
+    font-size: 0.3rem;
+    margin: 0.12rem;
+    font-weight: 800;
+}
+.library_right .library_name{
+    font-size: 0.35rem;
+    font-weight: 800;
+    color: black;
+    display:-webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /*display: box;*/
+
+}
+.library_right .venue_name{
+    color: #666;;
+    font-size: 0.2rem;
+    margin: 0.2rem;
+}
+.library_right .tag_icon{
+    color: #df5000;
+}

@@ -25,7 +25,7 @@ class Home extends React.Component{
         this.props.getTourRecommendList();
     }
     componentDidUpdate(){
-        //console.log(this.props)
+
     }
     render(){
 

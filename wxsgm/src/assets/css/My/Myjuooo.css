@@ -17,22 +17,35 @@
     flex-direction: column-reverse;
     align-items: center;
     background: burlywood;
-    border-bottom-left-radius: 0.4rem;
-    border-bottom-right-radius: 0.4rem;
+    border-bottom-left-radius: 13%;
+    border-bottom-right-radius: 13%;
 }
+/*上面设置icon*/
 .mine_info .icon{
     display: block;
     position: absolute;
     right: 0.25rem;
     top: 0.2rem;
     font-size: 18px;
+    color: white
 }
-.mine_info_main{
+/* 带头像的小框 */
+.mine_info .mine_info_main{
     position: relative;
     width: 6.9rem;
     height: 3.01rem;
     background: #fff;
-    border-radius: 0.15rem;
+    z-index: 12;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(35,35,35,.08);
+}
+.mine_info_main_null{
+    width: 6.9rem;
+    height: 3.01rem;
+    background: #fff;
+    position: absolute;
+    right: 0.32rem;
+    top: 1.2rem;
+    z-index: 11;
 }
 .mine_info__main__head{
     width: 6.9rem;
@@ -85,7 +98,7 @@
     height: 1.62rem;
     display: flex;
     align-items: center;
-
+    box-shadow: 0 0.05333rem 0.4rem 0.02667rem rgba(35,35,35,.08);
 }
 .mine_info__main__cnt__item{
     flex: 1;
@@ -103,18 +116,13 @@
 }
 .separator{
     position: absolute;
-    width: 1px;
     height: .8rem;
     background: #ebebeb;
     top: .4rem;
     right: 0;
 }
 
-
-
-
-
-
+/* .mine_vip图片 */
 .mine_vip{
     width: 100%;
     height:  1.8rem;;
@@ -126,7 +134,7 @@
 
 
 
-
+/* .mine_setting列表的那个地方 */
 .mine_setting{
     width: 100%;
     height:  3.78rem;
@@ -134,8 +142,10 @@
     flex-direction: column-reverse;
     align-items: center;
 }
-.mine_setting_null{
-}
+/* .mine_setting_null{
+    width: 
+} */
+/* 下面的列表 */
 .mine_setting__list{
     width: 6.9rem;
     height: 1.7696rem;
@@ -151,5 +161,6 @@
 .mine_setting__list__item .mine_icon{
     display: block;
     margin: 0.2rem;
-    font-size: 25px;
+    font-size: 22px;
+    color:#ff6743
 }

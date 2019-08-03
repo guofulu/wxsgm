@@ -14,7 +14,7 @@ class HotBlock extends React.Component{
             <section className={'hot-block'}>
                 <div className={'hot-block__lab'}>
                     <h3>热门演出</h3>
-                    <NavLink to={'/null'} className={'hot-block__lab-a'}>
+                    <NavLink to={'/show/showsLibrary'} className={'hot-block__lab-a'}>
                         <img src={'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg=='} alt={''} />
                     </NavLink>
                 </div> 
