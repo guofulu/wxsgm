@@ -11,7 +11,7 @@ export default class ShowsNav extends React.Component{
             <div className={"showNav"}>
                 <div className={"showNull"}></div>
                 <ul className={"showUl"}>
-                    <li onClick={this.props.getShowList.call(this,0)}>全部</li>
+                    <li onClick={this.props.getShowList.bind(this,0)}>全部</li>
                     {
                         this.props.Show_category_list.map((v,i)=>{
                             return(

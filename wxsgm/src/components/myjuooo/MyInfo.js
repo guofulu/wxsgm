@@ -26,22 +26,22 @@ export default class MyInfo extends React.Component{
                         <p className={"mine_info__main__label__name"}>普通会员</p>
                     </div>
                     <div className={"mine_info__main__cnt"}>
-                        <Link className={"mine_info__main__cnt__item"} to={"/show/showsLibrary"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
                             <p className={"mine_info__main__cnt__item__num"}>0</p>
                             <p className={"mine_info__main__cnt__item__name"}>账户余额</p>
                             <div className={"separator"}></div>
                         </Link>
-                        <Link className={"mine_info__main__cnt__item"} to={"/show/showsLibrary"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
                             <p className={"mine_info__main__cnt__item__num"}>0</p>
                             <p className={"mine_info__main__cnt__item__name"}>积分</p>
                             <div className={"separator"}></div>
                         </Link>
-                        <Link className={"mine_info__main__cnt__item"} to={"/show/showsLibrary"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
                             <p className={"mine_info__main__cnt__item__num"}>0</p>
                             <p className={"mine_info__main__cnt__item__name"}>优惠券</p>
                             <div className={"separator"}></div>
                         </Link>
-                        <Link className={"mine_info__main__cnt__item"} to={"/show/showsLibrary"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
                             <p className={"mine_info__main__cnt__item__num"}>立即开通</p>
                             <p className={"mine_info__main__cnt__item__name"}>橙PLUS卡</p>
                             <div className={"separator"}></div>

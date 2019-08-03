@@ -27,7 +27,7 @@ export default {
         return async (dispatch)=>{
             const {data} = await axios.get("/juoooM/Search/getShowList?category=0&city_id=4&page=1&keywords=&version=6.0.1&referer=2")
             dispatch(upShowsList(data.list))
-            console.log(2222,data)
+            // console.log(2222,data)
         }
     },
     getShowCategory(){
@@ -37,10 +37,10 @@ export default {
         }
     },
     getShowList(type){
-        console.log(type)
+        // console.log(type)
         return async (dispatch)=>{
             const {data} = await axios.get("/juoooM/Search/getShowList?category="+type+"&city_id=4&page=1&keywords=&version=6.0.1&referer=2")
-            console.log(9999,data)
+            // console.log(9999,data)
             dispatch(upShowList(data.list))
         }
     }
