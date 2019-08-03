@@ -7,6 +7,8 @@ import '../../assets/scss/home/index.scss'
 import Banner from '../../components/home/banner';
 import Adeertion from '../../components/home/AdvertionWrap';
 import HotBlock from '../../components/home/HotBlock';
+import TourBlock from '../../components/home/TourBlock';
+import VipBlock from '../../components/home/VipBlock';
 
 
 
@@ -54,7 +56,12 @@ class Home extends React.Component{
                 {
                     this.props.HotsRecommendList.hots_show_list?<HotBlock {...this.props.HotsRecommendList}></HotBlock>:null
                 }
+                {
+                    this.props.TourRecommendList.tour_show_list?<TourBlock {...this.props.TourRecommendList}></TourBlock>:null
+                }
+                <VipBlock></VipBlock>
                 
+                <div style={{height:'5rem'}}></div>
             </div>
         )
     }
