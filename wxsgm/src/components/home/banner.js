@@ -12,7 +12,7 @@ class Banner extends React.Component{
                     {
                         this.props.slide_list.map((v,i)=>{
                             return (
-                               <div className="swiper-slide" >
+                               <div className="swiper-slide" key={i} >
                                    <img style={{width:'100%',height:'100%'}} src={v.image_url} alt="" />
                                 </div> 
                             )
