@@ -1,5 +1,5 @@
 import Home from '../views/home/Home';
-
+import Theatre from "../views/theatre/theatre"
 export default [
     {//首页路由
         to:'/',
@@ -17,7 +17,7 @@ export default [
         to:'/theatre/theatreList',
         path:'/theatre/theatreList',
         context:'剧院',
-        component:Home,
+        component:Theatre,
         meta:{
             title:'聚橙网',
             isFooter:true,

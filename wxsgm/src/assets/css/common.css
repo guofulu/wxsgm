@@ -5,6 +5,7 @@ i,em{font-style:normal;}
 b,strong{font-weight:normal;}
 u,a{text-decoration: none;}
 ul,li,ol{list-style:none;}
+p{color: #000}
 img{border:0;display:block;}
 input{outline:none;}
 body{font-family:"微软雅黑";}
