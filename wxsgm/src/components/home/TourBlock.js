@@ -9,7 +9,7 @@ import {
 class TourBlock extends React.Component{
 
     render(){
-        const data = this.props.hots_show_list.slice(0,6) || []
+        const data = this.props.tour_show_list.slice(0,6) || []
         return (
             <section className={'hot-block'}>
                 <div className={'hot-block__lab'}>
@@ -23,10 +23,9 @@ class TourBlock extends React.Component{
                         <div className="swiper-wrapper swiper-wrapperdiv">
                             {
                                 data.map((v,i)=>{
-                                    console.log(v.pic)
                                     return (
-                                        <NavLink key={i} className="swiper-slide swiper-slide-link" to={'/null'}>
-                                            <img src={v.pic} alt={''} />
+                                        <NavLink key={i} className="swiper-slide swiper-slidelink" to={'/null'}>
+                                            <img style={{height:'2rem',width:'100%'}} src={v.pic} alt={''} />
                                             <h3>{v.show_name}</h3>
                                         </NavLink>
                                     )
@@ -40,10 +39,12 @@ class TourBlock extends React.Component{
         )
     }
     componentDidUpdate(){
-        var mySwiper = new Swiper('.tour-block-swiper',{
-            slidesPerView : "auto",
-            centeredSlides : false,
-            })
+        var mySwiper = new Swiper ('.tour-block-swiper', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+
+          })  
     }
 }
 export default TourBlock
