@@ -16,7 +16,7 @@ class Home extends React.Component{
         this.props.getVipHomeSchedular();//获取vip相关信息列表
     }
     componentDidUpdate(){
-        console.log(888,this.props.ClassifyHome)
+        // console.log(888,this.props.ClassifyHome)
     }
     render(){
 

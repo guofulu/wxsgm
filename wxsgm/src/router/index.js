@@ -1,6 +1,8 @@
 import Home from '../views/home/Home';
 import Theatre from "../views/theatre/theatre"
 import Myjuooo from "../views/myjuooo/Myjuooo"
+import Mysecurity from "../views/myjuooo/Mysecurity"
+import ShowsLibrary from "../views/showsLibrary/ShowsLibrary"
 export default [
     {//首页路由
         to:'/',
@@ -44,6 +46,28 @@ export default [
             isFooter:true,
         }
     },
-    
+
+       {//我的路由-设置
+        to:'/Myjuooo/Mysecurity',
+        path:'/Myjuooo/Mysecurity',
+        context:'我的',
+        component:Mysecurity,
+        meta:{
+            title:'账户设置',
+            isFooter:false,
+        }
+    },
+
+    {//演出页面
+        to:'/show/showsLibrary',
+        path:'/show/showsLibrary',
+        context:'我的',
+        component:ShowsLibrary,
+        meta:{
+            title:'演出',
+            isFooter:false,
+        }
+    },
+
 
 ]
