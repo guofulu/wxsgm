@@ -6,16 +6,19 @@
     height: .98rem;
     display:  flex;
     justify-content: space-around;
+    z-index: 9999;
     .nav-Link {
         color: #232323;
     }
     i {
         font-size: .6rem;
         display: block;
+        line-height: .6rem;
 
     }
     span {
         font-size: .24rem;
+        line-height: .24rem;
     }
     .active-Link {
         color: pink;
