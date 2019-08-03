@@ -1,0 +1,65 @@
+.hot-block {
+    width: 100%;
+    height: 5.52rem;
+    padding:  .4rem 0 .7rem .3rem;
+    .hot-block__lab {
+        height: .46rem;
+        h3 {
+            height: .46rem;
+            line-height: .46rem;
+            font-size: .4rem;
+            font-weight: 700;
+            color: #232323;
+            float: left;
+        }
+        .hot-block__lab-a {
+            float: right;
+            margin-right: .03rem .2rem 0 0 ;
+            width: .4rem;
+            height: .4rem;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .hot-block__list {
+        margin-top: .4rem;
+        height: 3.54rem;
+        .hot-block-swiper{
+            height: 100%;
+            width: 100%;
+            .swiper-wrapper-div {
+                height: 100%;
+                width: 100%;
+                .swiper-slide-link {
+                    height: 100%;
+                    width: 2.14rem;
+                    margin-right: 8px;
+                    img {
+                        width: 2.14rem;
+                        height: 2.92rem;
+                        border-radius: .10667rem;
+                        overflow: hidden;
+                        border: 1px solid #ebebeb;
+                    }
+                    h3 {
+                        height: .5rem;
+                        line-height: .5rem;
+                        font-size: .3rem;
+                        color: #232323;
+                        margin-top: .1rem;
+                        width: 100%;
+                        font-weight: 700;
+                        padding-right: .3rem;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
