@@ -21,6 +21,12 @@ export default function(state=initState,{type,payload}){
         case homeType.UP_VIP_HOME_SCHEDULAR:
             state.VipHomeSchedular = payload;
             break;
+        case homeType.UP_HOT_THEATRE:
+            state.HotTheatre = payload;
+            break;
+        case homeType.UP_TOUR_RECOMMEND_LIST:
+            state.TourRecommendList = payload;
+            break;
         default:
             break;
     }

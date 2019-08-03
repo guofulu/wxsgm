@@ -36,12 +36,26 @@ const upVipHomeSchedular = function(payload){
         payload
     }
 }
+const upHotTheatre = function (payload){
+    return {
+        type:homeType.UP_HOT_THEATRE,
+        payload
+    }
+}
+const upTourRecommendList = function (payload){
+    return {
+        type:homeType.UP_TOUR_RECOMMEND_LIST,
+        payload
+    }
+}
 
 export default {
     getRegisterCoupon(){//获取注册优惠券信息
         return async (dispatch)=>{
             const {data} = await axios.get('/juoooAPI/Promotion/coupon/getRegisterCoupon?version=6.0.1&referer=2');
             dispatch(upRegisterCoupon(data))
+            console.log(1111,data)
+            
         }
     },
 
@@ -49,14 +63,15 @@ export default {
         return async (dispatch)=>{
             const {data} = await axios.get('/juoooAPI/home/index/getClassifyHome?city_id=1&abbreviation=SZ&version=6.0.1&referer=2');
             dispatch(upClassifyHome(data))
+            console.log(222,data)
         }
     },
 
     getHotsRecommendList(){//获取照片推荐列表
         return async (dispatch)=>{
-            const {data} = await axios.get('/juoooAPI/home/index/getHotsRecommendList?city_id=1&version=6.0.1&referer=2');
-            console.log(333,data)
+            const {data} = await axios.get('/juoooAPI/home/index/getHotsRecommendList?city_id=0&version=6.0.1&referer=2');
             dispatch(upHotsRecommendList(data))
+            console.log(333,data)
         }
     },
 
@@ -64,6 +79,7 @@ export default {
         return async (dispatch)=>{
             const {data} = await axios.get('/juoooAPI/home/index/getFloorShow?city_id=1&version=6.0.1&referer=2');
             dispatch(upFloorShow(data))
+            console.log(444,data)
         }
     },
 
@@ -71,7 +87,7 @@ export default {
         return async (dispatch)=>{
             const {data} = await axios.get('/juoooAPI/home/index/getRecommendShow?cityAdd=SZ&page=1&version=6.0.1&referer=2');
             dispatch(upRecommendShow(data))
-            console.log('getRecommendShow',data)
+            console.log(555,data)
         }
     },
 
@@ -79,6 +95,21 @@ export default {
         return async (dispatch)=>{
             const {data} = await axios.get('/juoooAPI/vip/index/getVipHomeSchedular?version=6.0.1&referer=2');
             dispatch(upVipHomeSchedular(data))
+            console.log(666,data)
         }
     },
+    getHotTheatre(){
+        return async (dispatch)=>{
+            const {data} =  await axios.get('/juoooAPI/home/index/getHotTheatre?version=6.0.1&referer=2')
+            dispatch(upHotTheatre(data))
+            console.log(7777,data)
+        }
+    },
+    getTourRecommendList(){
+        return async (dispatch)=>{
+            const {data} =  await axios.get('/juoooAPI/home/index/getTourRecommendList?city_id=0&version=6.0.1&referer=2')
+            dispatch(upTourRecommendList(data))
+            console.log(8888,data)
+        }
+    }
 }
