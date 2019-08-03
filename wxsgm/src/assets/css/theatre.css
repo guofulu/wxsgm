@@ -10,6 +10,7 @@
     position: fixed;
     top:0;
     border-bottom: 1px #ebebeb solid;
+    z-index: 9999;
 }
 .title-single{
     text-align: center;
@@ -52,10 +53,11 @@
 }
 .title-name{
     font-size:0.34rem;
+    font-weight: 600;
 }
 .title-count{
     color: #666;
     font-size: 0.24rem;
     margin-top:0.2rem;
-    text-align: left
+    text-align: left;
 }
