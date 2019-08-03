@@ -1,5 +1,6 @@
 import Home from '../views/home/Home';
 import Theatre from "../views/theatre/theatre"
+import Myjuooo from "../views/myjuooo/Myjuooo"
 export default [
     {//首页路由
         to:'/',
@@ -37,7 +38,7 @@ export default [
         to:'/myjuooo/myjuooo',
         path:'/myjuooo/myjuooo',
         context:'我的',
-        component:Home,
+        component:Myjuooo,
         meta:{
             title:'聚橙网',
             isFooter:true,
