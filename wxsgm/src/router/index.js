@@ -1,12 +1,10 @@
 import Home from '../views/home/Home';
-import Theatre from "../views/theatre/theatre"
-import Myjuooo from "../views/myjuooo/Myjuooo"
-<<<<<<< HEAD
-import Ticket from "../views/theatre/ticket"
-=======
-import Mysecurity from "../views/myjuooo/Mysecurity"
-import ShowsLibrary from "../views/showsLibrary/ShowsLibrary"
->>>>>>> d120a35c5ffbaa44b9448d9c4cb033d827e60dfa
+import Theatre from "../views/theatre/theatre";
+import Myjuooo from "../views/myjuooo/Myjuooo";
+import Ticket from "../views/theatre/ticket";
+import Mysecurity from '../views/myjuooo/Mysecurity';
+import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
+
 export default [
     {//首页路由
         to:'/',
@@ -59,9 +57,6 @@ export default [
             isFooter:true,
         }
     },
-<<<<<<< HEAD
-=======
-
        {//我的路由-设置
         to:'/Myjuooo/Mysecurity',
         path:'/Myjuooo/Mysecurity',
@@ -83,7 +78,5 @@ export default [
             isFooter:false,
         }
     },
-
->>>>>>> d120a35c5ffbaa44b9448d9c4cb033d827e60dfa
 
 ]

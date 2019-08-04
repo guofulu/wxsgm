@@ -59,7 +59,10 @@ class Home extends React.Component{
                 {
                     this.props.TourRecommendList.tour_show_list?<TourBlock {...this.props.TourRecommendList}></TourBlock>:null
                 }
-                <VipBlock></VipBlock>
+                {
+                     this.props.VipHomeSchedular.discountList?<VipBlock {...this.props.VipHomeSchedular} ></VipBlock>:null
+                } 
+               
                 
                 <div style={{height:'5rem'}}></div>
             </div>
