@@ -6,6 +6,9 @@ export default  function (state=initState,{type,payload}) {
         case theatre.UP_THEATRE_LIST:
             state.TheatreList = payload;
             break;
+        case theatre.UP_CITY_LIST:
+            state.City = payload;
+            break;
     }
     return state
 }
