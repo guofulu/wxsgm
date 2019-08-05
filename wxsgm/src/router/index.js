@@ -1,6 +1,7 @@
 import Home from '../views/home/Home';
 import Theatre from "../views/theatre/theatre"
 import Myjuooo from "../views/myjuooo/Myjuooo"
+import buy from "../components/shop/vip/buy";
 export default [
     {//首页路由
         to:'/',
@@ -44,6 +45,16 @@ export default [
             isFooter:true,
         }
     },
+    {//我的Vip
+        to:'/shop/vip/buy',
+        path:'/shop/vip/buy',
+        context:'我的',
+        component:buy,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    }
     
 
 ]
