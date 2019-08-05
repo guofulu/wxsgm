@@ -10,12 +10,11 @@ class GuardRouter extends React.Component{
     }
     render(){
         document.title = this.props.meta.title;
-        
         return (
-            <div>
+            <>
                 <this.props.component {...this.props} />
                 {this.props.meta.isFooter?<MyNav></MyNav>:null}
-            </div>
+            </>
             
         )
     }

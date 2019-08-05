@@ -2,11 +2,14 @@
     background:#fff;
     position: fixed;
     bottom: 0;
+    right: 0;
     width: 100%;
     height: .98rem;
     display:  flex;
     justify-content: space-around;
     z-index: 9999;
+    align-items: center;
+
 
 
     .nav-Link {
@@ -16,6 +19,7 @@
         font-size: .6rem;
         display: block;
         line-height: .6rem;
+        padding: 0;
 
     }
     span {

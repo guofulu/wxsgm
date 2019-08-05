@@ -4,11 +4,12 @@ import { connect } from 'react-redux';//高阶组件
 import {bindActionCreators} from 'redux'
 import homeCreator from '../../store/actionCreator/home';//首页的数据请求方法集合
 import '../../assets/scss/home/index.scss'
-import Banner from '../../components/home/banner';
+import Banner from '../../components/home/Banner';
 import Adeertion from '../../components/home/AdvertionWrap';
 import HotBlock from '../../components/home/HotBlock';
 import TourBlock from '../../components/home/TourBlock';
 import VipBlock from '../../components/home/VipBlock';
+import CategoryBlock from '../../components/home/CategoryBlock';
 
 
 
@@ -25,10 +26,10 @@ class Home extends React.Component{
         this.props.getTourRecommendList();
     }
     componentDidUpdate(){
-
+        
     }
     render(){
-
+        console.log(4343434343,this.props)
         return (
             <div>
                 <header id={'Header'}>
@@ -57,12 +58,18 @@ class Home extends React.Component{
                     this.props.HotsRecommendList.hots_show_list?<HotBlock {...this.props.HotsRecommendList}></HotBlock>:null
                 }
                 {
-                    this.props.TourRecommendList.tour_show_list?<TourBlock {...this.props.TourRecommendList}></TourBlock>:null
+                     this.props.TourRecommendList.tour_show_list?<TourBlock {...this.props.TourRecommendList}></TourBlock>:null
                 }
                 {
                      this.props.VipHomeSchedular.discountList?<VipBlock {...this.props.VipHomeSchedular} ></VipBlock>:null
-                } 
-               
+                }
+                <div className={'category-block category-wrap'}>
+                    {
+                    // this.props.FloorShow.length>0?<CategoryBlock FloorShow={this.props.FloorShow}></CategoryBlock>:null
+                    }
+                </div>
+                    
+                    
                 
                 <div style={{height:'5rem'}}></div>
             </div>

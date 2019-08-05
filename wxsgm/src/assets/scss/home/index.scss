@@ -41,13 +41,13 @@
 }
 .banner {
     height: 3.92rem;
-    .swiper-container {
+    .banner-swiper {
         width: 100%;
         height: 100%;
-        .swiper-wrapper {
+        .banner-swiper-wrapper {
             width: 100%;
             height: 100%;
-            .swiper-slide {
+            .banner-swiper-slide {
                 width: 100%;
                 height: 100%;
             }
@@ -63,5 +63,20 @@
 .hot-block {
     width: 100%;
     height: 6.62rem;
-    background: #eee;
+}
+.category-block {
+    margin-bottom: .6rem;
+    min-height: 3rem;
+    background: #eee
+}
+
+.logo_i {
+    position: absolute;
+    left: .10667rem;
+    top: -.02667rem;
+    width: .56rem;
+    height: .68rem;
+    display: block;
+    background: url('../../images/redian.png') 50% no-repeat;
+    background-size: 100%;
 }

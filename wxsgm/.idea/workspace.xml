@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9cd480ad-4be5-4f44-a3f0-4eb2385a7a80" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/theatre/erject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -12,6 +13,16 @@
       <change beforePath="$PROJECT_DIR$/src/store/state/theatre/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/state/theatre/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/theatre/ticket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/theatre/ticket.js" afterDir="false" />
     </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="9cd480ad-4be5-4f44-a3f0-4eb2385a7a80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="9cd480ad-4be5-4f44-a3f0-4eb2385a7a80" name="Default Changelist" comment="" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,6 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/theatre/ticket.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,11 +50,30 @@
                 <element signature="e#3509#5090#0" />
                 <element signature="e#5175#5252#0" />
                 <element signature="e#5462#5496#0" />
+=======
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/components/shop/vip/buy.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/views/theatre/ticket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1058">
+              <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#451#756#0" />
+                <element signature="e#503#2226#0" />
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/actionCreator/theatre/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,11 +91,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="124">
               <caret line="267" column="21" lean-forward="true" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+=======
+      <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/assets/css/ticket.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/components/shop/vip/city.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4752">
+              <caret line="794" column="7" lean-forward="true" selection-start-line="794" selection-start-column="7" selection-end-line="794" selection-end-column="7" />
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/components/theatre/erject.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-23">
@@ -72,6 +128,25 @@
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/assets/css/BuyVip.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="207" column="17" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
+              <folding>
+                <element signature="e#4195#4199#0" />
+                <element signature="e#4264#4272#0" />
+                <element signature="e#4664#4686#0" />
+                <element signature="e#4727#4735#0" />
+                <element signature="e#4970#4978#0" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/assets/scss/MyNav.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
             </state>
           </provider>
         </entry>
@@ -81,6 +156,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -100,9 +176,18 @@
         <option value="$PROJECT_DIR$/src/assets/css/courtyard.css" />
         <option value="$PROJECT_DIR$/src/views/theatre/index.js" />
         <option value="$PROJECT_DIR$/src/views/theatre/theatre.js" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/components/myjuooo/MyVip.js" />
+=======
+        <option value="$PROJECT_DIR$/src/store/actionCreator/theatre/index.js" />
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
         <option value="$PROJECT_DIR$/src/components/theatre/index.js" />
         <option value="$PROJECT_DIR$/src/assets/scss/MyNav.scss" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
         <option value="$PROJECT_DIR$/src/router/index.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/store/actionType/theatre/index.js" />
         <option value="$PROJECT_DIR$/src/store/state/theatre/index.js" />
@@ -117,15 +202,44 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-62" />
     <option name="y" value="38" />
+=======
+        <option value="$PROJECT_DIR$/src/components/theatre/index.js" />
+        <option value="$PROJECT_DIR$/src/components/shop/vip/buyList.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/BuyVip.css" />
+        <option value="$PROJECT_DIR$/src/components/shop/vip/buy.js" />
+        <option value="$PROJECT_DIR$/src/components/shop/vip/city.json" />
+      </list>
+    </option>
+  </component>
+<<<<<<< HEAD
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="459" />
+    <option name="y" value="185" />
+    <option name="width" value="1284" />
+    <option name="height" value="792" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="添加" />
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="48" />
+    <option name="y" value="8" />
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
     <option name="width" value="1093" />
     <option name="height" value="665" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,6 +247,8 @@
               <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
             <path>
               <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
@@ -172,21 +288,29 @@
               <item name="state" type="462c0819:PsiDirectoryNode" />
               <item name="theatre" type="462c0819:PsiDirectoryNode" />
             </path>
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="D:\聚橙网\Wxsgm\wxsgm\node_modules\eslint" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -240,35 +364,79 @@
       <updated>1564738292082</updated>
       <workItem from="1564738293418" duration="2909000" />
       <workItem from="1564744655451" duration="17708000" />
+<<<<<<< HEAD
+      <workItem from="1564792651884" duration="1369000" />
+      <workItem from="1564805476978" duration="19158000" />
+      <workItem from="1564966467147" duration="14976000" />
+=======
       <workItem from="1564792651884" duration="1673000" />
       <workItem from="1564794681589" duration="41132000" />
       <workItem from="1564857903181" duration="4297000" />
+<<<<<<< HEAD
       <workItem from="1564966106268" duration="38104000" />
+=======
+      <workItem from="1564966106268" duration="1841000" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="105823000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="56120000" />
+=======
+    <option name="totallyTimeSpent" value="69560000" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6246575" visible="true" weight="0.25479233" />
+=======
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49440297" visible="true" weight="0.28399435" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.505597" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.055478502" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6246575" visible="true" weight="0.25" />
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
       <window_info id="Structure" order="1" sideWeight="0.504886" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.37534246" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49920127" weight="0.3293919" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49760383" weight="0.06418919" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840257" visible="true" weight="0.06418919" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50239617" side_tool="true" visible="true" weight="0.06418919" />
+=======
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007082" side_tool="true" weight="0.32871014" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49929178" weight="0.32871014" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159746" side_tool="true" weight="0.3293919" />
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840257" weight="0.3293919" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -301,10 +469,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
+<<<<<<< HEAD
           <url>file://$PROJECT_DIR$/src/views/theatre/ticket.js</url>
           <line>77</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
+=======
+          <url>file://$PROJECT_DIR$/src/components/shop/vip/buy.js</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -416,6 +591,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="120">
           <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
         </state>
@@ -432,13 +608,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-92">
           <caret line="8" column="71" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="8" selection-end-column="71" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="945">
+          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+=======
+        <state relative-caret-position="345">
+          <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/views/myjuooo/Myjuooo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/store/actionCreator/theatre/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/theatre.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1115">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/common.css">
+=======
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
@@ -448,6 +670,62 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/components/myjuooo/Myfooter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/Myjuooo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/myjuooo/MySetting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/myjuooo/MyInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/myjuooo/MyVip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Myjuooo/d.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/img/vip_plus_right.61e731b.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/img/vip_bg.f3c6d3a.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/theatre/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+=======
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -496,6 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/state/theatre/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="46">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
@@ -512,6 +791,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23">
           <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+=======
+        <state relative-caret-position="-92">
+          <caret line="8" column="71" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="8" selection-end-column="71" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -520,14 +804,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actionCreator/theatre/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="561">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="137">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="28" />
+=======
+        <state relative-caret-position="111">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/views/theatre/ticket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -543,6 +838,62 @@
             <element signature="e#5175#5252#0" />
             <element signature="e#5462#5496#0" />
           </folding>
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/components/shop/vip/buyList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/BuyVip.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="207" column="17" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
+          <folding>
+            <element signature="e#4195#4199#0" />
+            <element signature="e#4264#4272#0" />
+            <element signature="e#4664#4686#0" />
+            <element signature="e#4727#4735#0" />
+            <element signature="e#4970#4978#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shop/vip/city.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4752">
+          <caret line="794" column="7" lean-forward="true" selection-start-line="794" selection-start-column="7" selection-end-line="794" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/shop/vip/buy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#451#756#0" />
+            <element signature="e#503#2226#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/assets/css/ticket.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
+>>>>>>> 51bda0f55a148f57d2f1a8c730a520635d684763
         </state>
       </provider>
     </entry>

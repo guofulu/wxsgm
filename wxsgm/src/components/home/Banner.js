@@ -7,11 +7,11 @@ class Banner extends React.Component{
     render(){
         return (
             <div className="swiper-container banner-swiper">
-                <div className="swiper-wrapper">
+                <div className="swiper-wrapper banner-swiper-wrapper">
                     {
                         this.props.slide_list.map((v,i)=>{
                             return (
-                               <div className="swiper-slide" key={i} >
+                               <div className="swiper-slide banner-swiper-slide" key={i} >
                                    <img style={{width:'100%',height:'100%'}} src={v.image_url} alt="" />
                                 </div> 
                             )
@@ -20,7 +20,7 @@ class Banner extends React.Component{
                     
                 </div>
 
-                <div className="swiper-pagination"></div>
+                <div className="swiper-pagination banner-swiper-pagination"></div>
 
             </div>
         )
@@ -37,7 +37,7 @@ class Banner extends React.Component{
             
             // 如果需要分页器
             pagination: {
-              el: '.swiper-pagination',
+              el: '.banner-swiper-pagination',
             },
           })  
     }
