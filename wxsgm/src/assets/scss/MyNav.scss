@@ -8,18 +8,18 @@
     display:  flex;
     justify-content: space-around;
     z-index: 9999;
+    align-items: center;
 
 
 
     .nav-Link {
         color: #232323;
-        display: block;
-        background: red;
     }
     i {
         font-size: .6rem;
         display: block;
         line-height: .6rem;
+        padding: 0;
 
     }
     span {
