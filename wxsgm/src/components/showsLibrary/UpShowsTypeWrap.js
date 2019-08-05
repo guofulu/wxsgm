@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 export default class UpShowsTypeWrap extends React.Component{
     render() {
-        // console.log(12312131,this.props.Shows_type_wrap)
+        console.log(12312131,this.props.Shows_type_wrap)
         return(
             this.props.Shows_type_wrap.map((v,i)=>{
                 return(

@@ -9,8 +9,6 @@ export default class MyInfo extends React.Component{
     render() {
         return(
             <div>
-                <div className={"mine_info_main_null"}></div>
-
             <div className={"mine_info"}>
                 <Link className={"icon iconfont"} to={"/Myjuooo/mysecurity"}>&#xe618;</Link>
 
@@ -27,12 +25,12 @@ export default class MyInfo extends React.Component{
                     </div>
                     <div className={"mine_info__main__cnt"}>
                         <Link className={"mine_info__main__cnt__item"} to={"/null"}>
-                            <p className={"mine_info__main__cnt__item__num"}>0</p>
+                            <p className={"mine_info__main__cnt__item__num"}>99999999</p>
                             <p className={"mine_info__main__cnt__item__name"}>账户余额</p>
                             <div className={"separator"}></div>
                         </Link>
                         <Link className={"mine_info__main__cnt__item"} to={"/null"}>
-                            <p className={"mine_info__main__cnt__item__num"}>0</p>
+                            <p className={"mine_info__main__cnt__item__num"}>99999999</p>
                             <p className={"mine_info__main__cnt__item__name"}>积分</p>
                             <div className={"separator"}></div>
                         </Link>
