@@ -8,11 +8,13 @@
     display:  flex;
     justify-content: space-around;
     z-index: 9999;
-    width: 100%;
+
 
 
     .nav-Link {
         color: #232323;
+        display: block;
+        background: red;
     }
     i {
         font-size: .6rem;
