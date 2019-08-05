@@ -1,4 +1,9 @@
 import Home from '../views/home/Home';
+<<<<<<< HEAD
+import Theatre from "../views/theatre/theatre"
+import Myjuooo from "../views/myjuooo/Myjuooo"
+import buy from "../components/shop/vip/buy";
+=======
 
 import Theatre from "../views/theatre/theatre";
 import Myjuooo from "../views/myjuooo/Myjuooo";
@@ -7,6 +12,7 @@ import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
 
 
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
 export default [
     {//首页路由
         to:'/',
@@ -59,6 +65,19 @@ export default [
             isFooter:true,
         }
     },
+<<<<<<< HEAD
+    {//我的Vip
+        to:'/shop/vip/buy',
+        path:'/shop/vip/buy',
+        context:'我的',
+        component:buy,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    }
+    
+=======
        {//我的路由-设置
         to:'/Myjuooo/Mysecurity',
         path:'/Myjuooo/Mysecurity',
@@ -69,6 +88,7 @@ export default [
             isFooter:false,
         }
     },
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
 
     {//演出页面
         to:'/show/showsLibrary',
