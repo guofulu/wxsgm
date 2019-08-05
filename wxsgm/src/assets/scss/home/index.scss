@@ -1,5 +1,5 @@
 
-header {
+#Header {
     position:  fixed;
     height: .88rem;
     width: 100%;
@@ -53,4 +53,15 @@ header {
             }
         }
     }
+}
+.advertion-wrap {
+    height: 10.84rem;
+    padding: .4rem .3rem 0;
+    margin-bottom: .4rem;
+}
+//hot-block样式
+.hot-block {
+    width: 100%;
+    height: 6.62rem;
+    background: #eee;
 }

@@ -5,9 +5,8 @@ import 'swiper/dist/css/swiper.min.css';
 class Banner extends React.Component{
 
     render(){
-        console.log(555,this.props)
         return (
-            <div className="swiper-container">
+            <div className="swiper-container banner-swiper">
                 <div className="swiper-wrapper">
                     {
                         this.props.slide_list.map((v,i)=>{
@@ -28,7 +27,7 @@ class Banner extends React.Component{
     }
     componentDidMount(){
 
-        var mySwiper = new Swiper ('.swiper-container', {
+        var mySwiper = new Swiper ('.banner-swiper', {
             direction: 'horizontal', // 垂直切换选项
             loop: true, // 循环模式选项
             speed:300,//自动播放

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9cd480ad-4be5-4f44-a3f0-4eb2385a7a80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="9cd480ad-4be5-4f44-a3f0-4eb2385a7a80" name="Default Changelist" comment="" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,10 +21,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/components/shop/vip/buy.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
               <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/views/theatre/ticket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1058">
+              <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
                 <element signature="e#451#756#0" />
@@ -31,15 +42,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="15" column="11" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/assets/css/ticket.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/components/shop/vip/city.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4752">
@@ -60,6 +79,12 @@
                 <element signature="e#4727#4735#0" />
                 <element signature="e#4970#4978#0" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/assets/scss/MyNav.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
             </state>
           </provider>
         </entry>
@@ -85,13 +110,23 @@
         <option value="$PROJECT_DIR$/src/store/actionType/theatre/index.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/router/GuardRouter.js" />
-        <option value="$PROJECT_DIR$/src/assets/scss/MyNav.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/common.css" />
         <option value="$PROJECT_DIR$/src/store/reducers/theatre/index.js" />
-        <option value="$PROJECT_DIR$/src/store/actionCreator/theatre/index.js" />
         <option value="$PROJECT_DIR$/src/assets/css/theatre.css" />
+        <option value="$PROJECT_DIR$/src/assets/css/Myjuooo.css" />
+        <option value="$PROJECT_DIR$/src/assets/css/courtyard.css" />
+        <option value="$PROJECT_DIR$/src/views/theatre/index.js" />
         <option value="$PROJECT_DIR$/src/views/theatre/theatre.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/myjuooo/MyVip.js" />
+=======
+        <option value="$PROJECT_DIR$/src/store/actionCreator/theatre/index.js" />
+        <option value="$PROJECT_DIR$/src/components/theatre/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/views/theatre/ticket.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/ticket.css" />
+        <option value="$PROJECT_DIR$/src/assets/scss/MyNav.scss" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/components/theatre/index.js" />
         <option value="$PROJECT_DIR$/src/components/shop/vip/buyList.js" />
@@ -101,6 +136,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -115,6 +151,13 @@
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="添加" />
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="48" />
+    <option name="y" value="8" />
+    <option name="width" value="1093" />
+    <option name="height" value="665" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -128,6 +171,46 @@
               <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="theatre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxsgm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxsgm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="actionCreator" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
           </expand>
           <select />
         </subPane>
@@ -163,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -174,9 +257,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -192,18 +286,30 @@
       <updated>1564738292082</updated>
       <workItem from="1564738293418" duration="2909000" />
       <workItem from="1564744655451" duration="17708000" />
+<<<<<<< HEAD
       <workItem from="1564792651884" duration="1369000" />
       <workItem from="1564805476978" duration="19158000" />
       <workItem from="1564966467147" duration="14976000" />
+=======
+      <workItem from="1564792651884" duration="1673000" />
+      <workItem from="1564794681589" duration="41132000" />
+      <workItem from="1564857903181" duration="4297000" />
+      <workItem from="1564966106268" duration="1841000" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="56120000" />
+=======
+    <option name="totallyTimeSpent" value="69560000" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49440297" visible="true" weight="0.28399435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.505597" side_tool="true" weight="0.25" />
@@ -211,18 +317,52 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.055478502" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6246575" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.504886" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.37534246" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49920127" weight="0.3293919" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840257" visible="true" weight="0.06418919" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007082" side_tool="true" weight="0.32871014" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49929178" weight="0.32871014" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159746" side_tool="true" weight="0.3293919" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49840257" weight="0.3293919" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.861461" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.504886" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.13853905" side_tool="true" visible="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49920127" weight="0.3293919" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920127" weight="0.06418919" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007987" side_tool="true" weight="0.3293919" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49920127" visible="true" weight="0.3293919" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -332,32 +472,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/scss/MyNav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/js/rem.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actionCreator/theatre/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/reducers/theatre/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -369,26 +485,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/theatre.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/courtyard.css" />
+    <entry file="file://$PROJECT_DIR$/src/assets/css/Myjuooo.css" />
+    <entry file="file://$PROJECT_DIR$/src/views/theatre/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/theatre/theatre.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="945">
           <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+=======
+        <state relative-caret-position="345">
+          <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/views/myjuooo/Myjuooo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/store/actionCreator/theatre/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-89" />
@@ -402,12 +563,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/common.css">
+=======
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="120">
+          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/myjuooo/Myfooter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -462,6 +627,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+=======
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/theatre/ticket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/MyNav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/theatre/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="8" column="71" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="8" selection-end-column="71" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -470,14 +665,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="137">
           <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="28" />
+=======
+        <state relative-caret-position="111">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/shop/vip/buyList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -525,6 +726,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/assets/css/ticket.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+>>>>>>> 5f006a46dd1f36afc923f52c36c086da07ad8eab
         </state>
       </provider>
     </entry>
