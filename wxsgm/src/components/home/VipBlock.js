@@ -51,9 +51,9 @@ class VipBlock extends React.Component{
                         <ul className={'vip-block__conent__power__wrap wrap-list--right'}>
                             <li className={'vip-block__conent__power__item'}>
                                 <NavLink className={"vip-block__conent__power__click"}>
-                                    <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.priorList[0].pic} alt={''} />
+                                    <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.watchList[0].pic} alt={''} />
                                     <p>
-                                        <strong style={{fontSize:'.24rem'}}>{this.props.priorList[0].pre_time}</strong>
+                                        <strong style={{fontSize:'.24rem'}}>{this.props.watchList[0].date}</strong>
                                         <span>开始</span>
                                     </p>
                                 </NavLink>
