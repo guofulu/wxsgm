@@ -17,7 +17,7 @@
 .mine_info{
     position: relative;
     overflow: hidden;
-    height: 4.19rem;
+    height: 4.2rem;
     display:flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -86,7 +86,7 @@
 }
 /*顶部小方框大的div*/
 .mine_info__main__cnt{
-    height: 1.62rem;
+    height: 1.7rem;
     display: flex;
     align-items: center;
 }
@@ -140,17 +140,14 @@
     height: 1.7696rem;
     background: #ffffff;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     margin-bottom:0.15rem ;
 }
 .mine_setting__list__item{
     width: 25%;
-    height: 1.7696rem;
 }
 .mine_setting__list__item .mine_icon{
-    display: block;
-    margin: 0.2rem;
-    font-size: 22px;
-    color:#ff6743
+    margin-right: 0.2rem;
+    color: #df5000;
 }
 

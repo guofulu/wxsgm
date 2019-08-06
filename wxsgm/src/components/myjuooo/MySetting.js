@@ -8,7 +8,7 @@ export default class MySetting extends React.Component{
         return(
             <div className={"mine_setting"}>
 
-                <div className={"mine_setting_null"}></div>
+                {/*<div className={"mine_setting_null"}></div>*/}
                 <ul className={"mine_setting__list"}>
                     <li className={"mine_setting__list__item"}>
                         <Link className={"mine_setting__list__item_link"} to={"Home"}>

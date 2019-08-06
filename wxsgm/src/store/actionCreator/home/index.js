@@ -77,7 +77,7 @@ export default {
 
     getFloorShow(){//获取楼层信息
         return async (dispatch)=>{
-            const {data} = await axios.get('/juoooAPI/home/index/getFloorShow?city_id=1&version=6.0.1&referer=2');
+            const {data} = await axios.get('/juoooAPI/home/index/getFloorShow?city_id=0&version=6.0.3&referer=2');
             dispatch(upFloorShow(data))
             console.log(444,data)
         }
