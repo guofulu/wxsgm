@@ -65,7 +65,7 @@ class Home extends React.Component{
                 }
                 <div className={'category-block category-wrap'}>
                     {
-                    // this.props.FloorShow.length>0?<CategoryBlock FloorShow={this.props.FloorShow}></CategoryBlock>:null
+                     this.props.FloorShow.length>0?<CategoryBlock FloorShow={this.props.FloorShow}></CategoryBlock>:null
                     }
                 </div>
                     

@@ -9,7 +9,7 @@ import 'swiper/dist/css/swiper.min.css'
 class CategoryBlock extends React.Component {
     
     componentDidMount(){
-        var mySwiper = new Swiper('.swiper-container-horizontal',{
+        var mySwiper = new Swiper('.swiper-container-horizontal-a',{
             slidesPerView : 3,
             centeredSlides : false,
             })
