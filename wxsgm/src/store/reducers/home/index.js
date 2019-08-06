@@ -10,7 +10,7 @@ export default function(state=initState,{type,payload}){
             state.FloorShow = payload;
             break;
         case homeType.UP_RECOMMEND_SHOW:
-            state.RecommendShow = payload;
+            state.RecommendShow.recommend_show_list = [...payload.recommend_show_list,...state.RecommendShow.recommend_show_list];
             break;
         case homeType.UP_HOTS_RECOMMEND_LIST:
             state.HotsRecommendList = payload;
