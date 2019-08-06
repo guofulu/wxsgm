@@ -12,6 +12,12 @@ const getCityList=function (payload) {
         payload
     }
 };
+const getDationsList=function (payload) {
+    return{
+        type:theatreType.UP_DATIONSLIST,
+        payload
+    }
+};
 export default {
     getTheatreList(){
         return  async (dispatch)=>{
@@ -22,8 +28,14 @@ export default {
     getCityList(type){
         return async (dispatch)=>{
             const {data}= await axios.get("/juoooAPI/Schedule/Schedule/getTour?show_id="+type+"&venue_id=2419&version=6.0.3&referer=2")
-            console.log(22222,data.tour_list)
             dispatch(getCityList(data.tour_list))
         }
+    },
+    getDationsList(type){
+        return async (dispatch)=>{
+            const {data}=await axios.get("/juoooM/Search/getShowList?category="+type+"&city_id=1&version=6.0.3&referer=2")
+            dispatch(getDationsList(data.list))
+        }
     }
+
 }

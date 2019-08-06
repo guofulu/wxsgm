@@ -5,7 +5,7 @@ import buy from "../components/shop/vip/buy";
 import Ticket from "../views/theatre/ticket";
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
-
+import Search from "../views/search/index"
 export default [
     {//首页路由
         to:'/',
@@ -88,6 +88,16 @@ export default [
         component:ShowsLibrary,
         meta:{
             title:'演出',
+            isFooter:false,
+        }
+    },
+    {//搜索页面
+        to:'/search/index',
+        path:'/search/index',
+        context:'搜索',
+        component:Search,
+        meta:{
+            title:'搜索',
             isFooter:false,
         }
     },
