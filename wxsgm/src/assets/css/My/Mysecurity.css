@@ -6,6 +6,7 @@
 }
 .navbar_on_center{
     width: 100%;
+    position: fixed;
     font-size: 0.34rem;
     padding: 0.2rem;
     display: flex;
@@ -21,7 +22,6 @@
 .My_rigth{
     font-size: 30px;
 }
-/*退出登录*/
 .grid_btn{
     display: block;
     border-radius: 0.128rem;
@@ -31,14 +31,6 @@
     line-height: 1rem;
     background:#df5000;
     color: black;
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
 }
-/*返回首页、我的聚橙的*/
- #popoverLink{
-    color: #000;
-    font-size: 0.3rem;
-    display: block;
-    border-bottom: 0.01rem #f5f5f5 solid;
-    height: 0.8rem;
-    line-height: 0.8rem;
-}
+

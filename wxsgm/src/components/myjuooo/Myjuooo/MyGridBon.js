@@ -6,7 +6,7 @@ import "../../../assets/css/My/mygrid.css"
 export default class MyGridBon extends React.Component{
     render(){
         return(
-            <div className={"grid grid_title_Top"}>
+            <div className={"grid "}>
                 <div className={"grid_title_wrap grid_margin"}>
                     <span className={"grid_title_wrap_left"}>手机号</span>
                 </div>

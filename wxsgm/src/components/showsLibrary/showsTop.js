@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import Popover from "../public/Popover";
 export default class showsTop extends React.Component{
     constructor(props){
         super(props);
@@ -11,7 +12,7 @@ export default class showsTop extends React.Component{
                 <div className = {"My_center"}>
                     演出
                 </div>
-                <div className={"My_rigth"}>...</div>
+                <Popover></Popover>
             </div>
         )
     }
