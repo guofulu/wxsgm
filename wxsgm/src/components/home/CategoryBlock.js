@@ -10,12 +10,11 @@ class CategoryBlock extends React.Component {
     
     componentDidMount(){
         var mySwiper = new Swiper('.swiper-container-horizontal-a',{
-            slidesPerView : 3,
+            slidesPerView : "auto",
             centeredSlides : false,
             })
     }
     render(){
-        
         return (
             <>{
                 this.props.FloorShow.map((v,i)=>{

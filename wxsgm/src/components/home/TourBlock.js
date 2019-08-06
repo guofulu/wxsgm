@@ -56,11 +56,11 @@ class TourBlock extends React.Component{
     componentDidUpdate(){
         
         var swiper = new Swiper('.tour-swiper_list', {
-          slidesPerView: 2,
+            slidesPerView : "auto",
           spaceBetween: 30,
-          centeredSlides: true,
+          centeredSlides: false,
           loop: true,
-          slideActiveClass:'tour-swiper-slide-active'
+          slideActiveClass:'.tour-swiper-slide-active'
           
         });
     }

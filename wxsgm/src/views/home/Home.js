@@ -10,10 +10,17 @@ import HotBlock from '../../components/home/HotBlock';
 import TourBlock from '../../components/home/TourBlock';
 import VipBlock from '../../components/home/VipBlock';
 import CategoryBlock from '../../components/home/CategoryBlock';
-
-
+import HotVenue from "../../components/home/HotVenue"
+import RecommendBlock from '../../components/home/RecommendBlock';
 
 class Home extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            isMore:1,
+            isPage:1
+        }
+    }
     componentDidMount(){
 
         this.props.getClassifyHome();//获取分类列表
@@ -25,53 +32,100 @@ class Home extends React.Component{
         this.props.getHotTheatre();
         this.props.getTourRecommendList();
     }
+    changeHeader(){
+        if(typeof(this.refs.header) !== 'undefined'){
+            let  scrollY = window.scrollY;
+            let  headerHeight = 44;
+            if(headerHeight > scrollY){
+                //console.log('大于')
+                this.refs.header.id = ''
+            }
+            if(headerHeight < scrollY){
+                //console.log('小于')
+                this.refs.header.id = 'header-active'
+            }
+        }
+
+    }
+    moreRecommendBlock(){
+        if(typeof(this.refs.header) !== 'undefined'){
+            let juli = this.refs.home.offsetHeight - window.scrollY;
+            // console.log(666666666,juli)
+            if(juli < 1500){
+                if(this.state.isMore){
+                    this.state.isMore = 0
+                    this.props.getRecommendShow(++this.state.isPage);
+                    // console.log(this.state.isPage)
+                }
+            }
+        }
+
+    }
     componentDidUpdate(){
+        this.state.isMore = 1;
+        // console.log('回来了',this.state.isMore)
+    }
+    componentWillMount(){
+        window.addEventListener('scroll',()=>{
+            
+            //console.log(919191,window.scrollY,this.refs.home.offsetHeight)
+            this.changeHeader.call(this);
+            this.moreRecommendBlock.call(this);
+            
+
+        })
         
     }
+    
     render(){
         console.log(4343434343,this.props)
         return (
-            <div>
-                <header id={'Header'}>
-                    <div className={'home-loaction'}>
-                        <i className={'iconfont icon-dingwei'}></i>
-                        <span style={{fontSize:'.3rem',color:'#000',fontWeight:'900'}}>全国</span>
-                    </div>
-                    <div className={'home-search'}>
-                        <img src='https://m.juooo.com/static/img/nav_icon_search.f194288.png' alt='' />
-                        <span>搜索热门演出</span>
-                    </div>
-                    <div className='home-right'>
-                        <img style={{width:'.52rem',height:'.50rem'}} src='https://image.juooo.com/group1/M00/02/65/rAoKmVyvD7iAHJX4AAADmpmoUeI150.png' alt='' />
-                    </div>
-                </header>
-               
-                <div className={'banner'}>
-                    {
-                        this.props.ClassifyHome.slide_list?<Banner slide_list={this.props.ClassifyHome.slide_list}></Banner>:null
-                    }
-                </div>
-                {
-                    this.props.ClassifyHome.classify_list?<Adeertion {...this.props.ClassifyHome}></Adeertion>:null
-                }
-                {
-                    this.props.HotsRecommendList.hots_show_list?<HotBlock {...this.props.HotsRecommendList}></HotBlock>:null
-                }
-                {
-                     this.props.TourRecommendList.tour_show_list?<TourBlock {...this.props.TourRecommendList}></TourBlock>:null
-                }
-                {
-                     this.props.VipHomeSchedular.discountList?<VipBlock {...this.props.VipHomeSchedular} ></VipBlock>:null
-                }
-                <div className={'category-block category-wrap'}>
-                    {
-                     this.props.FloorShow.length>0?<CategoryBlock FloorShow={this.props.FloorShow}></CategoryBlock>:null
-                    }
-                </div>
-                    
-                    
+            <div className={'home'} ref={'home'}>
+                    <header className={'Header'} ref={'header'}>
+                        <div className={'home-location'}>
+                            <i className={'iconfont icon-dingwei'}></i>
+                            <span >全国</span>
+                        </div>
+                        <div className={'home-search'}>
+                            <img src='https://m.juooo.com/static/img/nav_icon_search.f194288.png' alt='' />
+                            <span>搜索热门演出</span>
+                        </div>
+                        <div className='home-right'>
+                            <img style={{width:'.52rem',height:'.50rem'}} src='https://image.juooo.com/group1/M00/02/65/rAoKmVyvD7iAHJX4AAADmpmoUeI150.png' alt='' />
+                        </div>
+                    </header>
                 
-                <div style={{height:'5rem'}}></div>
+                    <div className={'banner'}>
+                        {
+                            this.props.ClassifyHome.slide_list?<Banner slide_list={this.props.ClassifyHome.slide_list}></Banner>:null
+                        }
+                    </div>
+                    {
+                        this.props.ClassifyHome.classify_list?<Adeertion {...this.props.ClassifyHome}></Adeertion>:null
+                    }
+
+                    {
+                        this.props.HotsRecommendList.hots_show_list?<HotBlock {...this.props.HotsRecommendList}></HotBlock>:null
+                    }
+
+                    {
+                        this.props.TourRecommendList.tour_show_list?<TourBlock {...this.props.TourRecommendList}></TourBlock>:null
+                    }
+                    {
+                        this.props.VipHomeSchedular.discountList?<VipBlock {...this.props.VipHomeSchedular} ></VipBlock>:null
+                    }
+                    <div className={'category-block category-wrap'}>
+                        {
+                        this.props.FloorShow.length>0?<CategoryBlock FloorShow={this.props.FloorShow}></CategoryBlock>:null
+                        }
+                    </div>
+                {
+                    this.props.HotTheatre.theatre_list?<HotVenue HotTheatre={this.props.HotTheatre}></HotVenue>:null
+                }
+                    {
+                        this.props.RecommendShow.recommend_show_list?<RecommendBlock RecommendShow={this.props.RecommendShow}></RecommendBlock>:null
+                    }
+
             </div>
         )
     }

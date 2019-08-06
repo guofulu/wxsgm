@@ -7,31 +7,8 @@ export default class MySetting extends React.Component{
     render() {
         return(
             <div className={"mine_setting"}>
-                <ul className={"mine_setting__list"}>
-                    <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
-                            <i className={"mine_icon iconfont"}>&#xe70b;</i>
-                            <p className={"mine_setting__list__item_name"}>我的订单</p>
-                        </Link>
-                    </li>
-                    <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
-                            <i className={"mine_icon iconfont"}>&#xe612;</i>
-                            <p className={"mine_setting__list__item_name"}>我的票夹</p>
-                        </Link>
-                    </li>
-                    <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
-                            <i className={"mine_icon iconfont"}>&#xe669;</i>
-                            <p className={"mine_setting__list__item_name"}>我的卡包</p>
-                        </Link>
-                    </li>
-                    <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
-                        </Link>
-                    </li>
-                </ul>
-                <div className={"mine_setting_null"}></div>
+
+                {/*<div className={"mine_setting_null"}></div>*/}
                 <ul className={"mine_setting__list"}>
                     <li className={"mine_setting__list__item"}>
                         <Link className={"mine_setting__list__item_link"} to={"Home"}>
@@ -55,6 +32,30 @@ export default class MySetting extends React.Component{
                         <Link className={"mine_setting__list__item_link"} to={"Home"}>
                             <i className={"mine_icon iconfont"}>&#xe606;</i>
                             <p className={"mine_setting__list__item_name"}>客服帮助</p>
+                        </Link>
+                    </li>
+                </ul>
+                <ul className={"mine_setting__list"}>
+                    <li className={"mine_setting__list__item"}>
+                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                            <i className={"mine_icon iconfont"}>&#xe70b;</i>
+                            <p className={"mine_setting__list__item_name"}>我的订单</p>
+                        </Link>
+                    </li>
+                    <li className={"mine_setting__list__item"}>
+                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                            <i className={"mine_icon iconfont"}>&#xe612;</i>
+                            <p className={"mine_setting__list__item_name"}>我的票夹</p>
+                        </Link>
+                    </li>
+                    <li className={"mine_setting__list__item"}>
+                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                            <i className={"mine_icon iconfont"}>&#xe669;</i>
+                            <p className={"mine_setting__list__item_name"}>我的卡包</p>
+                        </Link>
+                    </li>
+                    <li className={"mine_setting__list__item"}>
+                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
                         </Link>
                     </li>
                 </ul>
