@@ -45,7 +45,7 @@ class Ticket extends React.Component{
                  <div className={"text"} >
                      <p><i style={{fontSize:".44rem"}} className={'iconfont icon-zuojiantou'}></i></p>
                      <p >演出详情</p>
-                     <p><i  style={{fontSize:".44rem"}} className={'iconfont icon-shouye3'}></i></p>
+                     <p><i  style={{fontSize:".34rem"}} className={'iconfont icon-shouye3'}></i></p>
                  </div>
                  <div className={"brief__primary__fg__content"}>
                      <div className={"brief__primary__fg__pic"}>
@@ -63,26 +63,26 @@ class Ticket extends React.Component{
                      <p>{this.state.data.static_data.city.city_name}  | {this.state.data.static_data.venue.venue_name}</p>
                  </div>
                  <div className={"brief__secondary__pointer"}>
-                     <i style={{display:"inline-block",fontSize:".46rem",textAlign:"center",marginTop:".0.7rem",color:"red"}} className={"iconfont icon-dingwei-copy"}></i>
+                     <i style={{display:"inline-block",fontSize:".46rem",textAlign:"center",marginRight:"1.8rem",color:"red"}} className={"iconfont icon-dingwei-copy"}></i>
                  </div>
              </div>
              <div className={"detail__plus-tips"}>
                  <div className={"orange-plus-tips"}>
                      <div className={"orange-plus-tips__name"}>橙PLUS卡  </div>
                      <div>开通送￥100 最高省675元</div>
-                     <p style={{color:"#e6e6e6"}}>立即开卡</p>
-                     <i style={{color:" #f5dea9",marginTop:"5px"}} className={"iconfont icon-xiangyou"}></i>
+                     <p style={{color:"#e6e6e6",marginTop:".2rem"}}>立即开卡</p>
+                     <i style={{color:" #f5dea9",marginTop:".0.1rem",fontSize:".38rem"}} className={"iconfont icon-xiangyou"}></i>
                  </div>
              </div>
              <div className={"show-benefit-detail__schedule-discount"}>
-                 <div>VIP+ &nbsp;:<p className={"plus__desc"}>V+会员享<span className={"plus__desc__benefit"}>国内免邮 + 双倍积分</span><span  className={"iconfont icon-xiangyou plus__desc__arrow"}></span></p></div>
+                 <div>VIP+ &nbsp;:<p className={"plus__desc"}>V+会员享<span className={"plus__desc__benefit"}>国内免邮 + 双倍积分</span><span  style={{fontSize:".38rem"}} className={"iconfont icon-xiangyou plus__desc__arrow"}></span></p></div>
                  <div >入 场 &nbsp;:<p  className={"enter"}>凭短信入场</p></div>
                  <div style={{border:"none"}}>支持 &nbsp;:<p className={"support__list__item__text"}>电子票</p>|<p className={"support__list__item__right"}>同城满200包邮</p></div>
              </div>
              <div className={"tour-cities-detail__tour-cities"}>
                  <div className={"tour-cities__desc"}>
                      <h1>巡演城市</h1>
-                     <p><span>{this.props.CityList.length===0?null:this.props.CityList.length}</span>场<i className={"iconfont icon-xiangyou"}></i></p>
+                     <p><span>{this.props.CityList.length===0?null:this.props.CityList.length}</span>场<i style={{fontSize:".38rem"}} className={"iconfont icon-xiangyou"}></i></p>
                      </div>
                  <div className={"tour-cities__list__content"}>
                      <div style={{width:"100%"}} className="swiper-container swiper__list__content">
