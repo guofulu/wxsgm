@@ -3,11 +3,15 @@ import Home from '../views/home/Home';
 import Eticket from "../views/eticket/eticket"
 
 import Theatre from "../views/theatre/theatre"
-import Myjuooo from "../views/myjuooo/Myjuooo"
+
 import buy from "../components/shop/vip/buy";
 import Ticket from "../views/theatre/ticket";
+// 我的相关的
+import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
+import Mymoney from "../views/myjuooo/mymoney"
+
 
 export default [
     {//首页路由
@@ -67,7 +71,7 @@ export default [
         context:'我的',
         component:buy,
         meta:{
-            title:'聚橙网',
+            title:'VIP',
             isFooter:false,
         }
     },
@@ -77,7 +81,17 @@ export default [
         context:'我的',
         component:Mysecurity,
         meta:{
-            title:'聚橙网',
+            title:'账户设置',
+            isFooter:true,
+        }
+    },
+    {//我的路由-余额
+        to:'/Myjuooo/mymoney',
+        path:'/Myjuooo/mymoney',
+        context:'我的',
+        component:Mymoney,
+        meta:{
+            title:'我的余额',
             isFooter:true,
         }
     },

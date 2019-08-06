@@ -37,7 +37,8 @@
     height: 100%;
   }
   .tour-swiper-slide {
-    height: 4rem;
+    height: 4rem !important;
+    width: 4.9rem !important;
     transition: 300ms;
     transform: scale(0.8);
   }

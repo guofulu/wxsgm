@@ -1,22 +1,42 @@
 
-#Header {
+.Header {
     position:  fixed;
     height: .88rem;
     width: 100%;
     padding: 0 .3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 999999;
     .home-location {
         width: 1.17rem;
         height: .56rem;
+        padding: 0;
         border-radius: .46667rem;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
+        align-items: center;
         background-color: rgba(0,0,0,.3);
         border: 1px solid hsla(0,0%,88%,.3);
+        position: relative;
+        .iconfont {
+            padding: 0 !important;
+        }
+        .icon-dingwei {
+            position: absolute;
+            left: 0;
+            top: 0rem;
+            color: #fff;
+            font-size: .36rem;
+        }
+        span {
+            display: inline-block;
+            width: .64rem ;
+            font-size: .3rem;
+            color: #fefefe;
+            font-weight: 700;
+            margin:.03rem 0 0 .25rem;
+        }
         
     }
     .home-search {
@@ -39,6 +59,33 @@
     }
 
 }
+#header-active {
+    background-color: #fefefe;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: -0.05333rem 0 0.12rem 1px rgba(35,35,35,.12);
+    .home-location {
+        background: #fff;
+        border: 1px solid #fff;
+        .icon-dingwei {
+            color: orangered; 
+        }
+        span {
+            color: #232323;
+        }
+    }
+    .home-search {
+        color: #b3b3b3;
+        background: #f5f5f5;
+        border-color: #ebebeb;
+        span {
+           
+        }
+    }
+}
+
+
+
+
 .banner {
     height: 3.92rem;
     .banner-swiper {
@@ -55,9 +102,9 @@
     }
 }
 .advertion-wrap {
-    height: 10.84rem;
     padding: .4rem .3rem 0;
     margin-bottom: .4rem;
+    overflow: hidden;
 }
 //hot-block样式
 .hot-block {

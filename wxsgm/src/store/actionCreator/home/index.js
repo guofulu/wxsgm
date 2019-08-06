@@ -83,9 +83,9 @@ export default {
         }
     },
 
-    getRecommendShow(){//获取推荐信息列表
+    getRecommendShow(page=1){//获取推荐信息列表
         return async (dispatch)=>{
-            const {data} = await axios.get('/juoooAPI/home/index/getRecommendShow?cityAdd=SZ&page=1&version=6.0.1&referer=2');
+            const {data} = await axios.get('/juoooAPI/home/index/getRecommendShow?cityAdd=SZ&page='+page+'&version=6.0.1&referer=2');
             dispatch(upRecommendShow(data))
             console.log(555,data)
         }

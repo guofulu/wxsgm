@@ -24,7 +24,7 @@ export default class MyInfo extends React.Component{
                         <p className={"mine_info__main__label__name"}>普通会员</p>
                     </div>
                     <div className={"mine_info__main__cnt"}>
-                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/Myjuooo/mymoney"}>
                             <p className={"mine_info__main__cnt__item__num"}>9999</p>
                             <p className={"mine_info__main__cnt__item__name"}>账户余额</p>
                             <div className={"separator"}></div>

@@ -30,7 +30,7 @@ export default class HotVenue extends React.Component{
                                     return (
                                         <div className="swiper-slide swiper_slide_active_hotvenue"key={i}>
                                             <div className={"hot_venue_block_info"}>
-                                                <NavLink className={"hot_venue_swiper_top_img"}>
+                                                <NavLink className={"hot_venue_swiper_top_img"} to={"/show/showsLibrary"}>
                                                     <img src={v.pic} alt="" to={"/show/showsLibrary"}　/>
                                                 </NavLink>
                                                 <div className={"hot_center"}>
@@ -43,14 +43,12 @@ export default class HotVenue extends React.Component{
                                             {
                                                v.showList.map((o,i)=>{
                                                     return(
-                                                        <div>
+                                                        <div key={i}>
                                                             <p>{o.show_time}</p>
                                                             <p className={"hot_venue_botton_p"}>
-                                                                <NavLink className={"hot_venue_botton_nav"}><img src={o.pic} alt=""/></NavLink>
+                                                                <NavLink to={"/show/showsLibrary"} className={"hot_venue_botton_nav"}><img src={o.pic} alt=""/></NavLink>
                                                             </p>
                                                         </div>
-
-
                                                     )
                                                 })
                                             }
