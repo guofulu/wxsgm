@@ -7,7 +7,6 @@ import '../../assets/scss/home/vipBlock.scss';
 class VipBlock extends React.Component{
 
     render(){
-        console.log(99999,this.props)
         return (
             <div className={'vip-block'}>
                 <NavLink className={'vip-block__advert'} to={'/null'}>

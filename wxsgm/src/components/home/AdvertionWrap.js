@@ -6,6 +6,7 @@ import '../../assets/scss/home/advertionWrap.scss';
 class Adeertion extends React.Component{
     
     render(){
+        //console.log(131313132,this.props)
         return (
             <div className={'advertion-wrap'}>
                 <div className={'label-item'}>
@@ -25,6 +26,11 @@ class Adeertion extends React.Component{
                         })
                     }
                     
+                </div>
+                <div style={this.props.ad_list.advert1.length>0?{display:'block'}:{display:'none'}} className={'advertion'}>
+                    <NavLink to={'null'} className={'advertion__block'}>
+                        <img src={this.props.ad_list.advert1[0].pic} alt='' />
+                    </NavLink>
                 </div>
                 <div className={'vip-ahead'}>
                     <NavLink className={'vip-ahead__advert'} to={'qewqrqr'}>
