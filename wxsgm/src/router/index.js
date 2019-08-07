@@ -122,13 +122,14 @@ export default [
     },
 
     {//搜索页面
-        to:'/plus/index',
-        path:'/plus/index',
-        context:'搜索',
-        component:Plus,
-        meta:{
-            title:'橙PLUS卡',
-
+        to: '/plus/index',
+        path: '/plus/index',
+        context: '搜索',
+        component: Plus,
+        meta: {
+            title: '橙PLUS卡',
+        }
+    },
     {
         to:'/vip/index',
         path:'/vip/index',
