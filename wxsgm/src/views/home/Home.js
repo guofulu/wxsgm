@@ -33,26 +33,29 @@ class Home extends React.Component{
         this.props.getHotTheatre();
         this.props.getTourRecommendList();
     }
-    changeHeader(){
-        let  scrollY = window.scrollY;
-        let  headerHeight = this.refs.header.offsetHeight;
-        if(headerHeight > scrollY){
-            //console.log('大于')
-            this.refs.header.id = ''
-        }
-        if(headerHeight < scrollY){
-            //console.log('小于')
-            this.refs.header.id = 'header-active'
+    changeHeader(){    
+        if(typeof(this.refs.header) !== 'undefined'){
+
+            
+            let  scrollY = window.scrollY;
+            let  headerHeight = 44 ;
+            if(headerHeight > scrollY){
+                this.refs.header.id = ''
+            }
+            if(headerHeight < scrollY){
+                this.refs.header.id = 'header-active'
+            }
         }
     }
     moreRecommendBlock(){
-        let juli = this.refs.home.offsetHeight - window.scrollY;
-        console.log(666666666,juli)
-        if(juli < 1500){
-            if(this.state.isMore){
-                this.state.isMore = 0
-                this.props.getRecommendShow(++this.state.isPage);
-                console.log(this.state.isPage)
+        if(typeof(this.refs.home) !== 'undefined'){
+            let juli = this.refs.home.offsetHeight - window.scrollY;
+            if(juli < 1500){
+                if(this.state.isMore){
+                    this.state.isMore = 0
+                    this.props.getRecommendShow(++this.state.isPage);
+                    console.log(this.state.isPage)
+                }
             }
         }
     }
@@ -61,13 +64,11 @@ class Home extends React.Component{
         console.log('回来了',this.state.isMore)
     }
     componentWillMount(){
-        window.addEventListener('scroll',()=>{
-            
+        window.addEventListener('scroll',()=>{          
             //console.log(919191,window.scrollY,this.refs.home.offsetHeight)
             this.changeHeader.call(this);
             this.moreRecommendBlock.call(this);
             
-
         })
         
     }
