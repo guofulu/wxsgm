@@ -10,7 +10,7 @@ class RecommendBlock extends React.Component{
         
     }
     render(){
-        console.log(82828282,this.props.RecommendShow)
+        //console.log(82828282,this.props.RecommendShow)
         return (
             <div className={"recommend-block recommend-wrap"}>
                 <div className={'recommend-block__wrap'}>

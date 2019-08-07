@@ -13,12 +13,7 @@ class Adeertion extends React.Component{
                     {
                         this.props.classify_list.map((v,i)=>{
                             return (
-                                <NavLink key={i} className={'label-item__block__column'} to={{
-                                    pathname:'/myjuooo/myjuooo',
-                                    query:{
-                                        tid:'234',
-                                    }
-                                }}>
+                                <NavLink key={i} className={'label-item__block__column'} to={'/show/showsLibrary/'+v.category_id}>
                                     <img src={v.pic} alt={''} />
                                     <span >{v.name}</span>
                                 </NavLink>

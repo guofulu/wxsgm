@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import router from './router';
 import GuardRouter from './router/GuardRouter';
+import 'antd/dist/antd.css';
 
 
 function App() {

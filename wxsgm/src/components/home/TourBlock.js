@@ -9,7 +9,7 @@ import {
 class TourBlock extends React.Component{
 
     render(){
-        console.log(6969696,this.props)
+        //console.log(6969696,this.props)
         const data = this.props.tour_show_list.slice(0,6) || []
         return (
             <section className={'hot-block'}>
@@ -56,7 +56,7 @@ class TourBlock extends React.Component{
     componentDidUpdate(){
         
         var swiper = new Swiper('.tour-swiper_list', {
-          slidesPerView: 2,
+            slidesPerView : "auto",
           spaceBetween: 30,
           centeredSlides: false,
           loop: true,

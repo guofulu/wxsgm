@@ -35,7 +35,8 @@ class Ticket extends React.Component{
 
     }
     render(){
-        const str=this.state.data.static_data.show_desc.desc||{}
+        const str=this.state.data.static_data.show_desc.desc||{};
+        const arr =this.props.DationsList.slice(0,3);
         return(
          <div className={"betail"}>
              <div className={"brief"}>
@@ -43,9 +44,15 @@ class Ticket extends React.Component{
              </div>
              <div className={"mask"}>
                  <div className={"text"} >
-                     <p><i style={{fontSize:".44rem"}} className={'iconfont icon-zuojiantou'}></i></p>
-                     <p >演出详情</p>
-                     <p><i  style={{fontSize:".34rem"}} className={'iconfont icon-shouye3'}></i></p>
+                     <p onClick={()=>{
+                         this.props.history.go(-1)
+                     }}><i style={{fontSize:".44rem"}} className={'iconfont icon-zuojiantou'}></i></p>
+                     <p onClick={()=>{
+                         this.props.history.push("/search/index")
+                     }}>演出详情</p>
+                     <p onClick={()=>{
+                         this.props.history.push("/")
+                     }}><i  style={{fontSize:".34rem"}} className={'iconfont icon-shouye3'}></i></p>
                  </div>
                  <div className={"brief__primary__fg__content"}>
                      <div className={"brief__primary__fg__pic"}>
@@ -63,7 +70,7 @@ class Ticket extends React.Component{
                      <p>{this.state.data.static_data.city.city_name}  | {this.state.data.static_data.venue.venue_name}</p>
                  </div>
                  <div className={"brief__secondary__pointer"}>
-                     <i style={{display:"inline-block",fontSize:".46rem",textAlign:"center",marginRight:"1.8rem",color:"red"}} className={"iconfont icon-dingwei-copy"}></i>
+                     <i style={{display:"inline-block",fontSize:".46rem",color:"red"}} className={"iconfont icon-dingwei-copy"}></i>
                  </div>
              </div>
              <div className={"detail__plus-tips"}>
@@ -115,10 +122,37 @@ class Ticket extends React.Component{
                  </div>}
              </div>
              <div className="intro__mask" onClick={()=>{
-                 document.querySelector(".detail__intro").style.height="84.30rem";
+                 document.querySelector(".detail__intro").style.height="auto";
                  document.querySelector(".intro__mask").style.display="none";
              }} >展示全部</div>
              <Erject></Erject>
+             <div className={"detail__recommend"}>
+                 <div className={"recommend__title"}>
+                     相关推荐
+                 </div>
+                 {
+                     arr.map((v,i)=>{
+                         return (
+                             <div key={i} className={"item"}>
+                                 <div className={"item_cover"}>
+                                     <img src={v.pic} alt={""}/>
+                                 </div>
+                                 <div className={"item_info"}>
+                                     <p style={{marginTop:".4rem"}}>{v.show_time_top}{v.show_time_bottom}</p>
+                                     <h4>{v.name}</h4>
+                                     <p style={{textAlign:"center"}}>{v.city_name}|{v.venue_name}</p>
+                                     <p><span style={{fontSize:".3rem",color:"#ff6473",marginRight:".15rem"}}>{v.min_price}</span>起</p>
+                                 </div>
+                             </div>
+                         )
+                     })
+                 }
+                 <div className={"recommend__more"} onClick={()=>{
+                     this.props.history.push("/show/showsLibrary")
+                 }}>
+                     查看更多演出 <i style={{fontSize:".38rem"}} className={"iconfont icon-xiangyou"}></i>
+                 </div>
+             </div>
          </div>
         )
     }
@@ -126,15 +160,17 @@ class Ticket extends React.Component{
     componentDidMount() {
         axios.get("/juoooAPI/Schedule/Schedule/getScheduleInfo?schedular_id="+this.props.match.params.type+"&version=6.0.1&referer=2")
             .then(({data})=>{
-                console.log(data.static_data.cate_parent_id)
+                console.log(1111111,data.static_data.is_online_seat);
                 this.setState({
                     data:data
                 });
-                this.props.getCityList.call(this,this.state.data.static_data.show_id)
+                this.props.getCityList.call(this,this.state.data.static_data.show_id);
+                this.props.getDationsList.call(this,this.state.data.static_data.cate_parent_id);
                 var mySwiper = new Swiper('.swiper__list__content',{
                     slidesPerView : 3,
                     centeredSlides : false,
-                })
+                });
+
             })
 
 
@@ -143,4 +179,5 @@ class Ticket extends React.Component{
 }
 export default connect((state)=>({
     CityList:state.theatre.City,
+    DationsList:state.theatre.DationsList
 }),(dispatch)=>bindActionCreators(theaterCreator,dispatch))(Ticket)

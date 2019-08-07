@@ -10,28 +10,28 @@ class CategoryBlock extends React.Component {
     
     componentDidMount(){
         var mySwiper = new Swiper('.swiper-container-horizontal-a',{
-            slidesPerView : 3,
+            slidesPerView : "auto",
             centeredSlides : false,
             })
     }
     render(){
-        
         return (
             <>{
                 this.props.FloorShow.map((v,i)=>{
                     const [data1] = v.list.slice(0,1)
                     const data2 = v.list.slice(1)
+                    //console.log(23234242,data1)
                     return (
                         <div key={i} className={'category-block__list'}>
                             <div className={'category-block__list__wrap'}>
                                 <h3 className={'category-block__list__wrap__title'}>{v.title}</h3>
-                                <NavLink className={'category-block__list__wrap__arrow'} to={'null'}>
-                                    <img src={''} alt='' />
+                                <NavLink className={'category-block__list__wrap__arrow'} to={'/show/showsLibrary'}>
+                                    <img src={'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg=='} alt='' />
                                 </NavLink>
                             </div>
                             <div className={'category-block__list__row'}>
                                 <div className={'row--bg'}>
-                                    <NavLink className={"category-block__list__row__wrap"} to={'null'}>
+                                    <NavLink className={"category-block__list__row__wrap"} to={'/ticket/'+data1.sche_id}>
                                         <div className={'category-block__list__row__item'}>
                                             <img src={data1.pic} alt='' />
                                             <div className={'juooo_sponsor'}  dangerouslySetInnerHTML={{__html: data1.ico}}>
@@ -60,7 +60,7 @@ class CategoryBlock extends React.Component {
                                             data2.map((item,n)=>{
                                                 return (
                                                     <div key={n+5} className="swiper-slide swiper-slide-active-ccc ">
-                                                        <NavLink className={'category-block__list__column__wrap'} to={'null'}>
+                                                        <NavLink className={'category-block__list__column__wrap'} to={'/ticket/'+item.sche_id}>
                                                             <div className={'category-block__list__column__item'}>
                                                                 <img src={item.pic} alt='' />
                                                                 <div dangerouslySetInnerHTML={{__html: item.ico}}></div>

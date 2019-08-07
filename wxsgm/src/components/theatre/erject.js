@@ -23,7 +23,7 @@ class Erject extends React.Component {
                 <div className={"detail__tips"}  onClick={this.showDrawer}>
                         <div className={"tips__title"}>
                             <h1>温馨提示</h1>
-                            <p style={{marginTop:"-.15rem"}}><i className={"iconfont icon-xiangyou"}></i></p>
+                            <p style={{marginTop:"-.15rem"}}><i style={{fontSize:".38rem"}} className={"iconfont icon-xiangyou"}></i></p>
                         </div>
                         <ul className={"tips__list"}>
                             <li>· 快递说明</li>

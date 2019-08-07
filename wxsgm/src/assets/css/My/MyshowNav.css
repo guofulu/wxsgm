@@ -1,24 +1,25 @@
 .showNav{
     position:fixed;
-    top:1rem;
+    top:0.7rem;
     background: white;
 }
 .showNull{
     width: 7.5rem;
     height: .2rem;
     position: absolute;
-    bottom: 0;
+    bottom:0.15rem;
     background: white;
 }
 .showUl{
     width: 7.5rem;
-    height: 0.91rem;
+    height: 0.75rem;
+    display: flex;
     line-height: 0.91rem;
     overflow-x: auto;
     white-space: nowrap;
-    display: flex;
+
 }
 .showUl li{
-    padding: 0 .2rem;
+    padding: 0 0.2rem;
     font-size: 16px;
 }

@@ -39,7 +39,8 @@ export default {
     getShowList(type){
         // console.log(type)
         return async (dispatch)=>{
-            const {data} = await axios.get("/juoooM/Search/getShowList?category="+type+"&city_id=4&page=1&keywords=&version=6.0.1&referer=2")
+            const {data} = await axios.get("/juoooM/Search/getShowList?category="+type+"&city_id=0&page=1&keywords=&version=6.0.3&referer=2")
+
             // console.log(9999,data)
             dispatch(upShowList(data.list))
         }

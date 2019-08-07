@@ -40,7 +40,7 @@ class HotBlock extends React.Component{
     }
     componentDidUpdate(){
         var mySwiper = new Swiper('.hot-block-swiper',{
-            slidesPerView : 3,
+            slidesPerView : "auto",
             centeredSlides : false,
             })
     }

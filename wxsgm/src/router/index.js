@@ -1,10 +1,22 @@
 import Home from '../views/home/Home';
+import Eticket from "../views/eticket/eticket"
 import Theatre from "../views/theatre/theatre"
-import Myjuooo from "../views/myjuooo/Myjuooo"
 import buy from "../components/shop/vip/buy";
 import Ticket from "../views/theatre/ticket";
+// 我的相关的
+import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
+
+import Search from "../views/search/index"
+
+import Mymoney from "../views/myjuooo/mymoney"
+
+import VipIndx from '../views/VipIndex/index';
+
+import Login from '../views/Login/Login';
+import Forget from '../views/Login/Forget';
+import Password from '../views/Login/Password';
 
 export default [
     {//首页路由
@@ -33,13 +45,13 @@ export default [
         to:'/eticket/list',
         path:'/eticket/list',
         context:'票夹',
-        component:Home,
+        component:Password,
         meta:{
             title:'聚橙网',
             isFooter:false,
         }
     },
-    {//我的路由
+    {//演出详情页
         path:'/ticket/:type',
         context:'我的',
         component:Ticket,
@@ -58,14 +70,13 @@ export default [
             isFooter:true,
         }
     },
-
     {//我的Vip
         to:'/shop/vip/buy',
         path:'/shop/vip/buy',
         context:'我的',
         component:buy,
         meta:{
-            title:'聚橙网',
+            title:'VIP',
             isFooter:false,
         }
     },
@@ -76,18 +87,47 @@ export default [
         component:Mysecurity,
         meta:{
             title:'账户设置',
-            isFooter:false,
+            isFooter:true,
+        }
+    },
+    {//我的路由-余额
+        to:'/Myjuooo/mymoney',
+        path:'/Myjuooo/mymoney',
+        context:'我的',
+        component:Mymoney,
+        meta:{
+            title:'我的余额',
+            isFooter:true,
         }
     },
 
-
     {//演出页面
         to:'/show/showsLibrary',
-        path:'/show/showsLibrary',
+        path:'/show/showsLibrary/:category',
         context:'我的',
         component:ShowsLibrary,
         meta:{
             title:'演出',
+            isFooter:false,
+        }
+    },
+    {//搜索页面
+        to:'/search/index',
+        path:'/search/index',
+        context:'搜索',
+        component:Search,
+        meta:{
+            title:'搜索',
+            isFooter:false,
+        }
+    },
+    {
+        to:'/vip/index',
+        path:'/vip/index',
+        context:'VIP+会员',
+        component:Search,
+        meta:{
+            title:'聚橙网',
             isFooter:false,
         }
     },
