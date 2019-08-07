@@ -17,7 +17,7 @@ export default class MyInfo extends React.Component{
                         <div className={"mine_info__main__head__pic"}>
                             <img src="https://image.juooo.com/group1/M00/03/6F/rAoKNV0XF2uABEtSAAANUrP00o0602.png" alt=""/>
                         </div>
-                        <span className={"mine_info__main__head__name"}>17865769236</span>
+                        <span className={"mine_info__main__head__name"}>昵称:也行倒是</span>
                         <span className={"mine_info__main__head__uid"}>ID:12312</span>
                     </div>
                     <div className={"mine_info__main__label"}>
@@ -29,19 +29,19 @@ export default class MyInfo extends React.Component{
                             <p className={"mine_info__main__cnt__item__name"}>账户余额</p>
                             <div className={"separator"}></div>
                         </Link>
-                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/Myjuooo/myintegral"}>
                             <p className={"mine_info__main__cnt__item__num"}>9999</p>
                             <p className={"mine_info__main__cnt__item__name"}>积分</p>
                             <div className={"separator"}></div>
                         </Link>
-                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/Myjuooo/Myintegral"}>
                             <p className={"mine_info__main__cnt__item__num"}>9999</p>
                             <p className={"mine_info__main__cnt__item__name"}>优惠券</p>
                             <div className={"separator"}></div>
                         </Link>
                         <Link className={"mine_info__main__cnt__item"} to={"/null"}>
-                            <p className={"mine_info__main__cnt__item__num"} style={{color:"#666"}}>立即开通</p>
-                            <p className={"mine_info__main__cnt__item__name"}>橙PLUS卡</p>
+                            <p className={"mine_info__main__cnt__item__num"} style={{color:"#666",fontSize:"0.25rem",fontWeight:"0"}}>立即开通</p>
+                            <p className={"mine_info__main__cnt__item__name"} style={{fontSize:"0.25rem",color:"#666"}}>橙PLUS卡</p>
                             <div className={"separator"}></div>
                         </Link>
                     </div>

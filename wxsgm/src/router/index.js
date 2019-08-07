@@ -11,6 +11,8 @@ import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
 import Mymoney from "../views/myjuooo/mymoney"
+import Myintegral from "../views/myjuooo/myintegral"
+import MyCouponExchange from "../views/myjuooo/couponExchange"
 
 
 export default [
@@ -92,7 +94,27 @@ export default [
         component:Mymoney,
         meta:{
             title:'我的余额',
-            isFooter:true,
+            isFooter:false,
+        }
+    },
+    {//我的路由-积分
+        to:'/Myjuooo/couponExchange',
+        path:'/Myjuooo/couponExchange',
+        context:'我的',
+        component:Myintegral,
+        meta:{
+            title:'我的积分',
+            isFooter:false,
+        }
+    },
+    {//我的路由-优惠券
+        to:'/Myjuooo/Myintegral',
+        path:'/Myjuooo/Myintegral',
+        context:'我的',
+        component:MyCouponExchange,
+        meta:{
+            title:'优惠券',
+            isFooter:false,
         }
     },
 

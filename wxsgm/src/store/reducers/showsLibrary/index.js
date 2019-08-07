@@ -3,7 +3,6 @@ import showsLibrary from "../../actionType/showsLibrary"
 import showsNav from "../../actionType/showsLibrary"
 import showList from "../../actionType/showsLibrary"
 export default function (state = initState,{type,payload}) {
-
     state = JSON.parse(JSON.stringify(state));
     if(type === showsLibrary.UP_SHOWSLIBRARY){
         state.ShowsLibrary = payload//将获取的数据赋值
