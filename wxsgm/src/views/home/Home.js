@@ -48,9 +48,10 @@ class Home extends React.Component{
 
     }
     moreRecommendBlock(){
-        if(typeof(this.refs.header) !== 'undefined'){
+
+        if(typeof(this.refs.home) !== 'undefined'){
             let juli = this.refs.home.offsetHeight - window.scrollY;
-            // console.log(666666666,juli)
+
             if(juli < 1500){
                 if(this.state.isMore){
                     this.state.isMore = 0
@@ -59,35 +60,36 @@ class Home extends React.Component{
                 }
             }
         }
-
     }
     componentDidUpdate(){
         this.state.isMore = 1;
         // console.log('回来了',this.state.isMore)
     }
     componentWillMount(){
-        window.addEventListener('scroll',()=>{
-            
+        window.addEventListener('scroll',()=>{          
             //console.log(919191,window.scrollY,this.refs.home.offsetHeight)
             this.changeHeader.call(this);
             this.moreRecommendBlock.call(this);
             
-
         })
         
     }
     
     render(){
-        console.log(4343434343,this.props)
+        //console.log(4343434343,this.props)
         return (
             <div className={'home'} ref={'home'}>
                     <header className={'Header'} ref={'header'}>
                         <div className={'home-location'}>
                             <i className={'iconfont icon-dingwei'}></i>
-                            <span >全国</span>
+                            <span onClick={()=>this.props.history.push('/null')} >全国</span>
                         </div>
                         <div className={'home-search'} onClick={()=>{
+<<<<<<< HEAD
                             this.props.history.push("/search/index")
+=======
+                            this.props.history.push('/search/index')
+>>>>>>> 1cc0305a940d943e77a4b5e412645bfa69713ac4
                         }}>
                             <img src='https://m.juooo.com/static/img/nav_icon_search.f194288.png' alt='' />
                             <span>搜索热门演出</span>
@@ -121,9 +123,9 @@ class Home extends React.Component{
                         this.props.FloorShow.length>0?<CategoryBlock FloorShow={this.props.FloorShow}></CategoryBlock>:null
                         }
                     </div>
-                {
-                    this.props.HotTheatre.theatre_list?<HotVenue HotTheatre={this.props.HotTheatre}></HotVenue>:null
-                }
+                    {
+                        this.props.HotTheatre.theatre_list?<HotVenue HotTheatre={this.props.HotTheatre}></HotVenue>:null
+                    }
                     {
                         this.props.RecommendShow.recommend_show_list?<RecommendBlock RecommendShow={this.props.RecommendShow}></RecommendBlock>:null
                     }

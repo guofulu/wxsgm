@@ -11,7 +11,7 @@ export default class HotVenue extends React.Component{
                 setWrapperSize :true,
                 slidesPerView : "auto",
         })
-        console.log(666666666666,this.props.HotTheatre)
+        //console.log(666666666666,this.props.HotTheatre)
     }
     render() {
         return(
