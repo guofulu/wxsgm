@@ -86,7 +86,9 @@ class Home extends React.Component{
                             <i className={'iconfont icon-dingwei'}></i>
                             <span >全国</span>
                         </div>
-                        <div className={'home-search'}>
+                        <div className={'home-search'} onClick={()=>{
+                            this.props.history.push("/search/index")
+                        }}>
                             <img src='https://m.juooo.com/static/img/nav_icon_search.f194288.png' alt='' />
                             <span>搜索热门演出</span>
                         </div>

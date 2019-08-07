@@ -61,7 +61,7 @@ class Adeertion extends React.Component{
                 
                 <div className={'operation'}>
                     <ul className={'operation-ul-1'}>
-                        <NavLink className={'ul-1-li'} to={'yu'}>
+                        <NavLink className={'ul-1-li'} to={'/plus/index'}>
                             <h3>{this.props.operation_list[0].name}</h3>
                             <img src={this.props.operation_list[0].pic} alt='' />
                             <p  dangerouslySetInnerHTML={{__html:this.props.operation_list[0].describe }}></p>

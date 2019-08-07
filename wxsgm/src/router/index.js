@@ -1,19 +1,15 @@
 import Home from '../views/home/Home';
-
 import Eticket from "../views/eticket/eticket"
-
 import Theatre from "../views/theatre/theatre"
-
 import buy from "../components/shop/vip/buy";
 import Ticket from "../views/theatre/ticket";
 // 我的相关的
 import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
-
 import Search from "../views/search/index"
-
 import Mymoney from "../views/myjuooo/mymoney"
+import Plus from "../views/plus/index"
 
 
 
@@ -117,6 +113,16 @@ export default [
         component:Search,
         meta:{
             title:'搜索',
+            isFooter:false,
+        }
+    },
+    {//搜索页面
+        to:'/plus/index',
+        path:'/plus/index',
+        context:'搜索',
+        component:Plus,
+        meta:{
+            title:'橙PLUS卡',
             isFooter:false,
         }
     },

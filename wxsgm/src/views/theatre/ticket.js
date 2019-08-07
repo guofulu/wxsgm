@@ -47,9 +47,7 @@ class Ticket extends React.Component{
                      <p onClick={()=>{
                          this.props.history.go(-1)
                      }}><i style={{fontSize:".44rem"}} className={'iconfont icon-zuojiantou'}></i></p>
-                     <p onClick={()=>{
-                         this.props.history.push("/search/index")
-                     }}>演出详情</p>
+                     <p>演出详情</p>
                      <p onClick={()=>{
                          this.props.history.push("/")
                      }}><i  style={{fontSize:".34rem"}} className={'iconfont icon-shouye3'}></i></p>
