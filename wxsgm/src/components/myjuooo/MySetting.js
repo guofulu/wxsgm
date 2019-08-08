@@ -17,13 +17,13 @@ export default class MySetting extends React.Component{
                         </Link>
                     </li>
                     <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                        <Link  className={"mine_setting__list__item_link"} >
                             <i className={"mine_icon iconfont"}>&#xe64e;</i>
                             <p className={"mine_setting__list__item_name"}>收货地址</p>
                         </Link>
                     </li>
                     <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                        <Link to={"/feedback/index"} className={"mine_setting__list__item_link"}>
                             <i className={"mine_icon iconfont"}>&#xe61a;</i>
                             <p className={"mine_setting__list__item_name"}>意见反馈</p>
                         </Link>

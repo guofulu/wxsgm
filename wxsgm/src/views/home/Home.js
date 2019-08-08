@@ -85,11 +85,8 @@ class Home extends React.Component{
                             <span onClick={()=>this.props.history.push('/null')} >全国</span>
                         </div>
                         <div className={'home-search'} onClick={()=>{
-<<<<<<< HEAD
-                            this.props.history.push("/search/index")
-=======
+
                             this.props.history.push('/search/index')
->>>>>>> 1cc0305a940d943e77a4b5e412645bfa69713ac4
                         }}>
                             <img src='https://m.juooo.com/static/img/nav_icon_search.f194288.png' alt='' />
                             <span>搜索热门演出</span>
