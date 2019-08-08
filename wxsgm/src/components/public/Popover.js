@@ -28,7 +28,7 @@ export default class Popover extends React.Component {
     render() {
         return (
             <div>
-                <p type="primary" onClick={this.showModal} style={{fontSize:"0.6rem"}}>
+                <p type="primary" onClick={this.showModal} style={{fontSize:"0.4rem"}}>
                     ...
                 </p>
                 <Modal

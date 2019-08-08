@@ -40,7 +40,7 @@
     height: 1.36rem;
     display: flex;
     justify-content: space-between;
-
+    text-align: left;
 }
 .hot_venue_swiper_top_img
 {    width: 1.33333rem;

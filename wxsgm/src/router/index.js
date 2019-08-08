@@ -11,9 +11,14 @@ import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
 import Search from "../views/search/index"
 import Mymoney from "../views/myjuooo/mymoney"
+
+import Myintegral from "../views/myjuooo/myintegral"
+import MyCouponExchange from "../views/myjuooo/couponExchange"
+
 import Plus from "../views/plus/index"
 import Feedback from "../views/feedback/index"
 import VipIndx from '../views/VipIndex/index';
+
 
 import Login from '../views/Login/Login';
 import Forget from '../views/Login/Forget';
@@ -88,7 +93,7 @@ export default [
         component:Mysecurity,
         meta:{
             title:'账户设置',
-            isFooter:true,
+            isFooter:false,
         }
     },
     {//我的路由-余额
@@ -98,7 +103,27 @@ export default [
         component:Mymoney,
         meta:{
             title:'我的余额',
-            isFooter:true,
+            isFooter:false,
+        }
+    },
+    {//我的路由-积分
+        to:'/Myjuooo/couponExchange',
+        path:'/Myjuooo/couponExchange',
+        context:'我的',
+        component:Myintegral,
+        meta:{
+            title:'我的积分',
+            isFooter:false,
+        }
+    },
+    {//我的路由-优惠券
+        to:'/Myjuooo/Myintegral',
+        path:'/Myjuooo/Myintegral',
+        context:'我的',
+        component:MyCouponExchange,
+        meta:{
+            title:'优惠券',
+            isFooter:false,
         }
     },
 

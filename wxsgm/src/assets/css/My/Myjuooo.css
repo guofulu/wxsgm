@@ -26,9 +26,9 @@
 .mine_info .icon{
     display: block;
     position: absolute;
-    right: 0.25rem;
+    right: 0.4rem;
     top: 0.2rem;
-    font-size: 18px;
+    font-size:0.4rem;
     color: white
 }
 /* 带头像的小框 */
@@ -48,7 +48,7 @@
 .mine_info__main__head__pic{
     position: absolute;
     left: 0.3rem;
-    top:-0.30rem;
+    top:-0.2rem;
     z-index: 9999;
     width: 1.16rem;
     height: 1.16rem;
@@ -61,13 +61,15 @@
     top: .22rem;
     left: 25%;
     color: #232323;
-    font-size: 14px;
+    font-size:0.25rem;
     font-weight: 700;
 }
 .mine_info__main__head__uid{
     position: absolute;
     bottom: 0;
     left: 25%;
+    font-size:0.25rem;
+
 }
 .mine_info__main__label{
     height: .52rem;
@@ -94,15 +96,18 @@
     flex: 1;
     text-align: center;
     position: relative;
-    padding: .5rem 0 .52rem;
-    font-weight: 500;
-    font-size:14px;
+    padding: .5rem 0 .3rem;
+    font-weight: 700;
+    font-size:0.35rem;
+    line-height: 0;
 }
 .mine_info__main__cnt__item__num{
-    color:#ff6743
+    color:#ff6743;
+    padding: 0.1rem;
 }
 .mine_info__main__cnt__item__name{
     color: #969896;
+    font-size: 0.2rem;
 }
 .separator{
     position: absolute;
@@ -141,13 +146,17 @@
     background: #ffffff;
     display: flex;
     justify-content: space-between;
-    margin-bottom:0.15rem ;
+    margin:0.15rem 0 ;
+    font-size: 0.25rem;
+
 }
 .mine_setting__list__item{
     width: 25%;
+    margin:0.35rem 0 ;
 }
 .mine_setting__list__item .mine_icon{
     margin-right: 0.2rem;
     color: #df5000;
+    font-size: 0.4rem;
 }
 
