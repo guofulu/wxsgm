@@ -7,7 +7,6 @@ export default class UpShowsTypeWrap extends React.Component{
             this.props.Shows_type_wrap.map((v,i)=>{
                 return(
                     <ul className={"library_main"} key={i}>
-
                         <Link  to={"/ticket/"+v.schedular_id/1}>
                             <li className={"library_li"}>
                                 <div className={"library_left"}>

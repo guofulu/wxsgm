@@ -1,6 +1,6 @@
 /*演出的*/
 .library_wrap{
-    padding-top: 1.64rem;
+    padding-top: 1.62rem;
     width: 100%;
     height: 100%;
 }
@@ -11,7 +11,7 @@
 }
 .library_li{
     width: 6.9rem;
-    height:3.04rem ;
+    height:3.0rem ;
     margin: 0 0.3rem;
     display: flex;
     justify-content: space-between;
@@ -31,21 +31,17 @@
 .library_right .library_time{
     color: black;
     font-size: 0.3rem;
-    margin: 0.12rem;
     font-weight: 800;
 }
 .library_right .library_name{
-    font-size: 0.35rem;
+    font-size: 0.3rem;
     font-weight: 800;
-    color: black;
-    display:-webkit-box;
     width: 100%;
     overflow: hidden;
-    /*display: box;*/
-
+    word-break: break-all;
+    display: -webkit-box;
 }
 .library_right .venue_name{
-    color: #666;;
     font-size: 0.2rem;
     margin: 0.2rem;
 }

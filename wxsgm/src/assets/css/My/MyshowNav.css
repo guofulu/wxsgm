@@ -2,6 +2,7 @@
     position:fixed;
     top:0.7rem;
     background: white;
+    color: black;
 }
 .showNull{
     width: 7.5rem;
@@ -21,5 +22,5 @@
 }
 .showUl li{
     padding: 0 0.2rem;
-    font-size: 16px;
+    font-size: 0.34rem;
 }

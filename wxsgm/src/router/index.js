@@ -9,9 +9,14 @@ import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
 import Search from "../views/search/index"
 import Mymoney from "../views/myjuooo/mymoney"
+
+import Myintegral from "../views/myjuooo/myintegral"
+import MyCouponExchange from "../views/myjuooo/couponExchange"
+
 import Plus from "../views/plus/index"
 
-import VipIndx from '../views/VipIndex/index';
+import VipIndx from '../views/vipIndex/index';
+
 
 import Login from '../views/Login/Login';
 import Forget from '../views/Login/Forget';
@@ -44,7 +49,7 @@ export default [
         to:'/eticket/list',
         path:'/eticket/list',
         context:'票夹',
-        component:Password,
+        component:Eticket,
         meta:{
             title:'聚橙网',
             isFooter:false,
@@ -86,7 +91,7 @@ export default [
         component:Mysecurity,
         meta:{
             title:'账户设置',
-            isFooter:true,
+            isFooter:false,
         }
     },
     {//我的路由-余额
@@ -96,7 +101,27 @@ export default [
         component:Mymoney,
         meta:{
             title:'我的余额',
-            isFooter:true,
+            isFooter:false,
+        }
+    },
+    {//我的路由-积分
+        to:'/Myjuooo/couponExchange',
+        path:'/Myjuooo/couponExchange',
+        context:'我的',
+        component:Myintegral,
+        meta:{
+            title:'我的积分',
+            isFooter:false,
+        }
+    },
+    {//我的路由-优惠券
+        to:'/Myjuooo/Myintegral',
+        path:'/Myjuooo/Myintegral',
+        context:'我的',
+        component:MyCouponExchange,
+        meta:{
+            title:'优惠券',
+            isFooter:false,
         }
     },
 
@@ -130,11 +155,11 @@ export default [
             title: '橙PLUS卡',
         }
     },
-    {
+    { //vip+会员
         to:'/vip/index',
         path:'/vip/index',
         context:'VIP+会员',
-        component:Search,
+        component:VipIndx,
         meta:{
             title:'聚橙网',
             isFooter:false,

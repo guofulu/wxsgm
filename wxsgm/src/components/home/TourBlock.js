@@ -10,12 +10,12 @@ class TourBlock extends React.Component{
 
     render(){
         //console.log(6969696,this.props)
-        const data = this.props.tour_show_list.slice(0,6) || []
+        const data = this.props.tour_show_list.slice(1,6) || []
         return (
             <section className={'hot-block'}>
                 <div className={'hot-block__lab'}>
                     <h3>巡回演出</h3>
-                    <NavLink to={'/null'} className={'hot-block__lab-a'}>
+                    <NavLink to={'/Tour/moreTourShowList'} className={'hot-block__lab-a'}>
                         <img src={'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg=='} alt={''} />
                     </NavLink>
                 </div> 
@@ -24,9 +24,10 @@ class TourBlock extends React.Component{
                         <div className="swiper-wrapper tour-swiper-wrapper">
                                 {
                                     data.map((v,i)=>{
+                                        const str = v.tour_show_url.replace('https://m.juooo.com/tour/tourshowinfo?sid=',"")
                                         return (
                                             <div key={i} className="swiper-slide tour-swiper-slide ">
-                                                <NavLink to={'null'} className={'tour-block__list__wrap'}>
+                                                <NavLink to={'/ticket/'+str} className={'tour-block__list__wrap'}>
                                                     <div className={'tour-block__list__wrap__item '}>
                                                         <img style={{width:'4.9rem',height:'2.8rem'}} src={v.pic} alt='' />
                                                     </div>

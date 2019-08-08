@@ -1,4 +1,80 @@
+
+/*最外层*/
 .My_price_mine{
+    background: #f6f6f6;
+    padding-top: 0.9rem;
+}
+/*账户余额*/
+.My_price{
+    background: url("/juoooM/public/basic/Home/app/app-juooo4/images/myjuooo/integral.jpg") no-repeat;
+    height: 3rem;
+    line-height: 0;
+}
+.My_price_top{
+    padding-top: 0.8rem;
+    color: white;
+    font-size: 0.25rem;
+}
+.My_price_bot{
+    padding-top: 0.3rem;
+    font-size: 0.6rem;
+    color: white;
+}
+/*余额和其它页面共有的样式*/
+.My_price{
+    position: relative;
+}
+.My_price_botton{
+    text-align: left;
+    height: 100%;
+}
+.My_price_botton_top{
+    font-size: 0.2rem;
+    padding: 0.2rem;
+    height: 100%;
+}
+.My_price_botton_bot{
+    height: 5rem;
+    background: white;
+    line-height: 5rem;
+    text-align: center;
+}
+
+/************************************************************我的积分中的样式*/
+/*规则*/
+.My_price_rules{
     position: absolute;
-    top:2rem
+    right: 0.1rem;
+    top:0.2rem;
+    padding: 0.15rem;
+    font-size: 0.25rem;
+    color: white;
+}
+/*积分商城*/
+.My_price_shop{
+    width: 2rem;
+    font-size: 0.25rem;
+    background: white;
+    padding: 0.3rem;
+    position: absolute;
+    left: 37%;
+    border-radius: 0.64rem 0.59733rem;
+}
+.My_price_for{
+    width: 100%;
+    background: white;
+}
+.My_price_for_info{
+    border-bottom: 0.03rem #e6e6e6 solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    line-height: 0.2rem;
+}
+.My_price_for_info_left{
+    font-size: 0.3rem;
+}
+.My_price_for_rig{
+    color: #df5000;
+    font-size: 0.5rem;
 }

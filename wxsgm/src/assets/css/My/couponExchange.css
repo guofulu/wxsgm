@@ -1,0 +1,56 @@
+/******************************优惠券******************************8*/
+/***********************中间内容的外层  */
+.coupon_wrap{
+    padding-top:1rem;
+    background:#f5f5f5;
+    height: 13.34rem;
+}
+/***************************输入框*/
+.coupon_input_main{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.4rem;
+
+}
+.coupon_input{
+    width: 5.5rem;
+    height: 0.7rem;
+    border: none;
+}
+.coupon_input_rig{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 0.3rem;
+    color: #ffffff;
+    border-radius: 0.1rem;
+    background: #cccccc;
+    padding: 0 0.3rem;
+}
+
+.coupon_main{
+    display: flex;
+    justify-content: space-between;
+    padding:0.3rem;
+    font-size:0.26rem;
+}
+.coupon_main_left{
+    padding-left: 0.25rem;
+    color: #b3b3b3;
+}
+.coupon_footer{
+    position: fixed;
+    bottom: 0;
+    left: 33%;
+    font-size: 0.25rem;
+}
+.coupon_footer_main{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.coupon_ruels_style{
+    height: 6rem;
+    overflow-y: auto;
+}

@@ -76,7 +76,7 @@ class Home extends React.Component{
     }
     
     render(){
-        //console.log(4343434343,this.props)
+        console.log(4343434343,this.props)
         return (
             <div className={'home'} ref={'home'}>
                     <header className={'Header'} ref={'header'}>
@@ -97,11 +97,11 @@ class Home extends React.Component{
                 
                     <div className={'banner'}>
                         {
-                            this.props.ClassifyHome.slide_list?<Banner slide_list={this.props.ClassifyHome.slide_list}></Banner>:null
+                            this.props.ClassifyHome.slide_list?<Banner slide_list={this.props.ClassifyHome.slide_list} ></Banner>:null
                         }
                     </div>
                     {
-                        this.props.ClassifyHome.classify_list?<Adeertion {...this.props.ClassifyHome}></Adeertion>:null
+                        this.props.VipHomeSchedular.priorList?<Adeertion {...this.props}></Adeertion>:null
                     }
 
                     {

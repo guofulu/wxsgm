@@ -1,0 +1,69 @@
+
+.vip-plus__free-view {
+    margin-top: .24rem;
+    position: relative;
+    .entry-block {
+        width: 100%;
+        background-color: #fff;
+        padding: .5rem .3rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        .free-view {
+            position: relative;
+            display: flex;
+            overflow-x: scroll;
+            .free-view__item {
+                padding-right: .14rem;
+                text-align: left;
+                .show-cell {
+                    display: flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    flex-direction: column;
+                    
+                    img {
+                        height: 2.92rem;
+                        pointer-events: none;
+                    }
+                    .show-cell__name {
+                        width: 2.12rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: .34rem;
+                        text-overflow: ellipsis;
+                        font-weight: 700;
+                        color: #232323;
+                        padding: .225rem .1rem 0;
+                    }
+                }
+                .free-view-show-cell__price {
+                    color: #ff6743;
+                    font-size: .32rem;
+                    vertical-align: bottom;
+                    .free-view-show-cell__price__origin {
+                        font-size: .24rem;
+                        color: #999;
+                        text-decoration: line-through;
+                        margin-left: .1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.vip-plus__double-points__img {
+    pointer-events: none;
+    border: none;
+    border-color: transparent;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.vip-plus__more {
+    color: #999;
+    font-size: .32rem;
+    padding: .44rem 0 1.48rem;
+    text-align: center;
+}

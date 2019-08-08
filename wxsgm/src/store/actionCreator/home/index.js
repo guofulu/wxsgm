@@ -52,7 +52,7 @@ const upTourRecommendList = function (payload){
 export default {
     getRegisterCoupon(){//获取注册优惠券信息
         return async (dispatch)=>{
-            const {data} = await axios.get('/juoooAPI/Promotion/coupon/getRegisterCoupon?version=6.0.1&referer=2');
+            const {data} = await axios.get('/juoooAPI/Promotion/coupon/getRegisterCoupon?version=6.0.3&referer=2');
             dispatch(upRegisterCoupon(data))
             // console.log(1111,data)
             
@@ -61,7 +61,7 @@ export default {
 
     getClassifyHome(){//获取分类列表
         return async (dispatch)=>{
-            const {data} = await axios.get('/juoooAPI/home/index/getClassifyHome?city_id=1&abbreviation=SZ&version=6.0.1&referer=2');
+            const {data} = await axios.get('/juoooAPI/home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.3&referer=2');
             dispatch(upClassifyHome(data))
             // console.log(222,data)
         }
@@ -85,7 +85,7 @@ export default {
 
     getRecommendShow(page=1){//获取推荐信息列表
         return async (dispatch)=>{
-            const {data} = await axios.get('/juoooAPI/home/index/getRecommendShow?cityAdd=SZ&page='+page+'&version=6.0.1&referer=2');
+            const {data} = await axios.get('/juoooAPI/home/index/getRecommendShow?cityAdd=&page='+page+'&version=6.0.3&referer=2');
             dispatch(upRecommendShow(data))
             // console.log(555,data)
         }
