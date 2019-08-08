@@ -3,6 +3,8 @@ import Eticket from "../views/eticket/eticket"
 import Theatre from "../views/theatre/theatre"
 import buy from "../components/shop/vip/buy";
 import Ticket from "../views/theatre/ticket";
+import CitySelect from "../views/feedback/citySelect"
+
 // 我的相关的
 import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
@@ -14,8 +16,8 @@ import Myintegral from "../views/myjuooo/myintegral"
 import MyCouponExchange from "../views/myjuooo/couponExchange"
 
 import Plus from "../views/plus/index"
-
-import VipIndx from '../views/vipIndex/index';
+import Feedback from "../views/feedback/index"
+import VipInedx from '../views/vipIndex/index';
 
 
 import Login from '../views/Login/Login';
@@ -159,7 +161,29 @@ export default [
         to:'/vip/index',
         path:'/vip/index',
         context:'VIP+会员',
-        component:VipIndx,
+        component:VipInedx,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    },
+    //意见反馈
+    {
+        to:'/feedback/index',
+        path:'/feedback/index',
+        context:"意见反馈",
+        component:Feedback,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    },
+    //选择你的成城市 连接意见反馈
+    {
+        to:'/feedback/citySelect',
+        path:'/feedback/citySelect',
+        context:"聚橙网",
+        component:CitySelect,
         meta:{
             title:'聚橙网',
             isFooter:false,

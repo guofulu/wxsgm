@@ -60,7 +60,6 @@ class Search extends React.Component{
                             this.refs.keyword.value=""
                         }}><i style={{fontSize: "16px", textAlign: "center", marginRight: "10px"}}
                                 className={"iconfont icon-guanbi1"}></i></div>
-
                     </div>
                     <div className={"cancel"} onClick={()=>{
                         this.props.history.push("/")
@@ -83,7 +82,7 @@ class Search extends React.Component{
     }
     componentWillMount() {
         pubsub.subscribe("one",(a,b)=>{
-            this.refs.keyword.value=b
+            this.refs.keyword.value=b;
             this.changeShopList.call(this,b)
         })
 
