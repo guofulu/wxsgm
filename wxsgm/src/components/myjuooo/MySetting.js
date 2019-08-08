@@ -37,19 +37,19 @@ export default class MySetting extends React.Component{
                 </ul>
                 <ul className={"mine_setting__list"}>
                     <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                        <Link className={"mine_setting__list__item_link"} to={"/my/myOrderList"}>
                             <i className={"mine_icon iconfont"}>&#xe70b;</i>
                             <p className={"mine_setting__list__item_name"}>我的订单</p>
                         </Link>
                     </li>
                     <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                        <Link className={"mine_setting__list__item_link"} to={"/eticket/list"}>
                             <i className={"mine_icon iconfont"}>&#xe612;</i>
                             <p className={"mine_setting__list__item_name"}>我的票夹</p>
                         </Link>
                     </li>
                     <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                        <Link className={"mine_setting__list__item_link"} to={"/my/cardproduct"}>
                             <i className={"mine_icon iconfont"}>&#xe669;</i>
                             <p className={"mine_setting__list__item_name"}>我的卡包</p>
                         </Link>

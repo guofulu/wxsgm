@@ -39,7 +39,7 @@ export default class MyInfo extends React.Component{
                             <p className={"mine_info__main__cnt__item__name"}>优惠券</p>
                             <div className={"separator"}></div>
                         </Link>
-                        <Link className={"mine_info__main__cnt__item"} to={"/null"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/plus/index"}>
                             <p className={"mine_info__main__cnt__item__num"} style={{color:"#666",fontSize:"0.25rem",fontWeight:"0"}}>立即开通</p>
                             <p className={"mine_info__main__cnt__item__name"} style={{fontSize:"0.25rem",color:"#666"}}>橙PLUS卡</p>
                             <div className={"separator"}></div>

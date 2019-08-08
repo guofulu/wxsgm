@@ -9,9 +9,11 @@ import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
 import Search from "../views/search/index"
 import Mymoney from "../views/myjuooo/mymoney"
-
 import Myintegral from "../views/myjuooo/myintegral"
 import MyCouponExchange from "../views/myjuooo/couponExchange"
+import MyCouponOverdue from "../views/myjuooo/couponOverdue"
+import MyOrderList from "../views/myjuooo/myOrderList"
+import Cardproduct from "../views/myjuooo/cardproduct"
 
 import Plus from "../views/plus/index"
 
@@ -124,6 +126,37 @@ export default [
             isFooter:false,
         }
     },
+    {//我的路由-已过期优惠券
+        to:'/Myjuooo/Mycoupon?overdue=overdue',
+        path:'/Myjuooo/Mycoupon?overdue=overdue',
+        context:'我的',
+        component:MyCouponOverdue,
+        meta:{
+            title:'优惠券',
+            isFooter:false,
+        }
+    },
+    {//我的路由-我的订单
+        to:'/my/myOrderList',
+        path:'/my/myOrderList',
+        context:'我的',
+        component:MyOrderList,
+        meta:{
+            title:'我的订单',
+            isFooter:false,
+        }
+    },
+    {//我的路由-我的卡包
+        to:'/my/cardproduct',
+        path:'/my/cardproduct',
+        context:'我的',
+        component:Cardproduct,
+        meta:{
+            title:'我的卡包',
+            isFooter:false,
+        }
+    },
+
 
     {//演出页面
         to:'/show/showsLibrary',

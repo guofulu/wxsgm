@@ -1,0 +1,74 @@
+.market_warp{
+    padding-top: 1rem;
+    background: white;
+}
+.market_swiper{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image:url("../../../img/myjuooo.jpg");
+    background-size: 100%;
+    height: 4.19rem;
+}
+
+/*顶部轮播*/
+.swiper_container_car{
+    width: 7rem;
+    height:3.7rem;
+    padding-top: 0.2rem;
+    border-radius: 0.1rem;
+}
+/*点点*/
+.swiper_pagination_car{
+    position: absolute;
+    top: 4.7rem;
+    left: 46%;
+}
+
+/*vIP栏目*/
+.market_vip{
+    padding: 0.3rem;
+    font-size: 0.3rem;
+}
+.market_vip_font{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.market_vip_font_lfet span{
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.market_vip_font_pic{
+    padding-top: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+.market_vip_font_pic_null{
+    width: 7rem;
+    height: 0.2rem;
+    background: white;
+    position: absolute;
+    top: 8.3rem;
+}
+.market_vip_font_pic_one{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+    padding: 0.2rem;
+}
+.market_vip_font_pic1{
+    background-image: url(../../../img/vip_plus_right.61e731b.png);
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    pointer-events: none;
+    background-size: 4.8rem 3.5rem;
+}
+.market_vip_font_font1{
+    font-size: 0.3rem;
+    line-height: 0;
+}
