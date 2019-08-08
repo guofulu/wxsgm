@@ -48,7 +48,6 @@ class Search extends React.Component{
             <div className={"page"}>
                 <div className={"search"}>
                     <div className={"search-ipt"}>
-
                         <div  style={{marginTop: "5px"}}><i
                             style={{fontSize: "18px", textAlign: "center",}} className={"iconfont icon-sousuo"}></i>
                         </div>
@@ -61,9 +60,6 @@ class Search extends React.Component{
                             this.refs.keyword.value=""
                         }}><i style={{fontSize: "16px", textAlign: "center", marginRight: "10px"}}
                                 className={"iconfont icon-guanbi1"}></i></div>
-
-
-
                     </div>
                     <div className={"cancel"} onClick={()=>{
                         this.props.history.push("/")
@@ -86,7 +82,7 @@ class Search extends React.Component{
     }
     componentWillMount() {
         pubsub.subscribe("one",(a,b)=>{
-            this.refs.keyword.value=b
+            this.refs.keyword.value=b;
             this.changeShopList.call(this,b)
         })
 
