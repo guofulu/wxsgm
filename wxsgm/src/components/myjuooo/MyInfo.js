@@ -29,7 +29,7 @@ export default class MyInfo extends React.Component{
                             <p className={"mine_info__main__cnt__item__name"}>账户余额</p>
                             <div className={"separator"}></div>
                         </Link>
-                        <Link className={"mine_info__main__cnt__item"} to={"/Myjuooo/myintegral"}>
+                        <Link className={"mine_info__main__cnt__item"} to={"/Myjuooo/couponExchange"}>
                             <p className={"mine_info__main__cnt__item__num"}>9999</p>
                             <p className={"mine_info__main__cnt__item__name"}>积分</p>
                             <div className={"separator"}></div>

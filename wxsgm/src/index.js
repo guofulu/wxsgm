@@ -7,9 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import axios from 'axios';
 import {Provider} from 'react-redux';
 import store from './store';
+import help from './common/help';
 
-
-
+React.Component.prototype.help = help;
 axios.interceptors.request.use(config=>{
     return config;
 })

@@ -146,12 +146,13 @@
     background: #ffffff;
     display: flex;
     justify-content: space-between;
-    margin-bottom:0.15rem ;
+    margin:0.15rem 0 ;
     font-size: 0.25rem;
+
 }
 .mine_setting__list__item{
     width: 25%;
-
+    margin:0.35rem 0 ;
 }
 .mine_setting__list__item .mine_icon{
     margin-right: 0.2rem;

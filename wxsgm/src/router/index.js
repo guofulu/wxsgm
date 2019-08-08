@@ -1,19 +1,26 @@
 import Home from '../views/home/Home';
-
 import Eticket from "../views/eticket/eticket"
-
 import Theatre from "../views/theatre/theatre"
-
 import buy from "../components/shop/vip/buy";
 import Ticket from "../views/theatre/ticket";
 // 我的相关的
 import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
+import Search from "../views/search/index"
 import Mymoney from "../views/myjuooo/mymoney"
+
 import Myintegral from "../views/myjuooo/myintegral"
 import MyCouponExchange from "../views/myjuooo/couponExchange"
 
+import Plus from "../views/plus/index"
+
+import VipIndx from '../views/VipIndex/index';
+
+
+import Login from '../views/Login/Login';
+import Forget from '../views/Login/Forget';
+import Password from '../views/Login/Password';
 
 export default [
     {//首页路由
@@ -42,7 +49,7 @@ export default [
         to:'/eticket/list',
         path:'/eticket/list',
         context:'票夹',
-        component:Eticket,
+        component:Password,
         meta:{
             title:'聚橙网',
             isFooter:false,
@@ -84,7 +91,7 @@ export default [
         component:Mysecurity,
         meta:{
             title:'账户设置',
-            isFooter:true,
+            isFooter:false,
         }
     },
     {//我的路由-余额
@@ -120,11 +127,41 @@ export default [
 
     {//演出页面
         to:'/show/showsLibrary',
-        path:'/show/showsLibrary',
+        path:'/show/showsLibrary/:category',
         context:'我的',
         component:ShowsLibrary,
         meta:{
             title:'演出',
+            isFooter:false,
+        }
+    },
+    {//搜索页面
+        to:'/search/index',
+        path:'/search/index',
+        context:'搜索',
+        component:Search,
+        meta:{
+            title:'搜索',
+            isFooter:false,
+        }
+    },
+
+    {//搜索页面
+        to: '/plus/index',
+        path: '/plus/index',
+        context: '搜索',
+        component: Plus,
+        meta: {
+            title: '橙PLUS卡',
+        }
+    },
+    {
+        to:'/vip/index',
+        path:'/vip/index',
+        context:'VIP+会员',
+        component:Search,
+        meta:{
+            title:'聚橙网',
             isFooter:false,
         }
     },

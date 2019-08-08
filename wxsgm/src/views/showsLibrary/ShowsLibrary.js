@@ -30,10 +30,17 @@ class ShowsLibrary extends React.Component{
         )
     }
     componentDidMount() {
-        console.log(222,"componentDidMount")
+
+        // console.log(222,"componentDidMount")
+        // this.props.getShowsList()
+        // this.props.getShowCategory()
+        // this.props.getShowList.call(this, 0)
+
+        console.log(23423425232232,this.props.match)
         this.props.getShowsList()
         this.props.getShowCategory()
-        this.props.getShowList.call(this, 0)
+        this.props.getShowList.call(this,this.props.match.params.category)
+
     }
 }
 export default connect((state)=>({
