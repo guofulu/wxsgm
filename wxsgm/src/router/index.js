@@ -149,7 +149,7 @@ export default [
         }
     },
     {//我的路由-我的卡包
-        to:'/my/cardproduct',
+        to:'/my/cardproduct/:tpye',
         path:'/my/cardproduct',
         context:'我的',
         component:Cardproduct,
@@ -158,8 +158,6 @@ export default [
             isFooter:false,
         }
     },
-
-
     {//演出页面
         to:'/show/showsLibrary',
         path:'/show/showsLibrary/:category',

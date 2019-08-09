@@ -4,6 +4,9 @@ import "../../assets/css/My/MyshowNav.css"
 export default class ShowsNav extends React.Component{
     constructor(props){
         super(props);
+        // this.state = ({
+        //     isShow : 0
+        // })
     }
     render(){
         // console.log(8888,this.props)
@@ -15,7 +18,9 @@ export default class ShowsNav extends React.Component{
                     {
                         this.props.Show_category_list.map((v,i)=>{
                             return(
-                                <li key={i} onClick={this.props.getShowList.bind(this,v.category_id)}>{v.name}</li>
+                                <li key={i} onClick={()=>{this.props.getShowList.bind(this,v.category_id)}}>
+                                    {v.name}
+                                </li>
                             )
                         })
                     }

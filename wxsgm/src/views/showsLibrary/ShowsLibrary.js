@@ -17,7 +17,7 @@ class ShowsLibrary extends React.Component{
         })
     }
     render() {
-        console.log(123456789,window.screenTop)
+        // console.log(123456789,window.)
         return(
                 <div >
                     <div className={"My_null"}></div>

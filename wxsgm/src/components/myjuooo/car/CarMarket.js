@@ -3,6 +3,7 @@ import Swiper from 'swiper';
 import {Link} from "react-router-dom"
 import 'swiper/dist/css/swiper.min.css'
 import "../../../assets/css/My/car/carmarket.css"
+import Cards from "./Cards"
 
 
 export default class CarMarket extends React.Component{
@@ -71,9 +72,9 @@ export default class CarMarket extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className={"market_car"}>
-
-                </div>
+                {
+                    this.props.MyCardsList.data?<Cards {...this.props}></Cards>:null
+                }
             </div>
         )
     }

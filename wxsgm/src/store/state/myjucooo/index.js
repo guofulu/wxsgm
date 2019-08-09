@@ -1,4 +1,5 @@
 export default {
     MyintegralList:[],
-    MyCarMarketList:[]
+    MyCarMarketList:[],
+    MyCardsList:[]
 }
