@@ -4,9 +4,12 @@ import {
 } from 'react-router-dom';
 import '../../assets/scss/home/advertionWrap.scss';
 class Adeertion extends React.Component{
-    
+    constructor(props){
+        super(props)
+       // console.log(66666,this.props)
+    }
     render(){
-        console.log(131313132,this.props)
+       // console.log(131313132,this.props.ClassifyHome.classify_list)
         return (
             <div className={'advertion-wrap'}>
                 {/* 导航 */}

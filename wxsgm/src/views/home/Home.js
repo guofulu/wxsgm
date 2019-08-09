@@ -77,12 +77,13 @@ class Home extends React.Component{
     
     render(){
         console.log(4343434343,this.props)
+        console.log(989898,this.props.VipHomeSchedular.priorList?true:false)
         return (
             <div className={'home'} ref={'home'}>
                     <header className={'Header'} ref={'header'}>
                         <div className={'home-location'}>
                             <i className={'iconfont icon-dingwei'}></i>
-                            <span onClick={()=>this.props.history.push('/null')} >全国</span>
+                            <span onClick={()=>this.props.history.push('/index/selectCity')} >{localStorage.city || '全国'}</span>
                         </div>
                         <div className={'home-search'} onClick={()=>{
                             this.props.history.push("/search/index")
@@ -101,7 +102,7 @@ class Home extends React.Component{
                         }
                     </div>
                     {
-                        this.props.VipHomeSchedular.priorList?<Adeertion {...this.props}></Adeertion>:null
+                        this.props.VipHomeSchedular.priorList && this.props.ClassifyHome.slide_list?<Adeertion {...this.props}></Adeertion>:null
                     }
 
                     {
@@ -125,7 +126,7 @@ class Home extends React.Component{
                     {
                         this.props.RecommendShow.recommend_show_list?<RecommendBlock RecommendShow={this.props.RecommendShow}></RecommendBlock>:null
                     }
-
+                    
             </div>
         )
     }

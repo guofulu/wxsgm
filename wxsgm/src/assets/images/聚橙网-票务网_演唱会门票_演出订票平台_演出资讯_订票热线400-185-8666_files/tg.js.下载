@@ -1,0 +1,208 @@
+try {
+    (function (a, b, c, d) {
+        a[c] = function () { a[c]['ar'] = a[c]['ar'] || []; a[c]['ar'].push(arguments); };
+        var s = b.createElement('script'); s.async = 1; s.src = '//static.t.agrant.cn/ag_track-2.49.js';
+        var r = b.getElementsByTagName('script')[0]; r.parentNode.insertBefore(s, r);
+    })(window, document, '_agtjs', 'script');
+    _agtjs('init', 'AG_400767_XIVB', '$website$');
+    _agtjs('trackPv');
+
+    var agtGetTopUrl = function () {
+        var win = window;
+        var doc = document;
+        var topwin = window.top || window.parent || window;
+
+        var localUrl = "";
+        try {
+            localUrl = topwin.location.href;
+        } catch (err) {
+            localUrl = doc.referrer || win.location.href;
+        }
+        return localUrl;
+    };
+    var agtTopUrl = agtGetTopUrl();
+
+    var agtCheckString = function (regular, str) {
+        var re = new RegExp(regular);
+        return re.test(str);
+    };
+
+    var agtBindClick = function (element, fn) {
+        if (element.attachEvent) {
+            element.attachEvent('onclick', fn);
+        } else if (element.addEventListener) {
+            element.addEventListener('click', fn);
+        }
+    };
+
+    var agtBindEventByTimer = function (selector, fn) {
+        var interval = setInterval(function () {
+            if (!_agtjs.Sizzle) { return }
+            var elements = _agtjs.Sizzle(selector);
+            if (elements && elements.length > 0) {
+                clearInterval(interval);
+                for (var i in elements) {
+                    agtBindClick(elements[i], fn);
+                }
+            }
+        }, 1000);
+    };
+    var getUrlParam = function (key) {
+        var url = "";
+        try {
+            url = window.top.location.search;
+        } catch (e) {
+            url = window.location.search;
+        }
+        try {
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    if (strs[i].split("=")[0] == key) {
+                        var param_arr = strs[i].split("=");
+                        if (param_arr.length > 1) {
+                            return param_arr[1];
+                        }
+                    }
+                }
+            }
+        } catch (e) {
+            return "";
+        }
+        return "";
+    };
+    var runAtDomready = function (fn) {
+        var done = false, top = true, win = window,
+            doc = win.document,
+            root = doc.documentElement,
+            modern = doc.addEventListener,
+
+            add = modern ? 'addEventListener' : 'attachEvent',
+            rem = modern ? 'removeEventListener' : 'detachEvent',
+            pre = modern ? '' : 'on',
+
+            init = function (e) {
+                if (e.type == 'readystatechange' && doc.readyState != 'complete') return;
+                (e.type == 'load' ? win : doc)[rem](pre + e.type, init, false);
+                if (!done && (done = true)) fn.call(win, e);
+            },
+
+            poll = function () {
+                try { root.doScroll('left'); } catch (e) { setTimeout(poll, 50); return; }
+                init('poll');
+            };
+
+        if (doc.readyState == 'complete') fn.call(win);
+        else {
+            if (!modern && root.doScroll) {
+                try { top = !win.frameElement; } catch (e) { }
+                if (top) poll();
+            }
+            doc[add](pre + 'DOMContentLoaded', init, false);
+            doc[add](pre + 'readystatechange', init, false);
+            win[add](pre + 'load', init, false);
+        }
+    };
+
+    var eleOnload = function (ele, fun) {
+        fun && (ele.addEventListener
+            ? ele.onload = fun
+            : ele.onreadystatechange = function () {
+                ele.readyState in {
+                    loaded: 1,
+                    complete: 1
+                } && (ele.onreadystatechange = null, fun())
+            })
+    };
+    function agt_204() { /* pc去支付 */
+        var order_sn = getUrlParam('order_sn'); // 订单号
+        var order_amount = getUrlParam('order_amount'); // 应付订单金额
+        var money_paid = getUrlParam('money_paid'); // 实付订单金额
+        var mc = document.querySelector("li.item.inven.clearfix div.inf").innerText.replace(/\s/g, '');
+        _agtjs('loadEvent', { atsev: 204, 'atsp1': order_sn, 'atsp2': order_amount, 'atsp3': money_paid, 'atsp4': mc });
+    }
+    if (agtCheckString('pay.juooo.com/pay', agtTopUrl)) {
+        agtBindEventByTimer('#goPay', agt_204);
+    }
+
+    function agt_205() { /* 移动端去支付 */
+        var order_sn = getUrlParam('order_sn'); // 订单号
+        var order_amount = getUrlParam('order_amount'); // 应付订单金额
+        var money_paid = getUrlParam('money_paid'); // 实付订单金额
+        _agtjs('loadEvent', { atsev: 205, 'atsp1': order_sn, 'atsp2': order_amount, 'atsp3': money_paid });
+    }
+    if (agtCheckString('m.juooo.com/Pay', agtTopUrl)
+        && document.body.innerHTML.indexOf('支付订单') >= 0) {
+        agt_205();
+    }
+
+    function agt_206() {
+        var inpxm = document.querySelector("input[name=name]");
+        var xm = "";
+        if (inpxm) { xm = inpxm.value }
+        var inpdh = document.querySelector("input[name=mobile]");
+        var dh = "";
+        if (inpdh) { dh = inpdh.value }
+        var inpyx = document.querySelector("input[name=email]");
+        var yx = "";
+        if (inpyx) { yx = inpyx.value }
+        var inpxb = document.querySelector("select[name=gender]");
+        var xb = "";
+        if (inpxb) { xb = inpxb.value }
+        _agtjs('loadEvent', { atsev: 206, 'atsp1': xm, 'atsp2': dh, 'atsp3': yx, 'atsp4': xb });
+    }
+    if (agtCheckString('myjuooo.juooo.com/User/myprofile', agtTopUrl)) {
+        setTimeout(agt_206, 500)
+    }
+
+    function agt_207() {
+        var ctn = document.querySelectorAll("div.mo-item.clearfix");
+        if (ctn.length == 0) { return; }
+        var len = ctn.length > 5 ? 5 : ctn.length;
+        var ddhall = "";
+        var ddjeall = "";
+        var ddztall = "";
+        var jmbhall = "";
+        for (var i = 0; i < len; i++) {
+            var ele = ctn[i];
+            var eddh = ele.querySelector("span.order-sn");
+            var eddje = ele.querySelector("div.remain-pay.margin-top13");
+            var eddzt = ele.querySelector("span.state");
+            var ejmbh = ele.querySelector("a[href*='item.juooo.com']");
+
+            if (eddh) { ddhall += eddh.innerText + "," }
+            if (eddje) { ddjeall += eddje.innerText.replace(/[^\d\.]/img, "") + "," }
+            if (eddzt) { ddztall += eddzt.innerText + "," }
+            if (ejmbh) { jmbhall += ejmbh.getAttribute('href').replace(/(^.*item\.juooo\.com\/*)|(\?.*)/, '') + "," }
+        }
+        _agtjs('loadEvent', { atsev: 207, 'atsp1': ddhall, 'atsp2': ddjeall, 'atsp3': ddztall, 'atsp4': jmbhall });
+    }
+    if (agtCheckString('myjuooo.juooo.com/User/myorderlist', agtTopUrl)) {
+        setTimeout(agt_207, 500)
+    }
+
+    // 支付成功
+    function agt_208() {
+        var ddh = getUrlParam("order_sn");
+        var ddje = getUrlParam("order_amount");
+        var jm = "";
+        var elejm = document.querySelector("div.cart li.inven div.inf");
+        if (elejm) {
+            jm = elejm.innerText.replace(/[\r\n ]/img, '');
+        }
+        _agtjs('loadEvent', { atsev: 208, 'atsp1': ddh, 'atsp2': ddje, 'atsp3': jm });
+    }
+
+    if (agtCheckString('pay\\.juooo\\.com/pay.*order_sn.*order_amount.*', agtTopUrl)
+        && document.body.innerHTML.indexOf('订单已提交成功') > -1) {
+        agt_208();
+    }
+
+    if (agtCheckString('m\\.juooo\\.com/Pay/pay.*order_sn.*order_amount.*', agtTopUrl)
+        && document.body.innerHTML.indexOf('支付成功') >= 0) {
+        agt_208();
+    }
+} catch (err) {
+    console.log('err:' + err);
+}
