@@ -2,6 +2,8 @@
 import Home from '../views/home/Home';
 //城市选择
 import SelectCityme from '../views/selectCity';
+//演出日历
+import ShowCalendar from '../components/home/ShowCalendar';
 //票夹
 import Eticket from "../views/eticket/eticket"
 //剧院
@@ -31,11 +33,22 @@ import Feedback from "../views/feedback/index"
 import VipInedx from '../views/vipIndex/index';
 
 //登录注册
-import Login from '../views/Login/Login';
-import Forget from '../views/Login/Forget';
-import Password from '../views/Login/Password';
+ import Login from '../views/LoginG/Login';
+ import PassPort from '../views/LoginG/Passport';
+// import Forget from '../views/Login/Forget';
+// import Password from '../views/Login/Password';
 
 export default [
+    {
+        path:'/Passport/verify',
+        context:'输入验证码',
+        component:PassPort,
+        exact:true,
+        meta:{
+            title:'登录',
+            isFooter:false,
+        }
+    },
     {//首页
         to:'/',
         path:'/',
@@ -71,7 +84,7 @@ export default [
         to:'/eticket/list',
         path:'/eticket/list',
         context:'票夹',
-        component:Eticket,
+        component:Login,
         meta:{
             title:'聚橙网',
             isFooter:false,

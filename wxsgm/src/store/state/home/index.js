@@ -9,5 +9,6 @@ export default {
     VipHomeSchedular:{},//储存vip相关信息列表
     HotTheatre:{},
     TourRecommendList:{},
-
+    // 0808
+    getShowList:[], //存储ShowCalendar组建信息
 }

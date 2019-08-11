@@ -1,0 +1,79 @@
+.show_type_wrap {
+    width: 100%;
+    background: #ff0;
+}
+
+/*左*/
+.show_type {
+    font-size: 16px;
+    height: 45px;
+    width: 75%;
+    overflow: auto;
+    float: left;
+}
+
+.show_type_ul {
+    display: inline;
+    white-space: nowrap;
+}
+.show_type_ul li{
+    padding: 10px 5px;
+    display: inline-block;
+}
+
+/*右*/
+.city_wrap {
+    width: 25%;
+    height: 45px;
+    float: left;
+    font-size: 14px;
+}
+
+.city {
+    display: inline-block;
+}
+
+.city_icon {
+}
+
+
+
+
+
+
+/***********************************************************/
+li{
+    list-style: none;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.recommend-list li .show-icon[data-v-b5e816fe] {
+    width: 2.93333rem;
+    height: 4rem;
+    border-radius: .10667rem;
+    border: 1px solid #ebebeb;
+    position: relative;
+    overflow: hidden;
+}
+.recommend-list li .show-icon a[data-v-b5e816fe] {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.recommend-wrap{
+    padding-top: .8rem;
+}
+.recommend-list{
+    margin-top: 0;
+}
+.recommend-list li .show-icon[data-v-b5e816fe] {
+    width: 2.93333rem;
+    height: 4rem;
+    border-radius: .10667rem;
+    border: 1px solid #ebebeb;
+    position: relative;
+    overflow: hidden;
+}
