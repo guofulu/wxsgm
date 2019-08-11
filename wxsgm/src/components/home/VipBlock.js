@@ -7,7 +7,7 @@ import '../../assets/scss/home/vipBlock.scss';
 class VipBlock extends React.Component{
 
     render(){
-        //console.log(6767,this.props.watchList[0])
+        console.log(6767,this.props)
         return (
             <div className={'vip-block'}>
                 <NavLink className={'vip-block__advert'} to={'/vip/index'}>
@@ -45,21 +45,40 @@ class VipBlock extends React.Component{
                         </ul>
                     </div>
                     
-
-                    <div className={'vip-block__conent__power'}>
-                        <h3 className={'vip-block__conent__power__title title--right'}>优先购票</h3>
-                        <ul className={'vip-block__conent__power__wrap wrap-list--right'}>
-                            <li className={'vip-block__conent__power__item'}>
-                                <NavLink className={"vip-block__conent__power__click"} to={'/ticket/'+this.props.watchList[0].schedular_id}>
-                                    <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.watchList[0].pic} alt={''} />
-                                    <p>
-                                        <strong style={{fontSize:'.24rem'}}>{this.props.watchList[0].date}</strong>
-                                        <span>开始</span>
-                                    </p>
-                                </NavLink>
-                            </li>
-                        </ul>
-                    </div>
+                    {
+                        // this.props.watchList.lentgh>0?(
+                        //     <div className={'vip-block__conent__power'}>
+                        //         <h3 className={'vip-block__conent__power__title title--right'}>优先购票</h3>
+                        //         <ul className={'vip-block__conent__power__wrap wrap-list--right'}>
+                        //             <li className={'vip-block__conent__power__item'}>
+                        //                 <NavLink className={"vip-block__conent__power__click"} to={'/ticket/'+this.props.watchList[0].schedular_id}>
+                        //                     <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.watchList[0].pic} alt={''} />
+                        //                     <p>
+                        //                         <strong style={{fontSize:'.24rem'}}>{this.props.watchList[0].date}</strong>
+                        //                         <span>开始</span>
+                        //                     </p>
+                        //                 </NavLink>
+                        //             </li>
+                        //         </ul>
+                        //     </div>
+                        // ):(
+                        //     <div className={'vip-block__conent__power'}>
+                        //         <h3 className={'vip-block__conent__power__title title--right'}>优先购票</h3>
+                        //         <ul className={'vip-block__conent__power__wrap wrap-list--right'}>
+                        //             <li className={'vip-block__conent__power__item'}>
+                        //                 <NavLink className={"vip-block__conent__power__click"} to={'/ticket/'+this.props.watchList[0].schedular_id}>
+                        //                     <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.watchList[0].pic} alt={''} />
+                        //                     <p>
+                        //                         <strong style={{fontSize:'.24rem'}}>{this.props.watchList[0].date}</strong>
+                        //                         <span>开始</span>
+                        //                     </p>
+                        //                 </NavLink>
+                        //             </li>
+                        //         </ul>
+                        //     </div>
+                        // )
+                    }
+                    
                 </div>
             </div>
         )
