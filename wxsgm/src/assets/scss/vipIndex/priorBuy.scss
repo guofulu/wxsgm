@@ -1,0 +1,125 @@
+.vip-plus__prior-buy {
+    width: 100%;
+    background-color: #fff;
+    padding: .5rem .3rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: .24rem;
+    .vip-plus-prior-buy {
+        border-top: 1px solid #ebebeb;
+        .vip-plus-prior-buy__tabs {
+            font-size: .32rem;
+            padding-top: .3rem;
+            .ju-tab-nav {
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                flex-direction: row;
+                .ju-tab-nav__title-wrapper{
+                    -webkit-box-flex: 1;
+                    flex: 1;
+                    text-align: center;
+                    .ju-tab-nav__title--selected {
+                        padding: .05rem .1rem;
+                    }
+                }
+            }
+            .ju-tab {
+                font-size: .3rem;
+                .prior-buy-card {
+                    position: relative;
+                    padding: .4rem 0;
+                    .prior-buy-card__base {
+                        display: flex;
+                        height: 3rem;
+                        img {
+                            width: 2.2rem;
+                            height: 3rem;
+                            flex-shrink: 0;
+                        }
+                        .item__info {
+                            margin-left: .29rem;
+                            .item__info__date-week {
+                                margin-top: .16rem;
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                color: #232323;
+                                .item__info__date-week__date {
+                                    display: inline-block;
+                                    font-weight: 700;
+                                    height: .24rem;
+                                    line-height: .24rem;
+                                    font-size: .24rem;
+                                }
+                                .item__info__date-week__week {
+                                    display: inline-block;
+                                    font-size: .24rem;
+                                    height: .24rem;
+                                    line-height: .24rem;
+                                    margin-left: .09rem;
+                                    vertical-align: bottom;
+                                }
+                            }
+                            .item__info__name {
+                                height: 1.52rem;
+                                text-align: left;
+                                line-height: .8rem;
+                                font-weight: 700;
+                            }
+                            .item__info__place {
+                                text-align: left;
+                                font-size: .24rem;
+                                color: #666;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                width: 4.4rem;
+                                height: .24rem;
+                                line-height: .24rem;
+                            }
+                        }
+                    }
+                    .prior-buy-card__extra-wrapper {
+                        position: absolute;
+                        left: 2.44rem;
+                        bottom: .4rem;
+                        right: 0;
+                        display: flex;
+                        align-items: baseline;
+                        .prior-buy-card__extra__price {
+                            color: #ff6743;
+                            font-size: .32rem;
+                        }
+                        .prior-buy-card__extra__price-desc {
+                            color: #999;
+                            font-size: .24rem;
+                            padding-left: .1rem;
+                        }
+                        .prior-buy-card__extra__date {
+                            flex: 1;
+                            color: #ff6743;
+                            font-size: .26rem;
+                            text-align: right;
+                        }
+                        .prior-buy-card__extra__time-desc {
+                            color: #666;
+                            font-size: .24rem;
+                            text-align: right;
+                            padding-left: .1rem;
+                        }
+                    }
+                    .divider {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+#ju-tab-nav__title{
+    color: #ff6743;
+    display: inline-block;
+    border-bottom: .04rem solid #ff6743;
+}

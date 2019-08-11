@@ -76,16 +76,17 @@ class Home extends React.Component{
     }
     
     render(){
-        //console.log(4343434343,this.props)
+        console.log(4343434343,this.props)
+        console.log(989898,this.props.VipHomeSchedular.priorList?true:false)
         return (
             <div className={'home'} ref={'home'}>
                     <header className={'Header'} ref={'header'}>
                         <div className={'home-location'}>
                             <i className={'iconfont icon-dingwei'}></i>
-                            <span onClick={()=>this.props.history.push('/null')} >全国</span>
+                            <span onClick={()=>this.props.history.push('/index/selectCity')} >{localStorage.city || '全国'}</span>
                         </div>
                         <div className={'home-search'} onClick={()=>{
-                            this.props.history.push('/search/index')
+                            this.props.history.push("/search/index")
                         }}>
                             <img src='https://m.juooo.com/static/img/nav_icon_search.f194288.png' alt='' />
                             <span>搜索热门演出</span>
@@ -97,11 +98,11 @@ class Home extends React.Component{
                 
                     <div className={'banner'}>
                         {
-                            this.props.ClassifyHome.slide_list?<Banner slide_list={this.props.ClassifyHome.slide_list}></Banner>:null
+                            this.props.ClassifyHome.slide_list?<Banner slide_list={this.props.ClassifyHome.slide_list} ></Banner>:null
                         }
                     </div>
                     {
-                        this.props.ClassifyHome.classify_list?<Adeertion {...this.props.ClassifyHome}></Adeertion>:null
+                        this.props.VipHomeSchedular.priorList && this.props.ClassifyHome.slide_list?<Adeertion {...this.props}></Adeertion>:null
                     }
 
                     {
@@ -125,7 +126,7 @@ class Home extends React.Component{
                     {
                         this.props.RecommendShow.recommend_show_list?<RecommendBlock RecommendShow={this.props.RecommendShow}></RecommendBlock>:null
                     }
-
+                    
             </div>
         )
     }

@@ -130,6 +130,7 @@
 
 
 
+
 /* .mine_setting列表的那个地方 */
 .mine_setting{
     width: 100%;
@@ -160,3 +161,42 @@
     font-size: 0.4rem;
 }
 
+
+/*客服帮助的*/
+/*外面显示文字*/
+.phone{
+    position: absolute;
+    top: 8.8rem;
+    right: 0.7rem;
+}
+.phone_mine_warp{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+.phone_hard{
+    text-align:center;
+}
+.phone_img{
+    display: inline-block;
+    width: 1.68rem;
+    height: 1.68rem;
+    background: #e0b78e;
+    border-radius: 50%;
+
+}
+.phone_img img{
+    position: absolute;
+    top:4.8rem;
+}
+.phone_img_right img{
+    right: 0.8rem;
+}
+.phone_img_left img{
+    left: 0.6rem;
+}
+.phone_footer{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 8%
+}

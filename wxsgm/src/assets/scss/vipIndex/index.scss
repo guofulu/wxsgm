@@ -182,19 +182,53 @@
         }
         // 第五部分
         .vip-plus__ticket{
+            width: 100%;
+            background-color: #fff;
+            padding: .5rem .3rem;
+            box-sizing: border-box;
+            overflow: hidden;
+            margin-top: .24rem;
             .vip-plus-ticket-wrapper {
+                position: relative;
                 .vip-plus-ticket-cell {
+                    position: relative;
+                    margin-right: .2rem;
+                    width: 3.4rem;
+                    height: 3.16rem;;
                     .ticket-cell {
+                        display: inline-flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        flex-direction: column;
                         .ticket-cell__img {
-                            
+                            width: 3.76rem;
+                            height: 2rem;
+                            border-radius: .10667rem;
+                            pointer-events: none;
                         }
                         .ticket-cell__name {
-
+                            width: 3.16rem;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-weight: 700;
+                            padding: .18rem .1rem 0;
+                            font-size: .32rem;
+                            color: #232323;
                         }
                     }
                     .vip-plus-ticket-cell__price {
+                        vertical-align: middle;
+                        color: #ff6743;
+                        font-size: .32rem;
+                        padding: .09rem .1rem 0;
+                        text-align: left;
                         .vip-plus-ticket-cell__price__desc {
-                            
+                            color: #999;
+                            font-size: .24rem;
+                            padding-left: .09rem;
                         }
                     }
                 }
@@ -222,6 +256,35 @@
     }
 }
 
+.vip-plus__btn-vip {
+    font-size: .34rem !important;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: .98rem;
+    border-radius: 0;
+    background: linear-gradient(90deg,#fece9d,#d79a62);
+    color: #85470e;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    outline: 0;
+    border: none;
+    padding: 0 .3rem;
+    font-weight: 400;
+    user-select: none;
+    font: inherit;
+    .vip-plus__btn__unit {
+        font-size: .24rem;
+    }
+    .vip-plus__btn__price {
+        font-weight: 700;
+    }
+}
 
 
 

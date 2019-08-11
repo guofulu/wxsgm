@@ -12,7 +12,7 @@ export default class MySetting extends React.Component{
                 {/*<div className={"mine_setting_null"}></div>*/}
                 <ul className={"mine_setting__list"}>
                     <li className={"mine_setting__list__item"}>
-                        <Link className={"mine_setting__list__item_link"} to={"Home"}>
+                        <Link className={"mine_setting__list__item_link"} to={"/myjuooo/myRealNameCertification"}>
                             <i className={"mine_icon iconfont"}>&#xe60c;</i>
                             <p className={"mine_setting__list__item_name"}>实名购票</p>
                         </Link>
@@ -30,10 +30,8 @@ export default class MySetting extends React.Component{
                         </Link>
                     </li>
                     <li className={"mine_setting__list__item"}>
-                        <MyPhone className={"mine_setting__list__item_link"}>
-                            <i className={"mine_icon iconfont"}>&#xe606;</i>
-                            <p className={"mine_setting__list__item_name"}>客服帮助</p>
-                        </MyPhone>
+                        <i className={"mine_icon iconfont"}>&#xe606;</i>
+                        <MyPhone className={"mine_setting__list__item_name"}>客服帮助</MyPhone>
                     </li>
                 </ul>
                 <ul className={"mine_setting__list"}>
