@@ -1,6 +1,7 @@
 import React from 'react';
 import axiso from 'axios';
 import '../../assets/scss/login/passport.scss';
+import  CommonTitle from  '../../common/commonTitle'
 
 class PassPort extends React.Component{
     constructor(){
@@ -60,7 +61,7 @@ class PassPort extends React.Component{
     render(){
         return (
             <div className={'verify-wrap'}>
-
+                <CommonTitle commonTitle={'验证'} history={this.props.history}></CommonTitle>
                 <div className={'main'}>
                     <div className={'login-wrap'}>
                         <h1 className={'login-title'}>验证码</h1>

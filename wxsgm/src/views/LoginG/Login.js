@@ -2,6 +2,7 @@ import React from 'react';
 import axiso from 'axios';
 import '../../assets/scss/login/index.scss';
 import {Icon} from 'antd';
+import  CommonTitle from  '../../common/commonTitle'
 
 class Login extends React.Component{
     constructor(){
@@ -82,6 +83,7 @@ class Login extends React.Component{
 
         return (
             <div className={'loginBlock'}>
+                <CommonTitle commonTitle={'登录'} history={this.props.history}></CommonTitle>
                 <div className={"main"}>
                     <div className={"login-wrap"}>
                         <h1 className={'login-title'}>欢迎来到聚橙网</h1>

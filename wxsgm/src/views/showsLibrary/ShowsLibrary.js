@@ -19,7 +19,7 @@ class ShowsLibrary extends React.Component{
     render() {
         console.log(123456789,window.screenTop)
         return(
-                <div >
+                <div>
                     <div className={"My_null"}></div>
                     <Showtop {...this.props}></Showtop>
                     <ShowNav {...this.props}></ShowNav>
@@ -30,7 +30,6 @@ class ShowsLibrary extends React.Component{
         )
     }
     componentDidMount() {
-
         // console.log(222,"componentDidMount")
         // this.props.getShowsList()
         // this.props.getShowCategory()

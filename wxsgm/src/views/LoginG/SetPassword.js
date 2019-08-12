@@ -2,7 +2,7 @@ import React from 'react';
 import axiso from 'axios';
 import '../../assets/scss/login/index.scss';
 import {Icon} from 'antd';
-
+import  CommonTitle from  '../../common/commonTitle'
 
 class SetPassword extends React.Component{
 
@@ -58,6 +58,7 @@ class SetPassword extends React.Component{
     render(){
         return (
             <div className={'loginBlock'} style={{background:'#fff'}}>
+                <CommonTitle commonTitle={'密码'} history={this.props.history}></CommonTitle>
                 <div className={"main"}>
                     <div className={"login-wrap"}>
                         <h1 className={'login-title'} style={{textAlign:'left'}}>设置新密码</h1>

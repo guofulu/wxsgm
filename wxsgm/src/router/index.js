@@ -29,8 +29,13 @@ import MyCouponExchange from "../views/myjuooo/couponExchange"
 import Plus from "../views/plus/index";
 //意见反馈
 import Feedback from "../views/feedback/index"
+
 //vip+会员
 import VipInedx from '../views/VipIndex/index';
+import Discount from "../views/vip/discount"
+
+import Scores from "../views/Scores/index"
+
 
 //登录注册
  import Login from '../views/LoginG/Login';
@@ -38,6 +43,7 @@ import VipInedx from '../views/VipIndex/index';
  import SetPassword from '../views/LoginG/SetPassword.js'
 // import Forget from '../views/Login/Forget';
 // import Password from '../views/Login/Password';
+
 
 export default [
     {//输入验证码
@@ -258,6 +264,25 @@ export default [
             title:'聚橙网',
             isFooter:false,
             isLogin:true
+        }
+    },
+    //积分商城
+    {
+        path:'/scores/index',
+        context:"积分商城",
+        component:Scores,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    },
+    {
+        path:'/vip/discount',
+        context:"积分商城",
+        component:Discount,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
         }
     },
 ]

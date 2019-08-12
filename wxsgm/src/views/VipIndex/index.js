@@ -9,6 +9,7 @@ import PriorBuy from '../../components/VipIndex/PriorBuy';
 import VipDiscount from '../../components/VipIndex/VipDiscount';
 import VipFreeView from '../../components/VipIndex/VipFreeView';
 import Popover from "../../components/public/Popover";
+import  CommonTitle from  '../../common/commonTitle'
 
 
 
@@ -20,18 +21,21 @@ class VipIndx extends React.Component {
         return (
             <div className={'vip-plus-wrapper'}>
                 <div className={'vip-plus'}>
+
+                    <CommonTitle commonTitle={'VIP + 会员'} history={this.props.history}></CommonTitle>
                     {/* <section className={'vip-plus__title title-g'}>
                         <span className={'title__text'}>VIP + 会员</span>
                         <i className={"iconfont ju-icon-ellipsis title__ellipsis"}></i>
                         <i className={'iconfont ju-icon-arrow title__back'}></i>
                     </section> */}
-                    <div className={"navbar_on_center"} style={{zIndex:'88'}}>
-                        <div className={"My_left"} onClick={()=>{this.props.history.go(-1)}}>&lt;</div>
-                        <div className = {"My_center"}>
-                            VIP + 会员
-                        </div>
-                        <Popover className={"My_rigth"}></Popover>
-                    </div>
+
+                    {/*<div className={"navbar_on_center"} style={{zIndex:'88'}}>*/}
+                        {/*<div className={"My_left"} onClick={()=>{this.props.history.go(-1)}}>&lt;</div>*/}
+                        {/*<div className = {"My_center"}>*/}
+                            {/*VIP + 会员*/}
+                        {/*</div>*/}
+                        {/*<Popover className={"My_rigth"}></Popover>*/}
+                    {/*</div>*/}
                     {/* 第二部分 */}
                     <div className={'vip-plus__desc'}>
                         <div className={'vip-plus__desc__title'}></div>
@@ -72,28 +76,32 @@ class VipIndx extends React.Component {
                         </div>
                     </div>
                     {/* 第五部分 */}
-                   
-                    <div className={"entry-block vip-plus__ticket"}>
-                        <div className={"entry-block__title"}>
-                            专属票
-                            <span className={"entry-block__title__desc"}></span>
-                        </div>
-                        <div className={"vip-plus-ticket-wrapper"}>
-                            <div className={'vip-plus-ticket-cell vip-plus-ticket__cell'}>
-                                <NavLink to={'/ticket/'+this.props.ExclusiveList.list[0].schedular_id} className={'ticket-cell'} style={{display:'block'}}>
-                                    <img src={this.props.ExclusiveList.list[0].pic} alt='' className={"ticket-cell__img"}  />
-                                    <div className={'ticket-cell__name'}>
-                                        {this.props.ExclusiveList.list[0].schedular_name }
-                                    </div>
-                                </NavLink>
-                                <div className={'vip-plus-ticket-cell__price'}>
-                                    {this.props.ExclusiveList.list[0].min_price || ''}
-                                    <span className={'vip-plus-ticket-cell__price__desc'}>起</span>
+                    {
+                        this.props.ExclusiveList.list.length>0?(
+                            <div className={"entry-block vip-plus__ticket"}>
+                                <div className={"entry-block__title"}>
+                                    专属票
+                                    <span className={"entry-block__title__desc"}></span>
                                 </div>
-                            </div>
-                        </div>
+                                <div className={"vip-plus-ticket-wrapper"}>
+                                    <div className={'vip-plus-ticket-cell vip-plus-ticket__cell'}>
+                                        <NavLink to={'/ticket/'+this.props.ExclusiveList.list[0].schedular_id} className={'ticket-cell'} style={{display:'block'}}>
+                                            <img src={this.props.ExclusiveList.list[0].pic} alt='' className={"ticket-cell__img"}  />
+                                            <div className={'ticket-cell__name'}>
+                                                {this.props.ExclusiveList.list[0].schedular_name }
+                                            </div>
+                                        </NavLink>
+                                        <div className={'vip-plus-ticket-cell__price'}>
+                                            {this.props.ExclusiveList.list[0].min_price || ''}
+                                            <span className={'vip-plus-ticket-cell__price__desc'}>起</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    </div>
+                            </div>
+                        ):null
+                    }
+                    
                     {/* 第六部分 */}
                     {
                         this.props.PriorBuyList.list?<PriorBuy {...this.props}></PriorBuy>:null
