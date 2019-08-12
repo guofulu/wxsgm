@@ -27,11 +27,11 @@ class Adeertion extends React.Component{
                     
                 </div>
                 {/* 图片广告 */}
-                <div style={this.props.ClassifyHome.ad_list.advert1.length>0?{display:'block'}:{display:'none'}} className={'advertion'}>
+                {/* <div style={this.props.ClassifyHome.ad_list.advert1.length>0?{display:'block'}:{display:'none'}} className={'advertion'}>
                     <NavLink to={'/ticket/102444'} className={'advertion__block'}>
                         <img src={this.props.ClassifyHome.ad_list.advert1[0].pic} alt='' />
                     </NavLink>
-                </div>
+                </div> */}
                 {/* vip广告 */}
                 <div className={'vip-ahead'}>
                     <NavLink className={'vip-ahead__advert'} to={'/vip/index'}>

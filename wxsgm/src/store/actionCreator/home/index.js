@@ -49,6 +49,14 @@ const upTourRecommendList = function (payload){
     }
 }
 
+// 0808
+const upGetShowList = function (payload) {
+    return {
+        type:homeType.UP_GET_SHOW_LIST,
+        payload
+    }
+}
+
 export default {
     getRegisterCoupon(){//获取注册优惠券信息
         return async (dispatch)=>{
@@ -110,6 +118,20 @@ export default {
             const {data} =  await axios.get('/juoooAPI/home/index/getTourRecommendList?city_id=0&version=6.0.1&referer=2')
             dispatch(upTourRecommendList(data))
             // console.log(8888,data)
+        }
+    },
+
+    // 0808
+    getShowList(time='2019%2f8%2f16'){
+        return async (dispatch)=> {
+            const {data} = await axios.get("/juoooM/Search/getShowList?category=0&city_id=0&start_time=" + time + "&version=6.0.1&referer=2");
+            dispatch(upGetShowList(data.list));
+            console.log('getShowList',data.list);
+            // console.log(data);
+            // this.setState({
+            //     data: data.list
+            // })
+
         }
     }
 }

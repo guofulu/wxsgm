@@ -4,8 +4,24 @@ import bg from './images/login_bg.png';
 import qq from './images/qq.png';
 import weibo from './images/weibo.png';
 
-export default class Login extends React.Component{
+import axios from 'axios'
 
+export default class Login extends React.Component{
+	constructor(){
+		super()
+	}
+
+	async getSendCode(phoneId){
+		console.log(555,phoneId)
+		const data =  await axios.get('http://127.0.0.1/sendCode',{
+			params:{
+				query:{
+					phoneId
+				}
+			}
+		})
+		console.log(666,data)
+	}
 	render() {
 		return (
 			<div>
@@ -46,7 +62,8 @@ export default class Login extends React.Component{
 												display:"inline-block"
 											}}>
 												<label style={{color:"red"}}>+86</label>
-												<input type="text"
+												<input ref='loginInput'
+													   type="text"
 													   name="text"
 													   placeholder="请输入手机号"
 													   style={{border:"0",width:"200px",height:"45px"}}/>
@@ -58,9 +75,12 @@ export default class Login extends React.Component{
 								<div style={{
 									padding:"40px"
 								}}>
-									<a href="javascript:;"
-									   disabled="disabled"
-									   style={{width:"250px",height:"50px",display:"block",background:"rgb(0,0,0,0.1)",borderRadius:"25px",margin:"0 auto",lineHeight:"50px",color:"#fff"}}>获取验证码</a>
+									<button
+									   onClick={()=>{
+										   console.log('获取验证码')
+										   this.getSendCode(this.refs.loginInput.value)}}
+									
+									   style={{width:"250px",height:"50px",display:"block",background:"rgb(0,0,0,0.1)",borderRadius:"25px",margin:"0 auto",lineHeight:"50px",color:"#fff"}}>获取验证码</button>
 								</div>
 								<div style={{
 									width:"200px",
