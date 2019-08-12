@@ -8,7 +8,7 @@ const requset = require("request");
 
 module.exports = function(phoneId,cb){
     // http://v.juhe.cn/sms/send?mobile=手机号码&tpl_id=短信模板ID&tpl_value=%23code%23%3D654654&key=
-    const code = getRandom(999999,100000);//获取刘伟验证码
+    const code = getRandom(9999,1000);//获取刘伟验证码
     const mobile = phoneId;//获取手机号
     const tpl_id = '169555'
     const tpl_value = "#code#="+code;

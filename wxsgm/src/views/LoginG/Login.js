@@ -12,7 +12,7 @@ class Login extends React.Component{
     }
     //按钮变色方法
     btnChange(long){
-        console.log(666,long);
+        //console.log(666,long);
             if(long >0) {
                 this.refs.loginBtn.id = 'loginbtnid'
             }
@@ -26,9 +26,8 @@ class Login extends React.Component{
         if(str.test(phoneId)) {
             const data = await axiso.get('http://127.0.0.1/sendCode',{
                 params:{
-                    query:{
-                        phoneId
-                    }
+                    phoneId
+                    
                 }
             })
             if(data.ok === 1){
@@ -37,6 +36,7 @@ class Login extends React.Component{
                 setTimeout(()=>{
                     this.refs.dialogs.style.display = 'none'
                     this.refs.loginInput.value = ''
+                    localStorage.phoneId = phoneId;
                     this.props.history.push('/Passport/verify')
                 },1000)
             }else{
@@ -51,11 +51,9 @@ class Login extends React.Component{
     async btnLogin(phoneId,password){
         const str = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;
         if(str.test(phoneId) && password.length){
-            const data = await axiso.post('http://127.0.0.1/login',{
-                
+            const data = await axiso.post('http://127.0.0.1/login',{               
                     phoneId,
-                    password
-                
+                    password               
             })
             if(data.ok === 1) {
                 localStorage.token = data.token;

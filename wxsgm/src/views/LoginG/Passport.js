@@ -14,19 +14,48 @@ class PassPort extends React.Component{
     }
    
     componentDidMount(){
+        
+        
+    }
+    //验证验证码
+    async getsendCode(){
         const arr = document.querySelectorAll('.lg-input')
-        for(let i=0;i<arr.length;i++){
-            arr[i].addEventListener('change',()=>{
             console.log('监听触发')
             console.log(this.state)
             if(this.state.inPutOne && this.state.inPutTwo && this.state.inPutThree && this.state.inPutFour){
-                const arr =  document.querySelectorAll('.lg-input');
-                const str = ''+arr[0].value+arr[1].value+arr[2].value+arr[3].value
-                console.log('验证码',str)
+                const str = ''+arr[0].value+arr[1].value+arr[2].value+arr[3].value;
+                console.log('验证触发',str)
+                const data = await axiso.post('http://127.0.0.1/loginCode',{
+                    phoneId:localStorage.phoneId,
+                    code:str
+                })
+                console.log(888,data)
+                if(data.ok === 1){
+                    localStorage.token = data.token;
+                    this.refs.tipsText.innerHTML = '验证码正确'
+                    this.refs.dialogs.style.display = 'block'
+                    setTimeout(()=>{
+                        this.refs.dialogs.style.display = 'none'
+                        if(data.type === 2)
+                            this.props.history.push('/Passport/setPassword')
+                        else 
+                            this.props.history.push('/')
+                           //console.log(888,data)
+                    },1000)
+                }else{
+                    this.changeDialog('验证码错误')
+                }
             }
-        })
-        }
+
         
+    }
+    //提示信息方法
+    changeDialog(context){
+        this.refs.tipsText.innerHTML = context
+        this.refs.dialogs.style.display = 'block'
+        setTimeout(()=>{
+            this.refs.dialogs.style.display = 'none'
+        },2000)
     }
     render(){
         return (
@@ -48,7 +77,8 @@ class PassPort extends React.Component{
                                             const  arr = document.querySelectorAll('.lg-input')
                                             if(arr[0].value.length>0){
                                                 console.log('1')
-                                                this.state.inPutOne = true
+                                                this.state.inPutOne = true;
+                                                this.getsendCode.call(this)
                                                 arr[1].focus()
                                             }else{
                                                 this.state.inPutOne = false
@@ -60,7 +90,8 @@ class PassPort extends React.Component{
                                             const  arr = document.querySelectorAll('.lg-input')
                                             if(arr[1].value.length>0){
                                                 console.log('2')
-                                                this.state.inPutTwo = true
+                                                this.state.inPutTwo = true;
+                                                this.getsendCode.call(this)
                                                 arr[2].focus()
                                             }else{
                                                 this.state.inPutTwo = false
@@ -73,7 +104,8 @@ class PassPort extends React.Component{
                                             const  arr = document.querySelectorAll('.lg-input')
                                             if(arr[2].value.length>0){
                                                 console.log('3')
-                                                this.state.inPutThree = true
+                                                this.state.inPutThree = true;
+                                                this.getsendCode.call(this)
                                                 arr[3].focus()
                                             }else{
                                                 this.state.inPutThree = false
@@ -86,6 +118,7 @@ class PassPort extends React.Component{
                                             const  arr = document.querySelectorAll('.lg-input')
                                             if(arr[3].value.length>0){
                                                 this.state.inPutFour = true;
+                                                this.getsendCode.call(this);
                                                 console.log('4');
                                             }else{
                                                 this.state.inPutFour = false
