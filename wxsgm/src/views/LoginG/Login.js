@@ -37,7 +37,7 @@ class Login extends React.Component{
                 setTimeout(()=>{
                     this.refs.dialogs.style.display = 'none'
                     this.refs.loginInput.value = ''
-                    this.props.history.push('/')
+                    this.props.history.push('/Passport/verify')
                 },1000)
             }else{
                 this.changeDialog('验证码发送失败')
