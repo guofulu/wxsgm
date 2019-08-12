@@ -25,7 +25,7 @@ class RecommendBlock extends React.Component{
                                 return (
                                     <li key={i}>
                                         <div className={'show-icon'}>
-                                            <NavLink to={'null'} className={'show-icon-a'}>
+                                            <NavLink to={'/ticket/'+v.sche_id} className={'show-icon-a'}>
                                                 <img src={v.schePic} alt='' />
                                             </NavLink>
                                             <div  dangerouslySetInnerHTML={{__html: v.tag_icon}}></div>
@@ -39,7 +39,7 @@ class RecommendBlock extends React.Component{
                                                 </strong>
                                                 <span></span>
                                             </p>
-                                            <NavLink to={'null'} className={'item-desc-a'} >
+                                            <NavLink to={'/ticket/'+v.sche_id} className={'item-desc-a'} >
                                                 <h3 className={' text-double'}>
                                                     {v.show_name}
                                                 </h3>

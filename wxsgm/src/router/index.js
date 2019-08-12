@@ -1,32 +1,45 @@
+//首页
 import Home from '../views/home/Home';
+//城市选择
+import SelectCityme from '../views/selectCity';
+//票夹
 import Eticket from "../views/eticket/eticket"
+//剧院
 import Theatre from "../views/theatre/theatre"
+//vip
 import buy from "../components/shop/vip/buy";
+//演出详情
 import Ticket from "../views/theatre/ticket";
+//意见反馈-城市选择
 import CitySelect from "../views/feedback/citySelect"
 
 // 我的相关的
 import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
+//搜索
 import Search from "../views/search/index"
 import Mymoney from "../views/myjuooo/mymoney"
 
 import Myintegral from "../views/myjuooo/myintegral"
 import MyCouponExchange from "../views/myjuooo/couponExchange"
-
-import Plus from "../views/plus/index"
+//橙卡plus
+import Plus from "../views/plus/index";
+//意见反馈
 import Feedback from "../views/feedback/index"
 import VipInedx from '../views/VipIndex/index';
 import Discount from "../views/vip/discount"
 
 import Scores from "../views/Scores/index"
+
+
+
 import Login from '../views/Login/Login';
 import Forget from '../views/Login/Forget';
 import Password from '../views/Login/Password';
 
 export default [
-    {//首页路由
+    {//首页
         to:'/',
         path:'/',
         context:'首页',
@@ -38,7 +51,16 @@ export default [
             isNav:true
         }
     },
-    {//剧院路由
+    {//城市选择
+        path:'/index/selectCity',
+        context:'城市定位',
+        component:SelectCityme,
+        meta:{
+            title:'聚橙网',
+            isFooter:true,
+        }
+    },
+    {//剧院
         to:'/theatre/theatreList',
         path:'/theatre/theatreList',
         context:'剧院',
@@ -48,7 +70,7 @@ export default [
             isFooter:true,
         }
     },
-    {//票夹路由
+    {//票夹
         to:'/eticket/list',
         path:'/eticket/list',
         context:'票夹',
@@ -67,7 +89,7 @@ export default [
             isFooter:false,
         }
     },
-    {//我的路由
+    {//俺的
         to:'/myjuooo/myjuooo',
         path:'/myjuooo/myjuooo',
         context:'我的',
@@ -149,7 +171,7 @@ export default [
         }
     },
 
-    {//搜索页面
+    {//橙PLUS卡
         to: '/plus/index',
         path: '/plus/index',
         context: '搜索',
