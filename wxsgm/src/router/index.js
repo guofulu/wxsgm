@@ -24,6 +24,7 @@ import MyCouponExchange from "../views/myjuooo/couponExchange"
 import MyCouponOverdue from "../views/myjuooo/couponOverdue"
 import MyOrderList from "../views/myjuooo/myOrderList"
 import Cardproduct from "../views/myjuooo/cardproduct"
+import MyCalendar from "../views/myjuooo/calendar"
 //搜索
 import Search from "../views/search/index"
 //橙卡plus
@@ -187,6 +188,16 @@ export default [
         component:Certification,
         meta:{
             title:'实名认证',
+            isFooter:false,
+        }
+    },
+    {//我的路由-演出日历
+        to:'/calendar',
+        path:'/calendar',
+        context:'我的',
+        component:MyCalendar,
+        meta:{
+            title:'演出日历',
             isFooter:false,
         }
     },
