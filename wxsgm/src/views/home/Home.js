@@ -76,7 +76,7 @@ class Home extends React.Component{
     }
     
     render(){
-        console.log(4343434343,this.props)
+        console.log(4343434343,this.props,this.props.VipHomeSchedular)
         return (
             <div className={'home'} ref={'home'}>
                     <header className={'Header'} ref={'header'}>
@@ -101,7 +101,7 @@ class Home extends React.Component{
                         }
                     </div>
                     {
-                        this.props.VipHomeSchedular.priorList?<Adeertion {...this.props}></Adeertion>:null
+                        this.props.VipHomeSchedular.priorList &&  this.props.ClassifyHome.slide_list?<Adeertion {...this.props}></Adeertion>:null
                     }
 
                     {

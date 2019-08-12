@@ -9,6 +9,7 @@ import PriorBuy from '../../components/VipIndex/PriorBuy';
 import VipDiscount from '../../components/VipIndex/VipDiscount';
 import VipFreeView from '../../components/VipIndex/VipFreeView';
 import Popover from "../../components/public/Popover";
+import  CommonTitle from  '../../common/commonTitle'
 
 
 
@@ -20,18 +21,21 @@ class VipIndx extends React.Component {
         return (
             <div className={'vip-plus-wrapper'}>
                 <div className={'vip-plus'}>
+
+                    <CommonTitle commonTitle={'VIP + 会员'} history={this.props.history}></CommonTitle>
                     {/* <section className={'vip-plus__title title-g'}>
                         <span className={'title__text'}>VIP + 会员</span>
                         <i className={"iconfont ju-icon-ellipsis title__ellipsis"}></i>
                         <i className={'iconfont ju-icon-arrow title__back'}></i>
                     </section> */}
-                    <div className={"navbar_on_center"} style={{zIndex:'88'}}>
-                        <div className={"My_left"} onClick={()=>{this.props.history.go(-1)}}>&lt;</div>
-                        <div className = {"My_center"}>
-                            VIP + 会员
-                        </div>
-                        <Popover className={"My_rigth"}></Popover>
-                    </div>
+
+                    {/*<div className={"navbar_on_center"} style={{zIndex:'88'}}>*/}
+                        {/*<div className={"My_left"} onClick={()=>{this.props.history.go(-1)}}>&lt;</div>*/}
+                        {/*<div className = {"My_center"}>*/}
+                            {/*VIP + 会员*/}
+                        {/*</div>*/}
+                        {/*<Popover className={"My_rigth"}></Popover>*/}
+                    {/*</div>*/}
                     {/* 第二部分 */}
                     <div className={'vip-plus__desc'}>
                         <div className={'vip-plus__desc__title'}></div>

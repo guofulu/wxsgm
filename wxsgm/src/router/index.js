@@ -17,9 +17,10 @@ import MyCouponExchange from "../views/myjuooo/couponExchange"
 
 import Plus from "../views/plus/index"
 import Feedback from "../views/feedback/index"
-import VipInedx from '../views/vipIndex/index';
+import VipInedx from '../views/VipIndex/index';
+import Discount from "../views/vip/discount"
 
-
+import Scores from "../views/Scores/index"
 import Login from '../views/Login/Login';
 import Forget from '../views/Login/Forget';
 import Password from '../views/Login/Password';
@@ -184,6 +185,25 @@ export default [
         path:'/feedback/citySelect',
         context:"聚橙网",
         component:CitySelect,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    },
+    //积分商城
+    {
+        path:'/scores/index',
+        context:"积分商城",
+        component:Scores,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    },
+    {
+        path:'/vip/discount',
+        context:"积分商城",
+        component:Discount,
         meta:{
             title:'聚橙网',
             isFooter:false,
