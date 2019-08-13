@@ -1,10 +1,16 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import "../../assets/css/My/MyshowNav.css"
 export default class ShowsNav extends React.Component{
     constructor(props){
         super(props)
         this.state=({
-            color:"red"
+            index:0
+        })
+    }
+    changeColor(index){
+        this.setState({
+            index
         })
     }
     render(){
@@ -12,13 +18,15 @@ export default class ShowsNav extends React.Component{
         return(
             <div className={"showNav"}>
                 <div className={"showNull"}></div>
+                <p className={"show_p"} onClick={this.props.getShowListYes.bind(this,{type:0})}>
+                    <b>全部</b>
+                </p>
                 <ul className={"showUl active"}>
-                    <li onClick={this.props.getShowListYes.bind(this,{type:0})}>全部</li>
                     {
                         this.props.Show_category_list.map((v,i)=>{
                             return(
                                 <li key={i} onClick={this.props.getShowListYes.bind(this,{type:v.category_id})}>
-                                    {v.name}
+                                    <p onClick={this.changeColor.bind(this,i)} style={{color:i===this.state.index?"red":null}}>{v.name}</p>
                                 </li>
                             )
                         })

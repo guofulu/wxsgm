@@ -24,10 +24,10 @@ class ShowsLibrary extends React.Component{
         })
     }
     moreRecommendBlock(){
-        console.log(window.scrollY)
+        // console.log(window.scrollY)
         if(typeof(this.refs.showsLibrary) !== 'undefined'){
             let juli = this.refs.showsLibrary.offsetHeight - window.scrollY;
-            console.log(666,juli)
+            // console.log(666,juli)
             if(juli < 800){
                 if(this.state.isMore){
                     // console.log(77,"进来了",this.state.isMore)
