@@ -1,0 +1,17 @@
+.carbind_input{
+    font-size: 0.35rem;
+    border-bottom: 0.01rem #e6e6e6 solid;
+}
+.carbind_input input{
+    border: none;
+    font-size: 0.3rem;
+    padding: 0.2rem;
+}
+.carbind_bind{
+    font-size: 0.4rem;
+    line-height: 1rem;
+    margin: 1rem 0.3rem;
+    background: #df5000;
+    text-align: center;
+    border-radius: 0.2rem;
+}

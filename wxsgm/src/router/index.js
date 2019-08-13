@@ -19,22 +19,29 @@ import CitySelect from "../views/feedback/citySelect"
 import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
-//搜索
-import Search from "../views/search/index"
+import Certification from "../views/myjuooo/certification"
 import Mymoney from "../views/myjuooo/mymoney"
-
 import Myintegral from "../views/myjuooo/myintegral"
 import MyCouponExchange from "../views/myjuooo/couponExchange"
+import MyCouponOverdue from "../views/myjuooo/couponOverdue"
+import MyOrderList from "../views/myjuooo/myOrderList"
+import Cardproduct from "../views/myjuooo/cardproduct"
+import MyCalendar from "../views/myjuooo/calendar"
+//搜索
+import Search from "../views/search/index"
 //橙卡plus
 import Plus from "../views/plus/index";
 //意见反馈
+
 import Feedback from "../views/feedback/index"
 
 //vip+会员
-import VipInedx from '../views/VipIndex/index';
+import VipInedx from '../views/VipIndex';
+
 import Discount from "../views/vip/discount"
 
 import Scores from "../views/Scores/index"
+
 
 
 //登录注册
@@ -197,7 +204,56 @@ export default [
             isLogin:true
         }
     },
-
+    {//我的路由-已过期优惠券
+        to:'/Myjuooo/Mycoupon?overdue=overdue',
+        path:'/Myjuooo/Mycoupon?overdue=overdue',
+        context:'我的',
+        component:MyCouponOverdue,
+        meta:{
+            title:'优惠券',
+            isFooter:false,
+        }
+    },
+    {//我的路由-我的订单
+        to:'/my/myOrderList',
+        path:'/my/myOrderList',
+        context:'我的',
+        component:MyOrderList,
+        meta:{
+            title:'我的订单',
+            isFooter:false,
+        }
+    },
+    {//我的路由-我的卡包
+        to:'/my/cardproduct/:tpye',
+        path:'/my/cardproduct',
+        context:'我的',
+        component:Cardproduct,
+        meta:{
+            title:'我的卡包',
+            isFooter:false,
+        }
+    },
+    {//我的路由-实名认证
+        to:'/myjuooo/myRealNameCertification',
+        path:'/myjuooo/myRealNameCertification',
+        context:'我的',
+        component:Certification,
+        meta:{
+            title:'实名认证',
+            isFooter:false,
+        }
+    },
+    {//我的路由-演出日历
+        to:'/calendar',
+        path:'/calendar',
+        context:'我的',
+        component:MyCalendar,
+        meta:{
+            title:'演出日历',
+            isFooter:false,
+        }
+    },
     {//演出页面
         to:'/show/showsLibrary',
         path:'/show/showsLibrary/:category',

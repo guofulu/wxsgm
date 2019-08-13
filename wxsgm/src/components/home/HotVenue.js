@@ -18,7 +18,7 @@ export default class HotVenue extends React.Component{
             <div className={'hot_venue'}>
                 <div className={"hot_venue__wrap"}>
                     <h3 className={"hot_venue__h3"}>热门场馆</h3>
-                    <NavLink to={'/show/showsLibrary'} className={'hot_block__lab_a'}>
+                    <NavLink to={'/theatre/theatreList'} className={'hot_block__lab_a'}>
                         <img src={'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg=='} alt={''} />
                     </NavLink>
                 </div>

@@ -1,4 +1,11 @@
 /*演出的*/
+.showsLibrary{
+    width: 100%;
+    height: 100%;
+}
+.showsLibrary_warp_top{
+
+}
 .library_wrap{
     padding-top: 1.62rem;
     width: 100%;
