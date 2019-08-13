@@ -27,11 +27,11 @@ class Adeertion extends React.Component{
                     
                 </div>
                 {/* 图片广告 */}
-                {/*<div style={this.props.ClassifyHome.ad_list.advert1.length>0?{display:'block'}:{display:'none'}} className={'advertion'}>*/}
-                    {/*<NavLink to={'/ticket/102444'} className={'advertion__block'}>*/}
-                        {/*<img src={this.props.ClassifyHome.ad_list.advert1[0].pic} alt='' />*/}
-                    {/*</NavLink>*/}
-                {/*</div>*/}
+                {/* <div style={this.props.ClassifyHome.ad_list.advert1.length>0?{display:'block'}:{display:'none'}} className={'advertion'}>
+                    <NavLink to={'/ticket/102444'} className={'advertion__block'}>
+                        <img src={this.props.ClassifyHome.ad_list.advert1[0].pic} alt='' />
+                    </NavLink>
+                </div> */}
                 {/* vip广告 */}
                 <div className={'vip-ahead'}>
                     <NavLink className={'vip-ahead__advert'} to={'/vip/index'}>
@@ -74,7 +74,7 @@ class Adeertion extends React.Component{
                         </NavLink>
                     </ul>
                     <ul className={'operation-ul-2'}>
-                        <NavLink className={'ul-2-li'} to={'/积分商城'}>
+                        <NavLink className={'ul-2-li'} to={'/scores/index'}>
                             <h3>{this.props.ClassifyHome.operation_list[2].name}</h3>
                             <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[2].describe }}></p>
                             <img src={this.props.ClassifyHome.operation_list[2].pic} alt='' />

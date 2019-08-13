@@ -56,9 +56,6 @@ class Theatre extends React.Component{
     }
     componentDidMount() {
         this.props.getTheatreList()
-
-    }
-    componentWillReceiveProps(nextProps, nextContext) {
     }
 
 

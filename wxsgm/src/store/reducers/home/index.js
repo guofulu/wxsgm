@@ -27,6 +27,10 @@ export default function(state=initState,{type,payload}){
         case homeType.UP_TOUR_RECOMMEND_LIST:
             state.TourRecommendList = payload;
             break;
+        // 0808
+        case homeType.UP_GET_SHOW_LIST:
+            state.getShowList = payload;
+            break;
         default:
             break;
     }

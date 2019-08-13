@@ -22,10 +22,10 @@ class VipBlock extends React.Component{
                 </NavLink>
                 <div className={'vip-block__conent'}>
                     <div className={'vip-block__conent__power'}>
-                        <h3 className={'vip-block__conent__power__title'}>专享折扣</h3>
+                       <NavLink to={"/vip/discount"}> <h3 className={'vip-block__conent__power__title'}>专享折扣</h3></NavLink>
                         <ul className={"vip-block__conent__power__wrap wrap--ul"}>
                             <li className={'vip-block__conent__power__item item--list'}>
-                                <NavLink className={'vip-block__conent__power__click'} to={'/ticket/'+this.props.discountList[0].schedular_id}>
+                                <NavLink className={'vip-block__conent__power__click'} to={"/"}>
                                     <img style={{width: '2.1rem',height:'2.92rem'}}  src={this.props.discountList[0].pic} alt={''} />
                                     <p>
                                         <strong>{this.props.discountList[0].min_discount}</strong>
@@ -34,7 +34,7 @@ class VipBlock extends React.Component{
                                 </NavLink>
                             </li>
                             <li className={'vip-block__conent__power__item item--list'}>
-                                <NavLink to={'/ticket/'+this.props.discountList[1].schedular_id} className={'vip-block__conent__power__click'} >
+                                <NavLink  className={'vip-block__conent__power__click'} to={"/"}>
                                     <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.discountList[1].pic} alt={''} />
                                     <p>
                                         <strong>{this.props.discountList[1].min_discount}</strong>
@@ -45,6 +45,23 @@ class VipBlock extends React.Component{
                         </ul>
                     </div>
                     
+
+
+                    <div className={'vip-block__conent__power'}>
+                        <h3 className={'vip-block__conent__power__title title--right'}>优先购票</h3>
+                        <ul className={'vip-block__conent__power__wrap wrap-list--right'}>
+                            <li className={'vip-block__conent__power__item'}>
+                                <NavLink className={"vip-block__conent__power__click"} to={'/ticket/'+this.props.priorList[0].schedular_id}>
+                                    <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.priorList[0].pic} alt={''} />
+                                    <p>
+                                        <strong style={{fontSize:'.24rem'}}>{this.props.priorList[0].date}</strong>
+                                        <span>开始</span>
+                                    </p>
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+
                     {
                         // this.props.watchList.lentgh>0?(
                         //     <div className={'vip-block__conent__power'}>
@@ -79,6 +96,7 @@ class VipBlock extends React.Component{
                         // )
                     }
                     
+
                 </div>
             </div>
         )

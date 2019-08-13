@@ -2,6 +2,8 @@
 import Home from '../views/home/Home';
 //城市选择
 import SelectCityme from '../views/selectCity';
+//演出日历
+import ShowCalendar from '../components/home/ShowCalendar';
 //票夹
 import Eticket from "../views/eticket/eticket"
 //剧院
@@ -32,15 +34,56 @@ import Plus from "../views/plus/index";
 //意见反馈
 
 import Feedback from "../views/feedback/index"
+
 //vip+会员
 import VipInedx from '../views/VipIndex';
 
+import Discount from "../views/vip/discount"
+
+import Scores from "../views/Scores/index"
+
+
+
 //登录注册
-import Login from '../views/Login/Login';
-import Forget from '../views/Login/Forget';
-import Password from '../views/Login/Password';
+ import Login from '../views/LoginG/Login';
+ import PassPort from '../views/LoginG/Passport';
+ import SetPassword from '../views/LoginG/SetPassword.js'
+// import Forget from '../views/Login/Forget';
+// import Password from '../views/Login/Password';
+
 
 export default [
+    {//输入验证码
+        path:'/Passport/verify',
+        context:'输入验证码',
+        component:PassPort,
+        exact:true,
+        meta:{
+            title:'登录',
+            isFooter:false,
+        }
+    },
+    {//设置密码
+        path:'/Passport/setPassword',
+        context:'设置密码',
+        component:SetPassword,
+        exact:true,
+        meta:{
+            title:'登录',
+            isFooter:false,
+        }
+    },
+    {//登录
+        path:'/login',
+        context:'设置密码',
+        component:Login,
+        exact:true,
+        meta:{
+            title:'登录',
+            isFooter:false,
+            isLogin:false
+        }
+    },
     {//首页
         to:'/',
         path:'/',
@@ -50,7 +93,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
-            isNav:true
+            isLogin:false
         }
     },
     {//城市选择
@@ -60,6 +103,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
+            isLogin:false
         }
     },
     {//剧院
@@ -70,6 +114,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
+            isLogin:false
         }
     },
     {//票夹
@@ -80,6 +125,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:true
         }
     },
     {//演出详情页
@@ -89,6 +135,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:false
         }
     },
     {//俺的
@@ -99,6 +146,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
+            isLogin:true
         }
     },
     {//我的Vip
@@ -109,6 +157,7 @@ export default [
         meta:{
             title:'VIP',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-设置
@@ -119,6 +168,7 @@ export default [
         meta:{
             title:'账户设置',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-余额
@@ -129,6 +179,7 @@ export default [
         meta:{
             title:'我的余额',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-积分
@@ -139,6 +190,7 @@ export default [
         meta:{
             title:'我的积分',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-优惠券
@@ -149,6 +201,7 @@ export default [
         meta:{
             title:'优惠券',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-已过期优惠券
@@ -209,6 +262,7 @@ export default [
         meta:{
             title:'演出',
             isFooter:false,
+            isLogin:false
         }
     },
     {//搜索页面
@@ -229,6 +283,8 @@ export default [
         component: Plus,
         meta: {
             title: '橙PLUS卡',
+            isFooter:false,
+            isLogin:false
         }
     },
     { //vip+会员
@@ -239,6 +295,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:false
         }
     },
     //意见反馈
@@ -250,6 +307,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:true
         }
     },
     //选择你的成城市 连接意见反馈
@@ -258,6 +316,26 @@ export default [
         path:'/feedback/citySelect',
         context:"聚橙网",
         component:CitySelect,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+            isLogin:true
+        }
+    },
+    //积分商城
+    {
+        path:'/scores/index',
+        context:"积分商城",
+        component:Scores,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    },
+    {
+        path:'/vip/discount',
+        context:"积分商城",
+        component:Discount,
         meta:{
             title:'聚橙网',
             isFooter:false,
