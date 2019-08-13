@@ -1,5 +1,5 @@
 import React from "react"
-
+import {NavLink} from "react-router-dom"
 
 import Popover from "../../public/Popover";
 import "../../../assets/css/My/couponExchange.css"
@@ -29,9 +29,9 @@ export default class CouponExchange extends React.Component{
                         <CouponRuels></CouponRuels>
                     </div>
                     <div className={"coupon_footer"}>
-                        <div className={"coupon_footer_main"}>
-                            <p>查看已过期优惠券</p>
-                            <i>&gt;</i>
+                        <div className={"coupon_footer_main"} >
+                            <NavLink to={"/Myjuooo/Mycoupon?overdue=overdue"}>查看已过期优惠券</NavLink>
+                            <NavLink to={"/Myjuooo/Mycoupon?overdue=overdue"}>&gt;</NavLink>
                         </div>
                     </div>
                 </div>

@@ -19,17 +19,25 @@ import CitySelect from "../views/feedback/citySelect"
 import Myjuooo from "../views/myjuooo/Myjuooo"
 import Mysecurity from '../views/myjuooo/Mysecurity';
 import ShowsLibrary from '../views/showsLibrary/ShowsLibrary';
-//搜索
-import Search from "../views/search/index"
+import Certification from "../views/myjuooo/certification"
 import Mymoney from "../views/myjuooo/mymoney"
-
 import Myintegral from "../views/myjuooo/myintegral"
 import MyCouponExchange from "../views/myjuooo/couponExchange"
+import MyCouponOverdue from "../views/myjuooo/couponOverdue"
+import MyOrderList from "../views/myjuooo/myOrderList"
+import Cardproduct from "../views/myjuooo/cardproduct"
+import MyCalendar from "../views/myjuooo/calendar"
+//搜索
+import Search from "../views/search/index"
 //橙卡plus
 import Plus from "../views/plus/index";
 //意见反馈
+
 import Feedback from "../views/feedback/index"
-import VipInedx from '../views/VipIndex/index';
+
+//vip+会员
+import VipInedx from '../views/VipIndex';
+
 import Discount from "../views/vip/discount"
 import showList from '../components/theatre/theatreList'
 import moreTourShowList from '../views/Tour/moreTourShowList'
@@ -37,16 +45,16 @@ import Scores from "../views/Scores/index"
 
 
 
-
 //登录注册
  import Login from '../views/LoginG/Login';
  import PassPort from '../views/LoginG/Passport';
+ import SetPassword from '../views/LoginG/SetPassword.js'
 // import Forget from '../views/Login/Forget';
 // import Password from '../views/Login/Password';
 
 
 export default [
-    {
+    {//输入验证码
         path:'/Passport/verify',
         context:'输入验证码',
         component:PassPort,
@@ -54,6 +62,27 @@ export default [
         meta:{
             title:'登录',
             isFooter:false,
+        }
+    },
+    {//设置密码
+        path:'/Passport/setPassword',
+        context:'设置密码',
+        component:SetPassword,
+        exact:true,
+        meta:{
+            title:'登录',
+            isFooter:false,
+        }
+    },
+    {//登录
+        path:'/login',
+        context:'设置密码',
+        component:Login,
+        exact:true,
+        meta:{
+            title:'登录',
+            isFooter:false,
+            isLogin:false
         }
     },
     {//首页
@@ -65,7 +94,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
-            isNav:true
+            isLogin:false
         }
     },
     {//城市选择
@@ -75,6 +104,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
+            isLogin:false
         }
     },
     {//剧院
@@ -85,16 +115,18 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
+            isLogin:false
         }
     },
     {//票夹
         to:'/eticket/list',
         path:'/eticket/list',
         context:'票夹',
-        component:Login,
+        component:Eticket,
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:true
         }
     },
     {//演出详情页
@@ -104,6 +136,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:false
         }
     },
     {//俺的
@@ -114,6 +147,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:true,
+            isLogin:true
         }
     },
     {//我的Vip
@@ -124,6 +158,7 @@ export default [
         meta:{
             title:'VIP',
             isFooter:false,
+            isLogin:true
         }
     },
     {//演出列表
@@ -154,6 +189,7 @@ export default [
         meta:{
             title:'账户设置',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-余额
@@ -164,6 +200,7 @@ export default [
         meta:{
             title:'我的余额',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-积分
@@ -174,6 +211,7 @@ export default [
         meta:{
             title:'我的积分',
             isFooter:false,
+            isLogin:true
         }
     },
     {//我的路由-优惠券
@@ -184,9 +222,59 @@ export default [
         meta:{
             title:'优惠券',
             isFooter:false,
+            isLogin:true
         }
     },
-
+    {//我的路由-已过期优惠券
+        to:'/Myjuooo/Mycoupon?overdue=overdue',
+        path:'/Myjuooo/Mycoupon?overdue=overdue',
+        context:'我的',
+        component:MyCouponOverdue,
+        meta:{
+            title:'优惠券',
+            isFooter:false,
+        }
+    },
+    {//我的路由-我的订单
+        to:'/my/myOrderList',
+        path:'/my/myOrderList',
+        context:'我的',
+        component:MyOrderList,
+        meta:{
+            title:'我的订单',
+            isFooter:false,
+        }
+    },
+    {//我的路由-我的卡包
+        to:'/my/cardproduct/:tpye',
+        path:'/my/cardproduct',
+        context:'我的',
+        component:Cardproduct,
+        meta:{
+            title:'我的卡包',
+            isFooter:false,
+        }
+    },
+    {//我的路由-实名认证
+        to:'/myjuooo/myRealNameCertification',
+        path:'/myjuooo/myRealNameCertification',
+        context:'我的',
+        component:Certification,
+        meta:{
+            title:'实名认证',
+            isFooter:false,
+        }
+    },
+    {//我的路由-演出日历
+        to:'/calendar',
+        path:'/calendar',
+        context:'我的',
+        component:MyCalendar,
+        meta:{
+            title:'演出日历',
+            isFooter:false,
+        }
+    },
     {//演出页面
         to:'/show/showsLibrary',
         path:'/show/showsLibrary/:category',
@@ -195,6 +283,7 @@ export default [
         meta:{
             title:'演出',
             isFooter:false,
+            isLogin:false
         }
     },
     {//搜索页面
@@ -215,6 +304,8 @@ export default [
         component: Plus,
         meta: {
             title: '橙PLUS卡',
+            isFooter:false,
+            isLogin:false
         }
     },
     { //vip+会员
@@ -225,6 +316,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:false
         }
     },
     //意见反馈
@@ -236,6 +328,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:true
         }
     },
     //选择你的成城市 连接意见反馈
@@ -247,6 +340,7 @@ export default [
         meta:{
             title:'聚橙网',
             isFooter:false,
+            isLogin:true
         }
     },
     //积分商城

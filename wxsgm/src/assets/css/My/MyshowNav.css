@@ -18,9 +18,18 @@
     line-height: 0.91rem;
     overflow-x: auto;
     white-space: nowrap;
-
+    padding-left: 1.2rem;
+    overflow-y: hidden;
 }
 .showUl li{
     padding: 0 0.2rem;
-    font-size: 0.34rem;
+    font-size: 0.3rem;
+}
+.show_p{
+    position: absolute;
+    top: 0.24rem;
+    padding-left: 0.5rem;
+    padding-right: 0.1rem;
+    font-size:0.3rem;
+    background: white;
 }

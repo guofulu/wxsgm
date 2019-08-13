@@ -1,0 +1,28 @@
+/*身份认证*/
+.Certification_warp{
+    padding-top: 1rem;
+}
+.Certification_btn input{
+    display: block;
+    width: 100%;
+    border: none;
+    line-height: 1rem;
+    font-size: 0.27rem;
+    padding-left: 0.5rem;
+}
+.Certification_mine{
+    padding-top: 0.3rem;
+}
+.Certification_mine p{
+    line-height: 0.3rem;
+    font-size: 0.25rem;
+    color: #969896;
+}
+.Certification_footer input{
+    width: 4rem;
+    border: none;
+    background: #ff7919;
+    border-radius: 0.1rem;
+    font-size: 0.3rem;
+    padding: 0.2rem;
+}

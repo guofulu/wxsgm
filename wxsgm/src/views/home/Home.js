@@ -104,10 +104,10 @@ class Home extends React.Component{
                             this.props.ClassifyHome.slide_list?<Banner slide_list={this.props.ClassifyHome.slide_list} ></Banner>:null
                         }
                     </div>
-                    {/*{*/}
-                        {/*this.props.VipHomeSchedular.priorList &&  this.props.ClassifyHome.slide_list?<Adeertion {...this.props}></Adeertion>:null*/}
+                    {
+                        this.props.VipHomeSchedular.priorList &&  this.props.ClassifyHome.slide_list?<Adeertion {...this.props}></Adeertion>:null
 
-                    {/*}*/}
+                    }
 
                     {
                         this.props.HotsRecommendList.hots_show_list?<HotBlock {...this.props.HotsRecommendList}></HotBlock>:null

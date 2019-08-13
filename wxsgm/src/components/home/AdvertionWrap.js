@@ -79,13 +79,13 @@ class Adeertion extends React.Component{
                             <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[2].describe }}></p>
                             <img src={this.props.ClassifyHome.operation_list[2].pic} alt='' />
                         </NavLink>
-                        <NavLink className={'ul-2-li'} to={'/演出日历'}>
+                        <NavLink className={'ul-2-li'} to={'/calendar'}>
                             <h3>{this.props.ClassifyHome.operation_list[3].name}</h3>
                             <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[3].describe }}></p>
                        
                             <img src={this.props.ClassifyHome.operation_list[3].pic} alt='' />
                         </NavLink>
-                        <NavLink className={'ul-2-li'} to={'/欢聚橙卡'}>
+                        <NavLink className={'ul-2-li'} to={'/plus/index'}>
                             <h3>{this.props.ClassifyHome.operation_list[4].name}</h3>
                             <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[4].describe }}></p>
                      

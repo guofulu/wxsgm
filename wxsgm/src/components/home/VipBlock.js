@@ -25,7 +25,7 @@ class VipBlock extends React.Component{
                        <NavLink to={"/vip/discount"}> <h3 className={'vip-block__conent__power__title'}>专享折扣</h3></NavLink>
                         <ul className={"vip-block__conent__power__wrap wrap--ul"}>
                             <li className={'vip-block__conent__power__item item--list'}>
-                                <NavLink className={'vip-block__conent__power__click'} >
+                                <NavLink className={'vip-block__conent__power__click'} to={"/"}>
                                     <img style={{width: '2.1rem',height:'2.92rem'}}  src={this.props.discountList[0].pic} alt={''} />
                                     <p>
                                         <strong>{this.props.discountList[0].min_discount}</strong>
@@ -34,7 +34,7 @@ class VipBlock extends React.Component{
                                 </NavLink>
                             </li>
                             <li className={'vip-block__conent__power__item item--list'}>
-                                <NavLink  className={'vip-block__conent__power__click'} >
+                                <NavLink  className={'vip-block__conent__power__click'} to={"/"}>
                                     <img style={{width: '2.1rem',height:'2.92rem'}} src={this.props.discountList[1].pic} alt={''} />
                                     <p>
                                         <strong>{this.props.discountList[1].min_discount}</strong>

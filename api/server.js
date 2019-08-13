@@ -19,12 +19,14 @@ app.all("*",function(req,res,next){
 //发送验证码
 app.get("/sendCode",function(req,res){
     const phoneId = req.query.phoneId;
+    //console.log('6666666',req.query.phoneId,phoneId)
     db.findOne("codeList",{
         phoneId
     },function(err,codeInfo){
         if(codeInfo){
+            console.log(33,codeInfo)
             let time = Date.now()-codeInfo.sendTime;
-            console.log('验证码时间',time,time>90*1000)
+           // console.log('验证码时间',time,time>90*1000)
             if(time>90*1000){
                 sendCode(phoneId,function(obj){
                     console.log('过期',obj)
@@ -80,14 +82,16 @@ app.get("/sendCode",function(req,res){
         }
     })
 })
-//登录
+//验证码登录
 app.post("/loginCode",function(req,res){
     const {phoneId,code} = req.body;
+    console.log(phoneId,code)
     db.findOne("codeList",{
         phoneId
     },function(err,codeInfo){
         if(err) help.json(res,-1,"获取信息失败")
         else{
+            console.log(22,codeInfo)
             if(codeInfo){
                 if((codeInfo.sendTime+90*1000)>Date.now()){
                     if(codeInfo.code === code/1){
@@ -109,8 +113,9 @@ app.post("/loginCode",function(req,res){
                                             res.json({
                                                 ok:1,
                                                 phoneId,
-                                                token:jwt.encode(adminName),
-                                                msg:"登录成功"
+                                                token:jwt.encode(phoneId),
+                                                msg:"登录成功",
+                                                type:1
                                             })
                                         }
                                     })
@@ -126,7 +131,8 @@ app.post("/loginCode",function(req,res){
                                                 ok:1,
                                                 phoneId,
                                                 token:jwt.encode(phoneId),
-                                                msg:"登录成功"
+                                                msg:"登录成功",
+                                                type:2
                                             })
                                         }
                                     })
@@ -145,6 +151,29 @@ app.post("/loginCode",function(req,res){
         }
     })
 })
+//设置新密码
+app.post('/addPassword',function(req,res){
+    const {phoneId,password} = req.body;
+    console.log(phoneId,password)
+    db.updateOne("userList",{
+        phoneId
+    },{
+        $set:{
+            password
+        }
+    },function(err,results){
+        if(err) help.json(res,-1,"获取客户信息失败，请检查网络连接")
+        else{
+            res.json({
+                ok:1,
+                phoneId,
+                msg:"设置成功",
+            })
+        }
+    })
+    
+})
+//密码登录
 app.post('/login',function(req,res){
     const {phoneId,password} = req.body;
     db.findOne('userList',{
