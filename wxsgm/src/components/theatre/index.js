@@ -32,7 +32,9 @@ class Horizontal extends React.Component{
                         <p style={{width:".2rem",height:".2rem",background:"#ccc", borderRadius:"50%", position:"absolute",top: ".51rem",
                             left: "1.06rem"}}></p>
                         <div style={{width:"2rem",height:"3rem",margin:".3rem",background:"#f5f5f5",float:"left"}}>
-                            <p style={{width:"1.85rem",color:"#66666",textAlign:"center",marginTop:"1.2rem",fontSize: ".27rem"}}>查看更多></p>
+                            <p style={{width:"1.85rem",color:"#66666",textAlign:"center",marginTop:"1.2rem",fontSize: ".27rem"}} onClick={()=>{
+                                this.props.history.push('/theatre/showList')
+                            }}>查看更多></p>
                         </div>
 
                     </div>

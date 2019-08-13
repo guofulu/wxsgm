@@ -6,7 +6,7 @@ module.exports = function(app){
         pathRewrite:{
             "^/juoooAPI":""
         }
-    })),
+    }))
     app.use('/juoooM',proxy({
         target:'https://m.juooo.com',
         changeOrigin:true,

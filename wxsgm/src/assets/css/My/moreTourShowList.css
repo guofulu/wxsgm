@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    background-color: white;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 1331912 */
+    src: url('//at.alicdn.com/t/font_1331912_pt62l60cph.eot');
+    src: url('//at.alicdn.com/t/font_1331912_pt62l60cph.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1331912_pt62l60cph.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1331912_pt62l60cph.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1331912_pt62l60cph.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1331912_pt62l60cph.svg#iconfont') format('svg');
+}
+.TourShowList_head{
+    height: 1.17333rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height:1.17333rem;
+    background-color: #f0f0f0;
+}
+.TourShowList_head p {
+    font-size: .4rem;
+    margin-bottom: 0;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.TourShowList_context {
+    display: flex;
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: .2rem;
+}
+.TourShowList_item img{
+    height: 2.4rem;
+    width: 1.6rem;
+    margin-right: .2rem;
+    margin-bottom: .1rem;
+}
+.TourShowList_Time{
+    height: 2rem;
+    width: 4.5rem;
+}
+.TourShowList_Time a {
+    min-height: 0.4533333333rem;
+    font-size: 0.1473333333rem;
+    padding-top: 0.1066666667rem;
+    margin-bottom: 0.2133333333rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+}
+.time{
+    font-size: 0.2693333333rem;
+    color: #999;
+    margin-bottom: 0.2133333333rem;
+    text-align: left;
+}
+.TourShowList_City{
+    height: .7rem;
+    width: 4.5rem ;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.city {
+    width: .8586666667rem;
+    height: .3093333333rem;
+    text-align: center;
+    font-size: 0.1693333333rem;
+    margin: 0 0.1266666667rem 0.1133333333rem 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 0.1066666667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+}

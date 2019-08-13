@@ -31,7 +31,8 @@ import Plus from "../views/plus/index";
 import Feedback from "../views/feedback/index"
 import VipInedx from '../views/VipIndex/index';
 import Discount from "../views/vip/discount"
-
+import showList from '../components/theatre/theatreList'
+import moreTourShowList from '../views/Tour/moreTourShowList'
 import Scores from "../views/Scores/index"
 
 
@@ -122,6 +123,26 @@ export default [
         component:buy,
         meta:{
             title:'VIP',
+            isFooter:false,
+        }
+    },
+    {//演出列表
+        to:"/theatre/showList",
+        path:'/theatre/showList',
+        context:'演出列表',
+        component:showList,
+        meta:{
+            title:'聚橙网',
+            isFooter:false,
+        }
+    },
+    {//巡回演出
+        to:"/Tour/moreTourShowList",
+        path:'/Tour/moreTourShowList',
+        context:'演出列表',
+        component:moreTourShowList,
+        meta:{
+            title:'聚橙网',
             isFooter:false,
         }
     },
