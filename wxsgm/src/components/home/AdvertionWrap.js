@@ -26,39 +26,47 @@ class Adeertion extends React.Component{
                     }
                     
                 </div>
-                {/* 图片广告 */}
-                {/* <div style={this.props.ClassifyHome.ad_list.advert1.length>0?{display:'block'}:{display:'none'}} className={'advertion'}>
-                    <NavLink to={'/ticket/102444'} className={'advertion__block'}>
-                        <img src={this.props.ClassifyHome.ad_list.advert1[0].pic} alt='' />
-                    </NavLink>
-                </div> */}
-                {/* vip广告 */}
-                <div className={'vip-ahead'}>
-                    <NavLink className={'vip-ahead__advert'} to={'/vip/index'}>
-                        <div className={'vip-ahead__advert__left'}>
-                            <span style={{fontSize:'.3rem',marginRight:'.1rem',fontWeight:'900'}}>优先购票</span>
-                            <span>VIP+会员尊享权益</span>
+                {
+                    this.props.ClassifyHome.ad_list.length>0?(
+                        <div style={this.props.ClassifyHome.ad_list.advert1.length>0?{display:'block'}:{display:'none'}} className={'advertion'}>
+                            <NavLink to={'/ticket/102444'} className={'advertion__block'}>
+                                <img src={this.props.ClassifyHome.ad_list.advert1[0].pic} alt='' />
+                            </NavLink>
                         </div>
-                        <div>
-                            <span>开通会员99元/年</span>
-                            <span>&gt;</span>
+                    ):null
+                
+                }
+                {
+                    this.props.VipHomeSchedular.priorList.length>0?(
+                        <div className={'vip-ahead'}>
+                            <NavLink className={'vip-ahead__advert'} to={'/vip/index'}>
+                                <div className={'vip-ahead__advert__left'}>
+                                    <span style={{fontSize:'.3rem',marginRight:'.1rem',fontWeight:'900'}}>优先购票</span>
+                                    <span>VIP+会员尊享权益</span>
+                                </div>
+                                <div>
+                                    <span>开通会员99元/年</span>
+                                    <span>&gt;</span>
+                                </div>
+                            </NavLink>
+                            <NavLink  className={'vip-ahead__list'} to={'/ticket/'+this.props.VipHomeSchedular.priorList[0].schedular_id} >
+                                <div className={'div-1'}>
+                                    <img src={this.props.VipHomeSchedular.priorList[0].pic} alt={''} />
+                                </div>
+                                <div className={'div-2'}>
+                                    <h3>{this.props.VipHomeSchedular.priorList[0].schedular_name}</h3>
+                                    <p className={'p-1'}>{this.props.VipHomeSchedular.priorList[0].city_name +' | '+ this.props.VipHomeSchedular.priorList[0].venue_name}}</p>
+                                    <p className={'p-2'}>
+                                        <span className={'p-span-1'}>{this.props.VipHomeSchedular.priorList[0].end_time}</span>
+                                        <span className={'p-span-2'}>开始</span>
+                                    </p>
+                                </div>
+                                <span className={'div-span'}>开售提醒</span>
+                            </NavLink>
                         </div>
-                    </NavLink>
-                    <NavLink  className={'vip-ahead__list'} to={'/ticket/'+this.props.VipHomeSchedular.priorList[0].schedular_id} >
-                        <div className={'div-1'}>
-                            <img src={this.props.VipHomeSchedular.priorList[0].pic} alt={''} />
-                        </div>
-                        <div className={'div-2'}>
-                            <h3>{this.props.VipHomeSchedular.priorList[0].schedular_name}</h3>
-                            <p className={'p-1'}>{this.props.VipHomeSchedular.priorList[0].city_name +' | '+ this.props.VipHomeSchedular.priorList[0].venue_name}}</p>
-                            <p className={'p-2'}>
-                                <span className={'p-span-1'}>{this.props.VipHomeSchedular.priorList[0].end_time}</span>
-                                <span className={'p-span-2'}>开始</span>
-                            </p>
-                        </div>
-                        <span className={'div-span'}>开售提醒</span>
-                    </NavLink>
-                </div>
+                    ):null
+                }
+                
                 {/* 五个操作 */}
                 <div className={'operation'}>
                     <ul className={'operation-ul-1'}>

@@ -146,7 +146,7 @@ class Ticket extends React.Component{
                      })
                  }
                  <div className={"recommend__more"} onClick={()=>{
-                     this.props.history.push("/show/showsLibrary")
+                     this.props.history.push("/show/showsLibrary/0")
                  }}>
                      查看更多演出 <i style={{fontSize:".38rem"}} className={"iconfont icon-xiangyou"}></i>
                  </div>
