@@ -12,10 +12,10 @@ import help from './common/help';
 React.Component.prototype.help = help;
 axios.interceptors.request.use(config=>{
     return config;
-})
+});
 axios.interceptors.response.use(({data})=>{
     return data;
-})
+});
 
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));

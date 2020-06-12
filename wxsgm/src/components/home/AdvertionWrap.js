@@ -24,7 +24,7 @@ class Adeertion extends React.Component{
                             )
                         })
                     }
-                    
+
                 </div>
                 {
                     this.props.ClassifyHome.ad_list.length>0?(
@@ -34,7 +34,7 @@ class Adeertion extends React.Component{
                             </NavLink>
                         </div>
                     ):null
-                
+
                 }
                 {
                     this.props.VipHomeSchedular.priorList.length>0?(
@@ -66,38 +66,38 @@ class Adeertion extends React.Component{
                         </div>
                     ):null
                 }
-                
+
                 {/* 五个操作 */}
                 <div className={'operation'}>
                     <ul className={'operation-ul-1'}>
                         <NavLink className={'ul-1-li'} to={'/plus/index'}>
-                            <h3>{this.props.ClassifyHome.operation_list[0].name}</h3>
-                            <img src={this.props.ClassifyHome.operation_list[0].pic} alt='' />
-                            <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[0].describe }}></p>
+                            {/*<h3>{this.props.ClassifyHome.operation_list[0].name}</h3>*/}
+                            {/*<img src={this.props.ClassifyHome.operation_list[0].pic} alt='' />*/}
+                            {/*<p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[0].describe }}/>*/}
                         </NavLink>
                         <NavLink className={'ul-1-li'} to={'/vip/index'}>
-                            <h3>{this.props.ClassifyHome.operation_list[1].name}</h3>
-                            <img src={this.props.ClassifyHome.operation_list[1].pic} alt='' />
-                            <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[1].describe }}></p> 
+                            {/*<h3>{this.props.ClassifyHome.operation_list[1].name}</h3>*/}
+                            {/*<img src={this.props.ClassifyHome.operation_list[1].pic} alt='' />*/}
+                            {/*<p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[1].describe }}/>*/}
                         </NavLink>
                     </ul>
                     <ul className={'operation-ul-2'}>
                         <NavLink className={'ul-2-li'} to={'/scores/index'}>
-                            <h3>{this.props.ClassifyHome.operation_list[2].name}</h3>
-                            <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[2].describe }}></p>
-                            <img src={this.props.ClassifyHome.operation_list[2].pic} alt='' />
+                            {/*<h3>{this.props.ClassifyHome.operation_list[2].name}</h3>*/}
+                            {/*<p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[2].describe }}/>*/}
+                            {/*<img src={this.props.ClassifyHome.operation_list[2].pic} alt='' />*/}
                         </NavLink>
                         <NavLink className={'ul-2-li'} to={'/calendar'}>
-                            <h3>{this.props.ClassifyHome.operation_list[3].name}</h3>
-                            <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[3].describe }}></p>
-                       
-                            <img src={this.props.ClassifyHome.operation_list[3].pic} alt='' />
+                            {/*<h3>{this.props.ClassifyHome.operation_list[3].name}</h3>*/}
+                            {/*<p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[3].describe }}/>*/}
+
+                            {/*<img src={this.props.ClassifyHome.operation_list[3].pic} alt='' />*/}
                         </NavLink>
                         <NavLink className={'ul-2-li'} to={'/plus/index'}>
-                            <h3>{this.props.ClassifyHome.operation_list[4].name}</h3>
-                            <p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[4].describe }}></p>
-                     
-                            <img src={this.props.ClassifyHome.operation_list[4].pic} alt='' />
+                            {/*<h3>{this.props.ClassifyHome.operation_list[4].name}</h3>*/}
+                            {/*<p  dangerouslySetInnerHTML={{__html:this.props.ClassifyHome.operation_list[4].describe }}/>*/}
+
+                            {/*<img src={this.props.ClassifyHome.operation_list[4].pic} alt='' />*/}
                         </NavLink>
                     </ul>
                 </div>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import "../../assets/css/search.css"
 import {connect} from "react-redux"
 import searchCreator from "../../store/actionCreator/search";
@@ -8,17 +8,15 @@ import HotSerch from "./HotSerch"
 import Correlation from"./correlation"
 import axios from "axios"
 import  pubsub from  "pubsub-js"
-class Search extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            isShow:2,
-            shopList:[]
-        }
+class Search extends Component{
+    state = {
+        isShow:2,
+        shopList:[]
     }
+
     async changeShopList(value){
         console.log("执行了show")
-        const {data}  = await axios.get('/juoooM/Search/getShowList?keywords='+value+'&page=1&sort_type=1&version=6.0.3&referer=2')
+        const {data}  = await axios.get('/juoooM/Search/getShowList?keywords='+value+'&page=1&sort_type=1&version=6.0.3&referer=2');
         if(data.result_type === 1){
             this.state.isShow = 1;
             this.setState({
@@ -33,7 +31,6 @@ class Search extends React.Component{
     }
     componentWillReceiveProps(nextProps, nextContext) {
         this.state.isShow = 2;
-        console.log('666啊我要6',this.state.isShow)
     }
     async changeHotWord(){
         this.props.getSearchList()
@@ -43,13 +40,13 @@ class Search extends React.Component{
 
     }
     render() {
-        console.log('我是render',this.state.isShow)
+        const {isShow} =this.state
         return (
             <div className={"page"}>
                 <div className={"search"}>
                     <div className={"search-ipt"}>
-                        <div  style={{marginTop: "5px"}}><i
-                            style={{fontSize: "18px", textAlign: "center",}} className={"iconfont icon-sousuo"}></i>
+                        <div  style={{marginTop: "5px"}}>
+                            <i style={{fontSize: "18px", textAlign: "center",}} className={"iconfont icon-sousuo"}/>
                         </div>
                         <input ref={"keyword"} className={"search_text"} type={"search"} onChange={(e)=>{
                             console.log(2333,e.target.value.length)
@@ -59,7 +56,7 @@ class Search extends React.Component{
                             this.changeHotWord.call(this)
                             this.refs.keyword.value=""
                         }}><i style={{fontSize: "16px", textAlign: "center", marginRight: "10px"}}
-                                className={"iconfont icon-guanbi1"}></i></div>
+                                className={"iconfont icon-guanbi1"}/></div>
                     </div>
                     <div className={"cancel"} onClick={()=>{
                         this.props.history.push("/")
@@ -67,13 +64,13 @@ class Search extends React.Component{
                 </div>
 
                 {
-                    this.state.isShow === 1?<ShowList  {...this.state}></ShowList>:null
+                    isShow === 1?<ShowList  {...this.state}/>:null
                 }
                 {
-                    this.state.isShow === 2?<HotSerch  {...this.props}></HotSerch>:null
+                    isShow === 2?<HotSerch  {...this.props}/>:null
                 }
                 {
-                    this.state.isShow === 3?<Correlation {...this.state}></Correlation>:null
+                    isShow === 3?<Correlation {...this.state}/>:null
                 }
 
 
